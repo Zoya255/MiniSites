@@ -1,0 +1,197 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+
+	display: grid;
+	grid-template-areas: 'header'
+						 'main'
+						 'footer';
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+
+	min-height: 100vh;
+
+	font-family: Roboto;
+
+	background-color: #2d2d2d;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	display: grid;
+	grid-template-areas: 'logo title'
+						 'logo nav';
+	grid-template-columns: 100px 1fr;
+	grid-template-rows: auto auto;
+
+	background-color: #a0823d;
+}
+.global__header-logo{
+	grid-area: logo;
+	
+	padding: 5px 15px;
+}
+.global__header-title{
+	grid-area: title;
+
+	padding: 5px 0px;
+	margin: 0px;
+
+	color: #000000;
+}
+.global__header-title h1{
+	margin: 0px;
+}
+
+/* -------------------- nav in header -------------------- */
+
+.global__nav{
+	grid-area: nav;
+}
+.global__nav a{
+	padding: 3px 6px;
+	margin-right: 10px;
+
+	text-decoration: none;
+	border-radius: 5px;
+
+	color: #000000;
+	border: 1px solid black;
+	background-color: #a58c51;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+
+	grid-template-areas: 'slider'
+						 'blocks';
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+/* -------------------- slider in main -------------------- */
+
+.global__slider{
+	grid-area: slider;
+
+	padding: 20px;
+}
+
+.slide{
+	margin: 0 auto;
+	width: 700px;
+	height: 400px;
+	border: 1px solid #888;
+	position: relative;
+	text-align: center;
+}
+.slide input{
+	display: none;
+}
+.slide input + label{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 8px;
+	background: rgba(90, 90, 90, 0.8);
+	border: 2px solid rgba(190, 190, 190, 0.8);
+
+	cursor: pointer;
+
+	z-index: 100;
+	position: relative;
+
+	margin-right: 4px;
+	top: 90%;
+
+	transition: background 0.8s ease-out 0s;
+}
+.slide input + label:hover{
+	background: rgba(250, 250, 250, 0.8);
+}
+.slide input:checked + label{
+	background: rgba(220, 220, 220, 0.8);
+}
+.slide div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 0;
+}
+.slide div{
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.slide img{
+	width: 700px;
+	height: 400px;
+}
+.slide input:checked + label + div{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+.slide div p{
+	position: absolute;
+	font-size: 22px;
+	top: -22px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.6);
+	padding: 1px;
+	font-family: Consolas;
+	font-style: italic;
+}
+
+/* -------------------- blocks main -------------------- */
+
+.global__blocks{
+	grid-area: blocks;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	align-items: stretch;
+
+	padding-top: 10px;
+
+	border-top: 1px dashed #d2d2d2;
+}
+
+.global__blocks-item{
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
+
+	border-top-right-radius: 5px;
+
+	color: #eeeeee;
+	background: #353535;
+	border: 1px solid #d2d2d2;
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+	grid-area: footer;
+
+	text-align: center;
+
+	background-color: #a0823d;
+}
