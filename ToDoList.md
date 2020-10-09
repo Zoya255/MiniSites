@@ -13,6 +13,10 @@
 
 ## 09.10.2020
 
+*Ploject*
+
+- add LICENSE, type - MIT
+
 *Sergo*
 
 - add PROTON
