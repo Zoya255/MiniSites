@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Paint</title>
+		<link rel="stylesheet" href="css/global.css">
+		<script src="script/libraries/jquery-3.4.1.min.js" defer="defer"></script>
+		<script src="script/canvas_fon.js" defer="defer"></script>
+		<script src="script/canvas_paint.js" defer="defer"></script>
+		<script src="script/div_windows.js" defer="defer"></script>
+	</head>
+
+	<body>
+		<header>
+			<p>PAINT</p>
+		</header>
+
+		<nav>
+			<button id="clear">очистить</button>
+			<button id="save">сохранить</button>
+			<button id="repeat">воспроизвести</button>
+			<button id="config">настройки</button>
+		</nav>
+		
+		<canvas id="BG">Браузер не поддерживается.</canvas>
+
+		<canvas id="canvas">Браузер не поддерживается.</canvas>
+
+		<div id="generate"></div>
+		
+		<footer id="pallete">
+			<div class="color" onclick="pallete_color('#000000')" style="background-color: #000000;"></div>
+			<div class="color" onclick="pallete_color('#808080')" style="background-color: #808080;"></div>
+			<div class="color" onclick="pallete_color('#C0C0C0')" style="background-color: #C0C0C0;"></div>
+			<div class="color" onclick="pallete_color('#FFFFFF')" style="background-color: #FFFFFF;"></div>
+			<div class="color" onclick="pallete_color('#FF00FF')" style="background-color: #FF00FF;"></div>
+			<div class="color" onclick="pallete_color('#800080')" style="background-color: #800080;"></div>
+			<div class="color" onclick="pallete_color('#FF0000')" style="background-color: #FF0000;"></div>
+			<div class="color" onclick="pallete_color('#800000')" style="background-color: #800000;"></div>
+			<div class="color" onclick="pallete_color('#FFFF00')" style="background-color: #FFFF00;"></div>
+			<div class="color" onclick="pallete_color('#808000')" style="background-color: #808000;"></div>
+			<div class="color" onclick="pallete_color('#00FF00')" style="background-color: #00FF00;"></div>
+			<div class="color" onclick="pallete_color('#008000')" style="background-color: #008000;"></div>
+			<div class="color" onclick="pallete_color('#00FFFF')" style="background-color: #00FFFF;"></div>
+			<div class="color" onclick="pallete_color('#008080')" style="background-color: #008080;"></div>
+			<div class="color" onclick="pallete_color('#0000FF')" style="background-color: #0000FF;"></div>
+			<div class="color" onclick="pallete_color('#000080')" style="background-color: #000080;"></div>
+			<div class="color" onclick="pallete_color('#FFD700')" style="background-color: #FFD700;"></div>
+			<div class="color" onclick="pallete_color('#FFC0CB')" style="background-color: #FFC0CB;"></div>
+			<div class="color" onclick="pallete_color('#FF7F50')" style="background-color: #FF7F50;"></div>
+			<div class="color" onclick="pallete_color('#FF4500')" style="background-color: #FF4500;"></div>
+			<div class="color" onclick="pallete_color('#FFA500')" style="background-color: #FFA500;"></div>
+			<div class="color" onclick="pallete_color('#FF00FF')" style="background-color: #FF00FF;"></div>
+			<div class="color" onclick="pallete_color('#BA55D3')" style="background-color: #BA55D3;"></div>
+			<div class="color" onclick="pallete_color('#9370DB')" style="background-color: #9370DB;"></div>
+			<div class="color" onclick="pallete_color('#8A2BE2')" style="background-color: #8A2BE2;"></div>
+			<div class="color" onclick="pallete_color('#9400D3')" style="background-color: #9400D3;"></div>
+			<div class="color" onclick="pallete_color('#8B008B')" style="background-color: #8B008B;"></div>
+			<div class="color" onclick="pallete_color('#4B0082')" style="background-color: #4B0082;"></div>
+			<div class="color" onclick="pallete_color('#6A5ACD')" style="background-color: #6A5ACD;"></div>
+			<div class="color" onclick="pallete_color('#483D8B')" style="background-color: #483D8B;"></div>
+			<div class="color" onclick="pallete_color('#ADFF2F')" style="background-color: #ADFF2F;"></div>
+			<div class="color" onclick="pallete_color('#00FF00')" style="background-color: #00FF00;"></div>
+			<div class="color" onclick="pallete_color('#2E8B57')" style="background-color: #2E8B57;"></div>
+			<div class="color" onclick="pallete_color('#006400')" style="background-color: #006400;"></div>
+			<div class="color" onclick="pallete_color('#9ACD32')" style="background-color: #9ACD32;"></div>
+			<div class="color" onclick="pallete_color('#6B8E23')" style="background-color: #6B8E23;"></div>
+			<div class="color" onclick="pallete_color('#556B2F')" style="background-color: #556B2F;"></div>
+			<div class="color" onclick="pallete_color('#66CDAA')" style="background-color: #66CDAA;"></div>
+			<div class="color" onclick="pallete_color('#8FBC8F')" style="background-color: #8FBC8F;"></div>
+			<div class="color" onclick="pallete_color('#20B2AA')" style="background-color: #20B2AA;"></div>
+			<div class="color" onclick="pallete_color('#008B8B')" style="background-color: #008B8B;"></div>
+			<div class="color" onclick="pallete_color('#0000CD')" style="background-color: #0000CD;"></div>
+			<div class="color" onclick="pallete_color('#00008B')" style="background-color: #00008B;"></div>
+			<div class="color" onclick="pallete_color('#000080')" style="background-color: #000080;"></div>
+			<div class="color" onclick="pallete_color('#191970')" style="background-color: #191970;"></div>
+			<div class="color" onclick="pallete_color('#D2691E')" style="background-color: #D2691E;"></div>
+			<div class="color" onclick="pallete_color('#800000')" style="background-color: #800000;"></div>
+			<div class="color" onclick="pallete_color('#FFC0CB')" style="background-color: #FFC0CB;"></div>
+			<div class="color" onclick="pallete_color('#FFB6C1')" style="background-color: #FFB6C1;"></div>
+			<div class="color" onclick="pallete_color('#FF69B4')" style="background-color: #FF69B4;"></div>
+			<div class="color" onclick="pallete_color('#FF1493')" style="background-color: #FF1493;"></div>
+			<div class="color" onclick="pallete_color('#C71585')" style="background-color: #C71585;"></div>
+			<div class="color" onclick="pallete_color('#DB7093')" style="background-color: #DB7093;"></div>
+			<div class="color" onclick="pallete_color('#454504')" style="background-color: #454504;"></div>
+			<div class="color" onclick="pallete_color('#910931')" style="background-color: #910931;"></div>
+			<div class="color" onclick="pallete_color('#774547')" style="background-color: #774547;"></div>
+			<div class="color" onclick="pallete_color('#912093')" style="background-color: #912093;"></div>
+			<div class="color" onclick="pallete_color('#739288')" style="background-color: #739288;"></div>
+			<div class="color" onclick="pallete_color('#109430')" style="background-color: #109430;"></div>
+			<div class="color" onclick="pallete_color('#274350')" style="background-color: #274350;"></div>
+			<div class="color" onclick="pallete_color('#696362')" style="background-color: #696362;"></div>
+			<div class="color" onclick="pallete_color('#410765')" style="background-color: #410765;"></div>
+			<div class="color" onclick="pallete_color('#130954')" style="background-color: #130954;"></div>
+			<div class="color" onclick="pallete_color('#598588')" style="background-color: #598588;"></div>
+			<div class="color" onclick="pallete_color('#834477')" style="background-color: #834477;"></div>
+			<div class="color" onclick="pallete_color('#241979')" style="background-color: #241979;"></div>
+			<div class="color" onclick="pallete_color('#968483')" style="background-color: #968483;"></div>
+			<div class="color" onclick="pallete_color('#498778')" style="background-color: #498778;"></div>
+			<div class="color" onclick="pallete_color('#749243')" style="background-color: #749243;"></div>
+			<div class="color" onclick="pallete_color('#649067')" style="background-color: #649067;"></div>
+			<div class="color" onclick="pallete_color('#461543')" style="background-color: #461543;"></div>
+			<div class="color" onclick="pallete_color('#230513')" style="background-color: #230513;"></div>
+			<div class="color" onclick="pallete_color('#921043')" style="background-color: #921043;"></div>
+			<div class="color" onclick="pallete_color('#822259')" style="background-color: #822259;"></div>
+			<div class="color" onclick="pallete_color('#266885')" style="background-color: #266885;"></div>
+			<div class="color" onclick="pallete_color('#354516')" style="background-color: #354516;"></div>
+			<div class="color" onclick="pallete_color('#537392')" style="background-color: #537392;"></div>
+			<div class="color" onclick="pallete_color('#291638')" style="background-color: #291638;"></div>
+			<div class="color" onclick="pallete_color('#264686')" style="background-color: #264686;"></div>
+			<div class="color" onclick="pallete_color('#153040')" style="background-color: #153040;"></div>
+		</footer>
+		
+
+	</body>
+
+</html>

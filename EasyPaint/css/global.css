@@ -1,0 +1,132 @@
+body{
+	background-color: #b3b3b3;
+	width: 1920px;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-template-areas:   	"header"
+							"nav"
+							"canvas"
+							"footer";
+	grid-template-columns: 	1fr;
+	grid-template-rows:    	4vh
+							3.5vh
+							780px
+							1fr;
+}
+header *, nav *{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+header p{
+	text-align: center;
+	font-size: 2em;
+}
+header{
+	grid-area: header;
+	background-color: #d2d2d2;
+}
+nav{
+	grid-area: nav;
+	background-color: #b3b3b3;
+}
+nav button{
+	padding: 3px 7px;
+	border-radius: 10px;
+	background-color: white;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #3c3c3c;
+	border: none;
+	margin-left: 30px;
+	margin-top: 3px;
+	margin-bottom: 3px; 
+}
+nav button:focus{
+	outline: none;
+}
+#config{
+	float: right;
+	margin-right: 30px;
+}
+#BG{
+	grid-area: canvas;
+	top: 7.5vh;
+	position: absolute;
+	z-index: 1;
+	/* Размеры смотреть в соответствующем скрипте */
+}
+#canvas{
+	grid-area: canvas;
+	top: 7.5vh;
+	position: absolute;
+	z-index: 2;
+	/* Размеры смотреть в соответствующем скрипте */
+}
+
+#fon_window{
+	position: absolute;
+	z-index: 3;
+	top: 0px; 
+	width: 1920px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#window{
+	position: absolute;
+	z-index: 4;
+	left: 360px;
+	top: 100px;
+	width: 1200px;
+	height: 700px;
+	background-color: #d2d2d2;
+}
+#header_window{
+	width: 1200px;
+	height: 30px;
+	background-color: #b2b2b2;
+}
+#header_window h2{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 400px;
+}
+#close{
+	float: right;
+	background-color: red;
+	color: #ffffff;
+	width: 30px;
+	height: 30px;
+}
+#body_window{
+	height: 640px;
+}
+#body_window fieldset{
+	max-width: 250px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+#footer_window{
+	width: 1200px;
+	height: 30px;
+	background-color: #b2b2b2;
+}
+#save_win{
+	float: right;
+	background-color: blue;
+	color: #ffffff;
+	width: 90px;
+	height: 30px;
+}
+footer{
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: 1fr
+						1fr
+						1fr
+						1fr;
+}
