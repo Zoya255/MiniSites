@@ -26,3 +26,4 @@
 *Sergo*
 
 - add FontsLib
+- add EasyPaint
