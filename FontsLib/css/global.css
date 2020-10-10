@@ -1,0 +1,78 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+	
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'none1  main   none2'
+						 'footer footer footer';
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto 1fr auto;
+
+	min-height: 100vh;
+	
+	background-color: #cccccc;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	display: grid;
+	grid-template-areas: 'hleft logo hright';
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto;
+
+	text-align: center;
+	position: sticky;
+	top: 0px;
+
+	background: #bbbbbb;
+	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-logo{
+	grid-area: logo;
+
+	margin: 0px;
+
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 1.7em;
+	font-style: italic;
+
+	color: #000000;
+}
+
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+
+	padding: 0px 15px;
+
+	background-color: #dddddd;
+	border-left: 1px solid #2d2d2d;
+	border-right: 1px solid #2d2d2d;
+}
+.global__main h2{
+	font-family: Consolas;
+	font-style: italic;
+	text-indent: 2em;
+
+	border-bottom: 1px dashed #2d2d2d;
+}
+.global__main p{
+	padding: 10px;
+
+	font-size: 1em;
+	white-space: pre-wrap;
+
+	border: 1px solid #2d2d2d;
+	background-color: #ffffff;
+}
