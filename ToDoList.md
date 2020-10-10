@@ -20,3 +20,9 @@
 *Sergo*
 
 - add PROTON
+
+## 10.10.2020
+
+*Sergo*
+
+- add FontsLib
