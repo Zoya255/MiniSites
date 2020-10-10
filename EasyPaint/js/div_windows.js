@@ -2,6 +2,7 @@
 
 var drcolorButton = document.getElementById('config');
 drcolorButton.addEventListener('click', main_gen);
+
 /*------------ Функции генерации окон меню ------------*/
 
 function main_gen() {
