@@ -27,3 +27,12 @@
 
 - add FontsLib
 - add EasyPaint
+- fully rewrite EasyPaint
+
+*Plans*
+
+- [ ] FontsLib: add new fonts
+- [ ] EasyPaint: export
+- [ ] EasyPaint: import
+- [ ] EasyPaint: features for end-user
+- [ ] add old music site
