@@ -7,11 +7,14 @@ data = {};
 data.levelLog = 'Debug';
 data.levelLogNum  = '10';
 
+var canvas__id = 'script__canvas-paint-1';
+
 console.log('  Start ' + data.levelLog + ' log');
 console.log('--------------------------------');
 console.log('');
 console.log('Dump of data:');
 console.log('  | Level log: ' + data.levelLog + ' ( ' + data.levelLogNum + ' )');
+console.log('  | ID canvas: ' + canvas__id);
 console.log('');
 
 /* -------------------- data -------------------- */
@@ -51,11 +54,11 @@ console.log('  | Background height: ' + canvas__bg.height + 'px');
 
 /* -------------------- canvas print -------------------- */
 
-var canvas__pr = document.getElementById('script__canvas-paint');
-var ctx__pr = canvas__pr.getContext('2d');
+var canvas__pr = document.getElementById(canvas__id);
+var ctx__pr    = document.getElementById(canvas__id).getContext('2d');
 
-canvas__pr.width = $('#script__canvas-paint').width();
-canvas__pr.height = $('#script__canvas-paint').height();
+canvas__pr.width  = $(canvas__id).width();
+canvas__pr.height = $(canvas__id).height();
 
 console.log('  | Paint width:  ' + canvas__pr.width + 'px');
 console.log('  | Paint height: ' + canvas__pr.height + 'px');
@@ -109,20 +112,9 @@ canvas__pr.addEventListener('mousemove', function(e){
 	}
 });
 
-/* -------------------- clear -------------------- */
-
-var clearButton  = document.getElementById('script__clear');
-clearButton.addEventListener('click', clear);
-
-function clear() {
-	ctx__pr.clearRect(0, 0, canvas__pr.width, canvas__pr.height);
-	coords = [];
-}
-
 /* -------------------- save -------------------- */
 
-var saveButton   = document.getElementById('script__save');
-saveButton.addEventListener('click', save);
+$("#script__button-save").click(function() { save() });
 
 function save() {
 	localStorage.setItem('coordsLS', JSON.stringify(coords));
@@ -130,8 +122,7 @@ function save() {
 
 /* -------------------- repeat -------------------- */
 
-var repeatButton = document.getElementById('script__repeat');
-repeatButton.addEventListener('click', repeat);
+$("#script__button-repeat").click(function() { repeat() });
 
 function repeat() {
 	clear();
@@ -166,8 +157,7 @@ function repeat() {
 
 /* -------------------- aside -------------------- */
 
-var repeatButton = document.getElementById('script__aside');
-repeatButton.addEventListener('click', aside_toggle);
+$("#script__button-aside-toggle").click(function() { aside_toggle() });
 
 function aside_toggle() {
 	$('.global__aside').toggle(
@@ -183,10 +173,18 @@ function aside_toggle() {
 	console.log('');
 }
 
+/* -------------------- clear -------------------- */
+
+$("#script__button-clear").click(function() { clear() });
+
+function clear() {
+	ctx__pr.clearRect(0, 0, canvas__pr.width, canvas__pr.height);
+	coords = [];
+}
+
 /* -------------------- config colors -------------------- */
 
-var drcolorButton = document.getElementById('script__save-config');
-drcolorButton.addEventListener('click', save_config);
+$("#script__button-save-config").click(function() { save_config() });
 
 function save_config() {
 	let colorDRPR;
@@ -217,15 +215,6 @@ function save_config() {
 	update_panel();
 }
 
-/* -------------------- pallete color -------------------- */
-
-function pallete_color(color) {
-	localStorage.setItem('colorDRLS', color);
-	colorDR = color;
-
-	update_panel();
-}
-
 /* -------------------- update panel -------------------- */
 
 function update_panel() {
@@ -239,5 +228,42 @@ function update_panel() {
 	console.log('  | Color of line: ' + LS.getItem('colorDRLS'));
 	console.log('  | Width of line: ' + LS.getItem('widthDRLS') + 'px');
 	console.log('  | Color of background: ' + LS.getItem('colorBGLS'));
+	console.log('');
+}
+
+/* -------------------- pallete color -------------------- */
+
+function pallete_color(color) {
+	localStorage.setItem('colorDRLS', color);
+	colorDR = color;
+
+	update_panel();
+}
+
+/* -------------------- layers -------------------- */
+
+$(".script__button-top").click(function() { set_top_layer(this) });
+
+function set_top_layer(el) {
+	$('.global__aside-layers-content-layer-top').removeClass('global__aside-layers-content-layer-top');
+	$(el).parent().addClass('global__aside-layers-content-layer-top');
+
+	$('.fa-paint-roller').removeClass('fa-paint-roller').addClass('fa-arrow-up');
+	$(el).children().removeClass('fa-arrow-up').addClass('fa-paint-roller');
+
+	var number = $(el).parent().index() + 1; 
+
+	$('.script__canvas-top').removeClass('script__canvas-top');
+
+	var id = 'script__canvas-paint-' + number;
+
+	$('#' + id).addClass('script__canvas-top')
+
+	canvas__id = id;
+	ctx__pr = document.getElementById(canvas__id).getContext('2d');
+
+	console.log('Update layers:');
+	console.log('  | Top layer:    ' + number)
+	console.log('  | Top layer id: ' + canvas__id);
 	console.log('');
 }

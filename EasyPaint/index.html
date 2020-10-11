@@ -18,41 +18,61 @@
 
 			<div class="global__header-actions">
 				<button class="btn btn-sm btn-round btn-success"
-						id="script__save">
+						id="script__button-save">
 							<i class="fa fa-save fa-lg"></i> сохранить
 				</button>
 
 				<button class="btn btn-sm btn-round btn-success"
-						id="script__repeat">
+						id="script__button-repeat">
 							<i class="fa fa-redo fa-lg"></i> воспроизвести
 				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__aside">
+						id="script__button-aside-toggle">
 							<i class="fa fa-bars fa-lg"></i> панель
 				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__import">
+						id="script__button-import">
 							<i class="fa fa-file-upload fa-lg"></i> импорт
 				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__export">
+						id="script__button-export">
 							<i class="fa fa-file-download fa-lg"></i> экспорт
 				</button>
 
 				<button class="btn btn-sm btn-round btn-danger"
-						id="script__clear">
+						id="script__button-clear">
 							<i class="fa fa-trash fa-lg"></i> очистить
 				</button>
 			</div>
 		</header>
 		
 		<main class="global__main">
-			<canvas class="global__main-canvas" id="script__canvas-background"></canvas>
+			<canvas class="global__main-canvas script__canvas-top" 
+					id="script__canvas-paint-1">
+			</canvas>
 
-			<canvas class="global__main-canvas" id="script__canvas-paint"></canvas>
+			<canvas class="global__main-canvas" 
+					id="script__canvas-paint-2">
+			</canvas>
+
+			<canvas class="global__main-canvas" 
+					id="script__canvas-paint-3">
+			</canvas>
+
+			<canvas class="global__main-canvas"
+					id="script__canvas-paint-4">
+			</canvas>
+
+			<canvas class="global__main-canvas" 
+					id="script__canvas-paint-5">
+			</canvas>
+
+			<canvas class="global__main-canvas" 
+					id="script__canvas-background">
+			</canvas>
 		</main>
 
 		<aside class="global__aside">
@@ -83,7 +103,7 @@
 
 				<div class="global__aside-buttons">
 					<button class="btn btn-sm btn-round btn-default"
-							id="script__save-config">сохранить
+							id="script__button-save-config">сохранить
 					</button>
 				</div>
 			</div>
@@ -94,11 +114,11 @@
 				</h2>
 
 				<div class="global__aside-layers-content">
-					<p class="global__aside-layers-content-layer">
+					<p class="global__aside-layers-content-layer global__aside-layers-content-layer-top">
 						<i class="fa fa-file fa-fw"></i> Cлой 1 
 
-						<button class="btn btn-round btn-mc btn-default">
-							<i class="fa fa-arrow-up"></i>
+						<button class="btn btn-round btn-mc btn-default script__button-top">
+							<i class="fa fa-paint-roller"></i>
 						</button>
 
 						<button class="btn btn-round btn-mc btn-default">
@@ -109,7 +129,7 @@
 					<p class="global__aside-layers-content-layer">
 						<i class="fa fa-file fa-fw"></i> Cлой 2 
 
-						<button class="btn btn-round btn-mc btn-default">
+						<button class="btn btn-round btn-mc btn-default script__button-top">
 							<i class="fa fa-arrow-up"></i>
 						</button>
 
@@ -121,7 +141,7 @@
 					<p class="global__aside-layers-content-layer">
 						<i class="fa fa-file fa-fw"></i> Cлой 3 
 
-						<button class="btn btn-round btn-mc btn-default">
+						<button class="btn btn-round btn-mc btn-default script__button-top">
 							<i class="fa fa-arrow-up"></i>
 						</button>
 
@@ -133,7 +153,7 @@
 					<p class="global__aside-layers-content-layer">
 						<i class="fa fa-file fa-fw"></i> Cлой 4 
 
-						<button class="btn btn-round btn-mc btn-default">
+						<button class="btn btn-round btn-mc btn-default script__button-top">
 							<i class="fa fa-arrow-up"></i>
 						</button>
 
@@ -145,7 +165,7 @@
 					<p class="global__aside-layers-content-layer">
 						<i class="fa fa-file fa-fw"></i> Cлой 5 
 
-						<button class="btn btn-round btn-mc btn-default">
+						<button class="btn btn-round btn-mc btn-default script__button-top">
 							<i class="fa fa-arrow-up"></i>
 						</button>
 

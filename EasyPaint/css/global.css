@@ -58,11 +58,26 @@
 
 /* -------------------- scripts elements -------------------- */
 
+.script__canvas-top{
+	z-index: 10 !important;
+}
+#script__canvas-paint-1{
+	z-index: 6;
+}
+#script__canvas-paint-2{
+	z-index: 5;
+}
+#script__canvas-paint-3{
+	z-index: 4;
+}
+#script__canvas-paint-4{
+	z-index: 3;
+}
+#script__canvas-paint-5{
+	z-index: 2;
+}
 #script__canvas-background{
 	z-index: 1;
-}
-#script__canvas-paint{
-	z-index: 2;
 }
 #f1_inp2{
 	width: 50px;
@@ -75,7 +90,7 @@
 
 	padding: 10px;
 
-	z-index: 3;
+	z-index: 15;
 
 	background-color: #d2d2d2;
 	border-left: 1px solid #2c2c2c;
@@ -110,7 +125,13 @@
 	padding: 0px 5px;
 	margin: 6px 0px;
 
-	border: 1px solid #000000;
+	border: 1px solid #888888;
+}
+.global__aside-layers-content-layer-top{
+	font-weight: bold;
+
+	border: 2px solid #000000;
+	background-color: #e2e2e2;
 }
 .global__aside-layers-content-background{
 	padding: 5px;
