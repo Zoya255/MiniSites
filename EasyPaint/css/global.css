@@ -106,6 +106,18 @@
 .global__aside-layers{
 	border-bottom: 1px dashed #888888;
 }
+.global__aside-layers-content-layer{
+	padding: 0px 5px;
+	margin: 6px 0px;
+
+	border: 1px solid #000000;
+}
+.global__aside-layers-content-background{
+	padding: 5px;
+	margin: 6px 0px;
+
+	border: 1px solid #000000;
+}
 
 /* -------------------- aside colors -------------------- */
 
@@ -113,7 +125,18 @@
 	
 }
 .global__aside-colors-content{
-	width: 230px;
+	width: 250px;
+
+	padding-bottom: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	border-bottom: 1px dashed #888888;
+}
+.global__aside-colors-content-user{
+	width: 250px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -122,7 +145,7 @@
 .global__aside-colors-content-color{
 	margin: 2px;
 
-	width: 35px;
+	width: 40px;
 	height: 20px;
 
 	border: 2px solid #ffffff;

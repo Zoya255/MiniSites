@@ -6,31 +6,46 @@
 		<title>Paint</title>
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/lib/buttons.css">
+		<link rel="stylesheet" href="css/external/fontawesome.css">
 		<script src="js/external/jquery-3.5.1.min.js"></script>
 	</head>
 
 	<body class="global__body">
 		<header class="global__header">
-			<h1 class="global__header-logo">EasyPaint</h1>
+			<h1 class="global__header-logo">
+				<i class="fa fa-pencil-alt fa-md"></i> EasyPaint
+			</h1>
 
 			<div class="global__header-actions">
 				<button class="btn btn-sm btn-round btn-success"
-						id="script__save">сохранить</button>
+						id="script__save">
+							<i class="fa fa-save fa-lg"></i> сохранить
+				</button>
 
 				<button class="btn btn-sm btn-round btn-success"
-						id="script__repeat">воспроизвести</button>
+						id="script__repeat">
+							<i class="fa fa-redo fa-lg"></i> воспроизвести
+				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__aside">панель</button>
+						id="script__aside">
+							<i class="fa fa-bars fa-lg"></i> панель
+				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__export">экспорт</button>
+						id="script__import">
+							<i class="fa fa-file-upload fa-lg"></i> импорт
+				</button>
 
 				<button class="btn btn-sm btn-round btn-default"
-						id="script__import">импорт</button>
+						id="script__export">
+							<i class="fa fa-file-download fa-lg"></i> экспорт
+				</button>
 
 				<button class="btn btn-sm btn-round btn-danger"
-						id="script__clear">очистить</button>
+						id="script__clear">
+							<i class="fa fa-trash fa-lg"></i> очистить
+				</button>
 			</div>
 		</header>
 		
@@ -43,22 +58,25 @@
 		<aside class="global__aside">
 			<div class="global__aside-settings">			
 				<h2 class="global__aside-title">
-					Настройки Paint
+					<i class="fa fa-cog"></i> Настройки Paint
 				</h2>
 
 				<div class="global__aside-settings-content">
 					<p>
-						Цвет линии
+						<i class="fa fa-palette"></i>
+						Цвет линии&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 						<input id="f1_inp1" type="color">
 					</p>
 
 					<p>
+						<i class="fa fa-paint-brush"></i>
 						Толщина линии 
 						<input id="f1_inp2" type="number">
 					</p>
 
 					<p>
-						Цвет фона  
+						<i class="fa fa-palette"></i>
+						Цвет фона&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
 						<input id="f2_inp1" type="color">
 					</p>
 				</div>
@@ -72,12 +90,73 @@
 
 			<div class="global__aside-layers">			
 				<h2 class="global__aside-title">
-					Слои Paint
+					<i class="fa fa-folder"></i> Слои Paint
 				</h2>
 
 				<div class="global__aside-layers-content">
-					<p>Основной слой</p>
-					<p>Фон</p>
+					<p class="global__aside-layers-content-layer">
+						<i class="fa fa-file fa-fw"></i> Cлой 1 
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-pencil-alt"></i>
+						</button>
+					</p>
+					
+					<p class="global__aside-layers-content-layer">
+						<i class="fa fa-file fa-fw"></i> Cлой 2 
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-pencil-alt"></i>
+						</button>
+					</p>
+					
+					<p class="global__aside-layers-content-layer">
+						<i class="fa fa-file fa-fw"></i> Cлой 3 
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-pencil-alt"></i>
+						</button>
+					</p>
+					
+					<p class="global__aside-layers-content-layer">
+						<i class="fa fa-file fa-fw"></i> Cлой 4 
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-pencil-alt"></i>
+						</button>
+					</p>
+					
+					<p class="global__aside-layers-content-layer">
+						<i class="fa fa-file fa-fw"></i> Cлой 5 
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+
+						<button class="btn btn-round btn-mc btn-default">
+							<i class="fa fa-pencil-alt"></i>
+						</button>
+					</p>
+					
+					<p class="global__aside-layers-content-background">
+						<i class="fa fa-file fa-fw"></i> Фон 
+					</p>
 				</div>
 
 				<div class="global__aside-buttons">
@@ -87,7 +166,7 @@
 
 			<div class="global__aside-colors">			
 				<h2 class="global__aside-title">
-					Быстрые цвета
+					<i class="fa fa-tint"></i> Быстрые цвета
 				</h2>
 
 				<div class="global__aside-colors-content">
@@ -140,10 +219,41 @@
 						 onclick="pallete_color('#0000FF')"
 						 style="background-color: #0000FF;">
 					</div>
+
+					<div class="global__aside-colors-content-color"
+						 onclick="pallete_color('#4285F4')"
+						 style="background-color: #4285F4;">
+					</div>
+
+					<div class="global__aside-colors-content-color"
+						 onclick="pallete_color('#DB4437')"
+						 style="background-color: #DB4437;">
+					</div>
+
+					<div class="global__aside-colors-content-color"
+						 onclick="pallete_color('#F57E02')"
+						 style="background-color: #F57E02;">
+					</div>
+
+					<div class="global__aside-colors-content-color"
+						 onclick="pallete_color('#FFC517')"
+						 style="background-color: #FFC517;">
+					</div>
+
+					<div class="global__aside-colors-content-color"
+						 onclick="pallete_color('#0F9D58')"
+						 style="background-color: #0F9D58;">
+					</div>
+				</div>
+
+				<div class="global__aside-colors-content-user">
+
 				</div>
 
 				<div class="global__aside-buttons">
-					
+					<button class="btn btn-round btn-mc btn-default">
+						<i class="fa fa-plus"></i>
+					</button>
 				</div>
 			</div>
 		</aside>
