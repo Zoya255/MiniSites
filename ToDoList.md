@@ -31,7 +31,7 @@
 
 *Plans*
 
-- [ ] FontsLib: add new fonts
+- [+] FontsLib: add new fonts
 - [ ] EasyPaint: export
 - [ ] EasyPaint: import
 - [+] EasyPaint: features for end-user
