@@ -34,5 +34,19 @@
 - [ ] FontsLib: add new fonts
 - [ ] EasyPaint: export
 - [ ] EasyPaint: import
-- [ ] EasyPaint: features for end-user
+- [+] EasyPaint: features for end-user
 - [ ] add old music site
+
+## 11.10.2020
+
+*Sergo*
+
+- EasyPaint: add icons
+- EasyPaint: add mehanic of layers
+- EasyPaint: add new scripts
+- EasyPaint: rewrite old scripts and styles
+
+*Plams*
+
+- [ ] EasyPaint: final plan update
+- [ ] add old text site
