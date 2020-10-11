@@ -4,11 +4,16 @@ Calibri
 Capture it
 Comfortaa
 Consolas
+Lato
+Lucida Console
 Magnolia Script
+Minecraft Title Cyrillic
 Minecraftia
 Montserrat
 Nunito
 Open Sans
+Roboto
+Segoe Script
 Times New Roman
 VAG World
 Verdana
