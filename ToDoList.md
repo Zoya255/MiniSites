@@ -31,10 +31,10 @@
 
 *Plans*
 
-- [ ] FontsLib: add new fonts
+- [X] FontsLib: add new fonts
 - [ ] EasyPaint: export
 - [ ] EasyPaint: import
-- [+] EasyPaint: features for end-user
+- [X] EasyPaint: features for end-user
 - [ ] add old music site
 
 ## 11.10.2020
