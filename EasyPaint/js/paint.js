@@ -2,63 +2,52 @@
 
 /* -------------------- initialization data -------------------- */
 
-data = {};
+var data = {
+	log__weight: 11,
+	log__level: get_level(11),
+	layers: 5,
+	canvas__id_pr: 'script__canvas-paint-1',
+	canvas__id_bg: 'script__canvas-background',
+	color__bg: get_ls('colorBGLS'),
+	color__pr: get_ls('colorDRLS'),
+	width__pr: get_ls('widthDRLS'),
+};
 
-data.levelLog = 'Debug';
-data.levelLogNum  = '10';
-
-var canvas__id = 'script__canvas-paint-1';
-
-console.log('  Start ' + data.levelLog + ' log');
+console.log('  Start ' + data.log__level + ' log');
 console.log('--------------------------------');
 console.log('');
-console.log('Dump of data:');
-console.log('  | Level log: ' + data.levelLog + ' ( ' + data.levelLogNum + ' )');
-console.log('  | ID canvas: ' + canvas__id);
+console.log('Initialization of data:');
+console.log('  | Level log: ' + data.log__level);
+console.log('  | Weight log: ' + data.log__weight)
+console.log('  | ID top canvas: ' + data.canvas__id_pr);
+console.log('  | ID back canvas: ' + data.canvas__id_bg);
+console.log('  | Number layers: ' + data.layers);
 console.log('');
 
-/* -------------------- data -------------------- */
+check_config();
 
-var locStr = localStorage;
-
-var colorBG = locStr.getItem('colorBGLS');
-var colorDR = locStr.getItem('colorDRLS');
-var widthDR = locStr.getItem('widthDRLS');
-
-if (colorBG == null){
-	locStr.setItem('colorBGLS', '#ffffff');
-	colorBG = locStr.getItem('colorBGLS');
-}
-if (colorDR == null){
-	locStr.setItem('colorDRLS', '#000000');
-	colorDR = locStr.getItem('colorDRLS');
-}
-if (widthDR == null){
-	locStr.setItem('widthDRLS', '20');
-	widthDR = locStr.getItem('widthDRLS');
-}
-
-update_panel();
+update_config('Initialization');
 
 /* -------------------- canvas background -------------------- */
 
-var canvas__bg = document.getElementById('script__canvas-background');
+var canvas__bg = document.getElementById(data.canvas__id_bg);
 var ctx__bg = canvas__bg.getContext('2d');
 
-ctx__bg.fillStyle = colorBG;
+ctx__bg.fillStyle = data.color__bg;
 ctx__bg.fillRect(0, 0, canvas__bg.width, canvas__bg.height);
 
-console.log('Canvas initialization:');
+console.log('Initialization background:');
 console.log('  | Background width:  ' + canvas__bg.width + 'px');
 console.log('  | Background height: ' + canvas__bg.height + 'px');
+console.log('')
 
 /* -------------------- canvas print -------------------- */
 
-var canvas__pr = document.getElementById(canvas__id);
-var ctx__pr    = document.getElementById(canvas__id).getContext('2d');
+var canvas__pr = document.getElementById(data.canvas__id_pr);
+var ctx__pr    = document.getElementById(data.canvas__id_pr).getContext('2d');
 
-canvas__pr.width  = $(canvas__id).width();
-canvas__pr.height = $(canvas__id).height();
+canvas__pr.width  = $('#' + data.canvas__id_pr).width();
+canvas__pr.height = $('#' + data.canvas__id_pr).height();
 
 console.log('  | Paint width:  ' + canvas__pr.width + 'px');
 console.log('  | Paint height: ' + canvas__pr.height + 'px');
@@ -71,7 +60,7 @@ var coords = [];
 canvas__pr.addEventListener('mousedown', function(){
 	isMouseDown = true;
 
-	if (data.levelLogNum <= 10) {
+	if (data.log__weight <= 10) {
 		console.log('Paint:');
 	}
 });
@@ -81,7 +70,7 @@ canvas__pr.addEventListener('mouseup', function(){
 	ctx__pr.beginPath();
 	coords.push('mouseup');
 
-	if (data.levelLogNum <= 10) {
+	if (data.log__weight <= 10) {
 		console.log('');
 	}
 });
@@ -90,24 +79,24 @@ canvas__pr.addEventListener('mousemove', function(e){
 	var offset = $('.global__header').height() - window.pageYOffset;
 
 	if (isMouseDown) {
-		ctx__pr.fillStyle = colorDR;
-		ctx__pr.strokeStyle = colorDR;
-		ctx__pr.lineWidth = widthDR;
+		ctx__pr.fillStyle   = data.color__pr;
+		ctx__pr.strokeStyle = data.color__pr;
+		ctx__pr.lineWidth   = data.width__pr;
 
-		coords.push([e.clientX, e.clientY - offset, colorDR, widthDR]);
+		coords.push([e.clientX, e.clientY - offset, data.color__pr, data.width__pr]);
 
 		ctx__pr.lineTo(e.clientX, e.clientY - offset);
 		ctx__pr.stroke();
 
 		ctx__pr.beginPath();
-		ctx__pr.arc(e.clientX, e.clientY - offset, widthDR / 2, 0, Math.PI * 2);
+		ctx__pr.arc(e.clientX, e.clientY - offset, data.width__pr / 2, 0, Math.PI * 2);
 		ctx__pr.fill();
 
 		ctx__pr.beginPath();
 		ctx__pr.moveTo(e.clientX, e.clientY - offset);
 
-		if (data.levelLogNum <= 10) {
-			console.log('  | ' + e.clientX + ' ' + (e.clientY - offset) + ' ' + colorDR + ' ' + widthDR);
+		if (data.log__weight <= 10) {
+			console.log('  | ' + e.clientX + ' ' + (e.clientY - offset) + ' ' + data.color__pr + ' ' + data.width__pr);
 		}
 	}
 });
@@ -187,57 +176,51 @@ function clear() {
 $("#script__button-save-config").click(function() { save_config() });
 
 function save_config() {
-	let colorDRPR;
-	let	widthDRPR;
-	let colorBGPR;
+	let color_pr_check = $('#f1_inp1').val();
+	let	width_pr_check = $('#f1_inp2').val();
+	let color_bg_check = $('#f2_inp1').val();
 
-	colorDRPR = $('#f1_inp1').val();
-	widthDRPR = $('#f1_inp2').val();
-	colorBGPR = $('#f2_inp1').val();
-
-	if ((colorDRPR !== null) && (colorDRPR !== undefined) && (colorDRPR !== "")) {
-		localStorage.setItem('colorDRLS', colorDRPR);
-		colorDR = colorDRPR;
+	if ((color_pr_check !== null) && (color_pr_check !== undefined) && (color_pr_check !== "")) {
+		set_ls('colorDRLS', color_pr_check);
+		data.color__pr = color_pr_check;
 	}
 
-	if ((widthDRPR !== null) && (widthDRPR !== undefined) && (widthDRPR !== "")){
-		localStorage.setItem('widthDRLS', widthDRPR);
-		widthDR = widthDRPR;
+	if ((width_pr_check !== null) && (width_pr_check !== undefined) && (width_pr_check !== "")){
+		set_ls('widthDRLS', width_pr_check);
+		data.width_pr = width_pr_check;
 	}
 
-	if ((colorBGPR !== null) && (colorBGPR !== undefined) && (colorBGPR !== "")){
-		localStorage.setItem('colorBGLS', colorBGPR);
-		colorBG = colorBGPR;
-		ctx__bg.fillStyle = colorBGPR;
+	if ((color_bg_check !== null) && (color_bg_check !== undefined) && (color_bg_check !== "")){
+		set_ls('colorBGLS', color_bg_check);
+		data.color__bg = color_bg_check;
+		ctx__bg.fillStyle = color_bg_check;
 		ctx__bg.fillRect(0, 0, canvas__bg.width, canvas__bg.height);
 	}
 
-	update_panel();
+	update_config();
 }
 
-/* -------------------- update panel -------------------- */
+/* -------------------- update config -------------------- */
 
-function update_panel() {
-	var LS = localStorage;
+function update_config(status = 'Update') {
+	$('#f1_inp1').val( get_ls('colorDRLS') );
+	$('#f1_inp2').val( get_ls('widthDRLS') );
+	$('#f2_inp1').val( get_ls('colorBGLS') );
 
-	$('#f1_inp1').val( LS.getItem('colorDRLS') );
-	$('#f1_inp2').val( LS.getItem('widthDRLS') );
-	$('#f2_inp1').val( LS.getItem('colorBGLS') );
-
-	console.log('Update config:');
-	console.log('  | Color of line: ' + LS.getItem('colorDRLS'));
-	console.log('  | Width of line: ' + LS.getItem('widthDRLS') + 'px');
-	console.log('  | Color of background: ' + LS.getItem('colorBGLS'));
+	console.log(status + ' config:');
+	console.log('  | Color of line: ' + get_ls('colorDRLS'));
+	console.log('  | Width of line: ' + get_ls('widthDRLS') + 'px');
+	console.log('  | Color of background: ' + get_ls('colorBGLS'));
 	console.log('');
 }
 
 /* -------------------- pallete color -------------------- */
 
 function pallete_color(color) {
-	localStorage.setItem('colorDRLS', color);
-	colorDR = color;
+	set_ls('colorDRLS', color);
+	data.color__pr = color;
 
-	update_panel();
+	update_config();
 }
 
 /* -------------------- layers -------------------- */
@@ -259,11 +242,64 @@ function set_top_layer(el) {
 
 	$('#' + id).addClass('script__canvas-top')
 
-	canvas__id = id;
-	ctx__pr = document.getElementById(canvas__id).getContext('2d');
+	data.canvas__id_pr = id;
+	ctx__pr = document.getElementById(data.canvas__id_pr).getContext('2d');
 
 	console.log('Update layers:');
 	console.log('  | Top layer:    ' + number)
-	console.log('  | Top layer id: ' + canvas__id);
+	console.log('  | Top layer id: ' + data.canvas__id_pr);
 	console.log('');
+}
+
+/* -------------------- check config -------------------- */
+
+function check_config() {
+	let check = 0;
+
+	console.log('Check config...');
+
+	if (data.color__bg == null){
+		set_ls('colorBGLS', '#ffffff');
+		data.color__bg = get_ls('colorBGLS');
+		check++;
+	}
+	if (data.color__pr == null){
+		set_ls('colorDRLS', '#000000');
+		data.color__pr = get_ls('colorDRLS');
+		check++;
+	}
+	if (data.width__pr == null){
+		set_ls('widthDRLS', '20');
+		data.color__pr = get_ls('widthDRLS');
+		check++;
+	}
+
+	if (check == 0) {
+		console.log('  | Status: OK');
+	}
+	else{
+		console.log('  | Status: set ' + check + ' items');
+	}
+
+	console.log('');
+}
+
+/* -------------------- level of logs -------------------- */
+
+function get_level(level) {
+	if (level <= 10) {
+		return 'Debug';
+	}
+	else if (level > 10) {
+		return 'Info'
+	}
+}
+
+/* -------------------- local storage -------------------- */
+
+function set_ls(key, item) {
+	localStorage.setItem(key, item);
+}
+function get_ls(key) {
+	return localStorage.getItem(key);
 }
