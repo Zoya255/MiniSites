@@ -45,8 +45,23 @@
 - EasyPaint: add mehanic of layers
 - EasyPaint: add new scripts
 - EasyPaint: rewrite old scripts and styles
+- EasyPaint: update logs
 
-*Plams*
+*Plans*
 
 - [ ] EasyPaint: final plan update
 - [ ] add old text site
+
+## 12.10.2020
+
+*Sergo*
+
+- EasyPaint: inner update code
+- EasyPaint: inner update structure
+- EasyPaint: fixed bugs
+- EasyPaint: update logs
+
+*Plans*
+
+- [ ] add old text site
+- [ ] add old profnavigator site
