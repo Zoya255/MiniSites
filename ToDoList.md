@@ -65,3 +65,15 @@
 
 - [ ] add old text site
 - [ ] add old profnavigator site
+
+## 13.10.2020
+
+*Sergo*
+
+- EasyPaint: update mechanic of layers
+- EasyPaint: update mechanic of logs
+
+*Plans*
+
+- [ ] add external sites
+- [ ] final add mechanic of layers
