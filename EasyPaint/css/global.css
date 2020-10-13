@@ -59,9 +59,6 @@
 
 /* -------------------- scripts elements -------------------- */
 
-.script__canvas-top{
-	z-index: 10 !important;
-}
 #script__canvas-paint-1{
 	z-index: 6;
 }

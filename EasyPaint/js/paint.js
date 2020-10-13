@@ -3,10 +3,11 @@
 /* -------------------- initialization data -------------------- */
 
 var data = {
-	log__weight: 11,
-	log__level: get_level(11),
+	log__weight: 10,
+	log__level: get_level(10),
 	layers: 5,
-	canvas__id_pr: 'script__canvas-paint-1',
+	layer__id: 1,
+	canvas__id_pr: 'script__canvas-paint-',
 	canvas__id_bg: 'script__canvas-background',
 	color__bg: get_ls('colorBGLS'),
 	color__pr: get_ls('colorDRLS'),
@@ -19,7 +20,7 @@ console.log('');
 console.log('Initialization of data:');
 console.log('  | Level log: ' + data.log__level);
 console.log('  | Weight log: ' + data.log__weight)
-console.log('  | ID top canvas: ' + data.canvas__id_pr);
+console.log('  | ID top canvas: ' + data.canvas__id_pr + data.layer__id);
 console.log('  | ID back canvas: ' + data.canvas__id_bg);
 console.log('  | Number layers: ' + data.layers);
 console.log('');
@@ -28,7 +29,7 @@ check_config();
 
 update_config('Initialization');
 
-/* -------------------- canvas background -------------------- */
+/* -------------------- initialization background -------------------- */
 
 var canvas__bg = document.getElementById(data.canvas__id_bg);
 var ctx__bg = canvas__bg.getContext('2d');
@@ -41,18 +42,27 @@ console.log('  | Background width:  ' + canvas__bg.width + 'px');
 console.log('  | Background height: ' + canvas__bg.height + 'px');
 console.log('')
 
-/* -------------------- canvas print -------------------- */
+/* -------------------- initialization layers -------------------- */
 
-var canvas__pr = document.getElementById(data.canvas__id_pr);
-var ctx__pr    = document.getElementById(data.canvas__id_pr).getContext('2d');
+var canvas__pr = document.getElementById(data.canvas__id_pr + data.layer__id);
+var ctx__pr    = document.getElementById(data.canvas__id_pr + data.layer__id).getContext('2d');
 
-canvas__pr.width  = $('#' + data.canvas__id_pr).width();
-canvas__pr.height = $('#' + data.canvas__id_pr).height();
+console.log('Initialization background:');
 
-console.log('  | Paint width:  ' + canvas__pr.width + 'px');
-console.log('  | Paint height: ' + canvas__pr.height + 'px');
+for (var i = 1; i <= data.layers; i++) {
+	canvas__pr.width  = $('#' + data.canvas__id_pr + i).width();
+	canvas__pr.height = $('#' + data.canvas__id_pr + i).height();
+
+	console.log('  | Layer ' + i + ' width:  ' + canvas__pr.width + 'px');
+	console.log('  | Layer ' + i + ' height: ' + canvas__pr.height + 'px');
+}
+
 console.log('');
 
+/* -------------------- canvas print -------------------- */
+
+canvas__pr = document.getElementById(data.canvas__id_pr + data.layer__id);
+ctx__pr    = document.getElementById(data.canvas__id_pr + data.layer__id).getContext('2d');
 
 var isMouseDown = false;
 var coords = [];
@@ -60,9 +70,7 @@ var coords = [];
 canvas__pr.addEventListener('mousedown', function(){
 	isMouseDown = true;
 
-	if (data.log__weight <= 10) {
-		console.log('Paint:');
-	}
+	log_debug('Paint:');
 });
 
 canvas__pr.addEventListener('mouseup', function(){
@@ -70,9 +78,7 @@ canvas__pr.addEventListener('mouseup', function(){
 	ctx__pr.beginPath();
 	coords.push('mouseup');
 
-	if (data.log__weight <= 10) {
-		console.log('');
-	}
+	log_debug('');
 });
 
 canvas__pr.addEventListener('mousemove', function(e){
@@ -83,7 +89,7 @@ canvas__pr.addEventListener('mousemove', function(e){
 		ctx__pr.strokeStyle = data.color__pr;
 		ctx__pr.lineWidth   = data.width__pr;
 
-		coords.push([e.clientX, e.clientY - offset, data.color__pr, data.width__pr]);
+		coords.push([e.clientX, e.clientY - offset, data.layer__id, data.color__pr, data.width__pr]);
 
 		ctx__pr.lineTo(e.clientX, e.clientY - offset);
 		ctx__pr.stroke();
@@ -95,9 +101,7 @@ canvas__pr.addEventListener('mousemove', function(e){
 		ctx__pr.beginPath();
 		ctx__pr.moveTo(e.clientX, e.clientY - offset);
 
-		if (data.log__weight <= 10) {
-			console.log('  | ' + e.clientX + ' ' + (e.clientY - offset) + ' ' + data.color__pr + ' ' + data.width__pr);
-		}
+		log_debug('  | ' + e.clientX + ' ' + (e.clientY - offset) + ' ' + data.layer__id + ' ' + data.color__pr + ' ' + data.width__pr);
 	}
 });
 
@@ -106,7 +110,10 @@ canvas__pr.addEventListener('mousemove', function(e){
 $("#script__button-save").click(function() { save() });
 
 function save() {
-	localStorage.setItem('coordsLS', JSON.stringify(coords));
+	set_ls('coordsLS', JSON.stringify(coords));
+
+	console.log('Save of picture');
+	console.log('');
 }
 
 /* -------------------- repeat -------------------- */
@@ -126,7 +133,7 @@ function repeat() {
 		}
 
 		let crd = coordsR.shift();
-		let e = {clientX: crd['0'], clientY: crd['1'], colorDR: crd['2'], widthDR: crd['3']};
+		let e = {clientX: crd['0'], clientY: crd['1'], layerID: crd['2'], colorDR: crd['3'], widthDR: crd['4']};
 
 		ctx__pr.fillStyle = e.colorDR;
 		ctx__pr.strokeStyle = e.colorDR;
@@ -141,7 +148,10 @@ function repeat() {
 
 		ctx__pr.beginPath();
 		ctx__pr.moveTo(e.clientX, e.clientY);
-	}, 1)
+	}, 1);
+
+	console.log('Repaint of picture');
+	console.log('');
 }
 
 /* -------------------- aside -------------------- */
@@ -169,6 +179,9 @@ $("#script__button-clear").click(function() { clear() });
 function clear() {
 	ctx__pr.clearRect(0, 0, canvas__pr.width, canvas__pr.height);
 	coords = [];
+
+	console.log('Clear canvas');
+	console.log('');
 }
 
 /* -------------------- config colors -------------------- */
@@ -242,12 +255,13 @@ function set_top_layer(el) {
 
 	$('#' + id).addClass('script__canvas-top')
 
-	data.canvas__id_pr = id;
-	ctx__pr = document.getElementById(data.canvas__id_pr).getContext('2d');
+	data.layer__id = number;
+	canvas__pr = document.getElementById(data.canvas__id_pr + data.layer__id);
+	ctx__pr    = document.getElementById(data.canvas__id_pr + data.layer__id).getContext('2d');
 
 	console.log('Update layers:');
 	console.log('  | Top layer:    ' + number)
-	console.log('  | Top layer id: ' + data.canvas__id_pr);
+	console.log('  | Top layer id: ' + data.canvas__id_pr + data.layer__id);
 	console.log('');
 }
 
@@ -295,11 +309,33 @@ function get_level(level) {
 	}
 }
 
+function log_debug(message) {
+	if (data.log__weight <= 10) {
+		console.log(message);
+	}
+}
+
+function log_info(message) {
+	if (data.log__weight > 10) {
+		console.log(message);
+	}
+}
+
 /* -------------------- local storage -------------------- */
 
 function set_ls(key, item) {
 	localStorage.setItem(key, item);
+
+	log_debug('Saving data in Local Storage:');
+	log_debug('  | key:  ' + key);
+	log_debug('  | item: ' + item);
+	log_debug('');
 }
+
 function get_ls(key) {
 	return localStorage.getItem(key);
+
+	log_debug('Loading data from Local Storage:');
+	log_debug('  | key: ' + key);
+	log_debug('');
 }
