@@ -35,7 +35,7 @@
 - [ ] EasyPaint: export
 - [ ] EasyPaint: import
 - [X] EasyPaint: features for end-user
-- [ ] add old music site
+- [X] add old music site
 
 ## 11.10.2020
 
@@ -77,3 +77,13 @@
 
 - [ ] add external sites
 - [ ] final add mechanic of layers
+
+## 14.10.2020
+
+*Sergo*
+
+- add legacy music site
+
+*Plans*
+
+- [ ] rewrite music site
