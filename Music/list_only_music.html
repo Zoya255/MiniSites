@@ -1,0 +1,90 @@
+<!docktype HTML>
+
+<html>
+
+	<head>
+		<title>
+			Муз. сайт, свёрстанный на коленке.
+		</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/player.css">
+		<script src="js/libraries/jquery-3.4.1.min.js"></script>
+		<script src="js/audioplayer.js"></script>
+		<script>
+   		$( function()
+   		{
+       		$( 'audio' ).audioPlayer(
+			{
+				classPrefix: 'audioplayer',
+ 				strPlay: 'Запуск',
+   				strPause: 'Пауза',
+				strVolume: 'Громкость'
+			});
+   		});
+		</script>
+		<script type="text/javascript" src="js/switch_style.js" defer="defer"></script>
+	</head>
+	
+	<body>
+
+		<header>
+			<h1>Музон.ком</h1>
+			<h2>Без слов</h2>
+			<h3>Сайт, свёрстанный на коленке, проверка того, что я могу. Выбери уже что-нибудь. Планируется несколько страниц.</h3>
+			<br>
+			<div id="switch_styles">
+				<button id="light_theme" onclick="setLightTheme()">Светлая тема</button>
+				<button id="bright_theme" onclick="setBrightTheme()">Яркая тема</button>
+				<button id="dark_theme" onclick="setDarkTheme()">Тёмная тема</button>
+			</div>
+		</header>
+
+		<div id="false_header"></div>
+
+		<nav>
+			<h3>Менюшка сайта</h3>
+			<ul class="metro">
+				<li><a href="main.html">Главная</a></li>
+				<li><a href="">По жанрам:</a></li>
+				<ul>
+					<li><a href="list_electro.html">Электроника</a></li>
+					<li><a href="list_nightcore.html">Nightcore</a></li>
+					<li><a href="list_russian.html">Русские</a></li>
+					<li><a href="list_quiet.html">Спокойные</a></li>
+					<li><a href="list_energy.html">Энергичные</a></li>
+					<li><a href="list_only_music.html">Без слов</a></li>
+				</ul>
+				<li><a href="all.html">Общий список песен</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<p>Xomu - Tera.mp3</p>
+			<audio src="music/Xomu - Tera.mp3" preload="auto" controls></audio>
+			
+			<p>Shogun Taira - First Strike.mp3</p>
+			<audio src="music/Shogun Taira - First Strike.mp3" preload="auto" controls></audio>
+			
+			<p>Axel F - Crasy Frog.mp3</p>
+			<audio src="music/Axel F - Crasy Frog.mp3" preload="auto" controls></audio>
+									
+			<p>EdgeCore - Say No More.mp3</p>
+			<audio src="music/EdgeCore - Say No More.mp3" preload="auto" controls></audio>
+		</section>
+
+		<aside>
+			<h3>То, что приносит нам деньги</h3>
+			<p>Тут могла быть ваша реклама, но вы не захотели платить...</p>
+		</aside>
+
+		<footer>
+			<p>Давай, расскажи, что ты сверстал бы лучше.</p>
+			<p>Права на эту херь никому не нужны.</p>
+			<p>03.05.2019</p>
+		</footer>
+
+	</body>
+	
+</html>

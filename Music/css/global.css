@@ -1,0 +1,243 @@
+/*----------Главный файл стилей----------*/
+
+/*----------Основные стили, распределены по блокам----------*/
+
+body{
+	margin: 0;
+	border-collapse: all;
+	background-color: #222222; /* #d2d2d2 #fce0cc #222222 */
+}
+p{
+	margin: 0;
+	color: #ffffff; /* #000000 #000000 #ffffff */
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	color: #ffffff; /* #000000 #000000 #ffffff */
+}
+header{
+	position: fixed;
+	height: 12vh;
+	width: 100%;
+	background-color: #212121; /* #777777 #f39f18 #212121 */
+	z-index: 10;
+}
+#switch_styles{
+	position: fixed;
+	top: 3vh;
+	left: 53%;
+	height: 6vh;
+	width: 40%;
+}
+#false_header{
+	position: relative;
+	height: 12vh;
+	width: 100%;
+}
+nav{
+	position: fixed;
+	float: left;
+	width: 15%;
+	top: 12vh;
+	min-height: 88%;
+	background-color: #383838; /* #adadad #ffc266 #383838 */
+}
+section{
+	align-self: center;
+	position: relative;
+	top: 0;
+	min-height: 78vh;
+	width: 70%;
+	margin-left: 15%;
+}
+aside{
+	position: fixed;
+	float: right;
+	width: 15%;
+	top: 12vh;
+	left: 85%;
+	min-height: 88%;
+	background-color: #383838; /* #adadad #ffc266 #383838 */
+}
+footer{
+	align-self: center;
+	top: 0;
+	height: 10vh;
+	width: 70%;
+	margin-left: 15%;
+	background-color: #212121; /* #777777 #f39f18 #212121 */
+}
+
+/*----------Кнопки переключения тем----------*/
+
+#light_theme{
+	text-decoration:none;
+	text-align:center; 
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#adadad; 
+}
+#light_theme:hover{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#ffffff; 
+}
+#light_theme:active{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#adadad;    
+}
+
+#bright_theme{
+	text-decoration:none;
+	text-align:center; 
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#f39f18; 
+}
+#bright_theme:hover{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#edbb6b; 
+}
+#bright_theme:active{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#000000; 
+	background:#f39f18;    
+}
+
+#dark_theme{
+	text-decoration:none;
+	text-align:center; 
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#ffffff; 
+	background:#000000; 
+}
+#dark_theme:hover{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#ffffff; 
+	background:#2b2929;  
+}
+#dark_theme:active{
+	padding:11px 32px; 
+	border:solid 2px #4f5557; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:20px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#ffffff; 
+	background:#000000; 
+}
+
+/*----------Меню-метро----------*/
+
+.metro {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 10px;
+	border-left: 5px solid #000000; /* #000000 #000000 #000000 */
+}
+.metro li {
+	line-height: 2em;
+}
+.metro ul {
+	margin: 20px 0 10px 15px;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+.metro ul:before,
+.metro ul:after {
+ 	content: "";
+	width: 5px;
+	height: 28px;
+	background: #000000; /* #000000 #000000 #000000 */
+ 	position: relative;
+	display: block;
+	left: -9px;
+}
+.metro ul:before {
+  transform: rotate(-45deg);
+  margin-top: -15px;
+}
+.metro ul:after {
+	transform: rotate(45deg);
+	bottom: -20px;
+}
+.metro ul li {
+	border-left: 5px solid #000000; /* #000000 #000000 #000000 */
+}
+.metro ul li:first-child {
+	margin-top: -5px;
+	padding-top: 5px;
+}
+.metro ul li:last-child {
+	padding-bottom: 9px;
+	margin-bottom: -25px;
+}
+.metro a {
+	text-decoration: none;
+	display: block;
+	font-size: 1.1em;
+	color: #ffffff; /* #000000 #000000 #ffffff */
+}
+.metro a:before {
+	content: "";
+	display: inline-block;
+	background: #000000; /* #CA682D #000000 #000000 */
+	width: 12px;
+	height: 12px;
+	left: -9px;
+	position: relative;
+	border-radius: 50%;
+	margin-right: .5em;
+}
