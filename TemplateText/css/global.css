@@ -1,0 +1,254 @@
+/*--------------------------- Главный файл стилей ---------------------------*/
+
+/*--------------------------- Настройка основных блоков ---------------------------*/
+
+body{
+	width: 1903px;
+	font: 14px 'Verdana';
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	min-height: 48px;
+	z-index: 3;
+}
+h1{
+	margin: 0px;
+	padding: 0.4em;
+	color: white;
+}
+h2{
+	margin: 0px;
+	margin-left: 60px;
+}
+h3, h4{
+	margin-left: 60px;
+}
+aside{
+	margin-top: 3em;
+	width: 290px;
+	float: left;
+}
+main{
+	margin-top: 3em;
+	margin-left: 15%;
+	width: 85%;
+}
+main > div{
+	margin-left: 1em;
+}
+/*
+a.anchor{
+	display: block;
+	content: "";
+	height: 48px;
+	margin: -48px 0 0;
+}
+*/
+
+/*--------------------------- Настройка текста ---------------------------*/
+
+p{
+	text-align: justify;
+	padding-right: 20px;
+	text-indent: 2em;
+}
+p.info{
+	margin-left: 10px;
+	padding-left: 10px;
+}
+p.info:first-line{
+	font-weight: bold;
+}
+p.info:before{
+	content: 'Примечание:\A';
+	white-space: pre;
+}
+p.extra{
+	margin-left: 10px;
+	padding-left: 10px;
+}
+p.extra:first-line{
+	font-weight: bold;
+}
+p.extra:before{
+	content: 'Дополнительно:\A';
+	white-space: pre;
+}
+p.important{
+	margin-left: 10px;
+	padding-left: 10px;
+}
+p.important:first-line{
+	font-weight: bold;
+}
+p.important:before{
+	content: 'Важно:\A';
+	white-space: pre;
+}
+p.warn{
+	margin-left: 10px;
+	padding-left: 10px;
+}
+p.warn:first-line{
+	font-weight: bold;
+}
+p.warn:before{
+	content: 'Внимание:\A';
+	white-space: pre;
+}
+
+/*--------------------------- Настройка меню (только для >1140px) ---------------------------*/
+
+@media (min-device-width: 1140px) {
+	
+	ul {
+	    display: block;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	}
+	ul:after {
+	    display: block;
+	    content: ' ';
+	    clear: both;
+	    float: none;
+	}
+	ul.menu > li {
+	    float: left;
+	    position: relative;
+	}
+	ul.menu > li > a {
+	    display: block;
+	    padding: 1em;
+	    text-decoration: none;
+	}
+	ul.submenu {
+	    display: none;
+	    position: absolute;
+	    width: 120px;
+	    top: 45px;
+	    left: 0;
+	}
+	ul.submenu > li {
+	    display: block;
+	}
+	ul.submenu > li > a {
+	    display: block;
+	    padding: 10px;
+	    text-decoration: none;
+	}
+	ul.submenu > li > a:hover {
+	    text-decoration: underline;
+	}
+	ul.menu > li:hover > ul.submenu {
+	    display: block;
+	}
+	ul.menu_theme{
+		position: relative;
+		float: right;
+		top: -45px;
+		right: 0px;
+	}
+	ul.menu_theme > li{
+		float: right;
+		position: relative;
+	}
+	ul.menu_theme > li > button{
+		font: 14px 'Verdana';
+	    display: block;
+	    padding: 1em;
+	    text-decoration: none;
+	    border: none;
+	}
+	
+}
+
+/*--------------------------- Настройка меню (только для <1140px) ---------------------------*/
+
+
+/*--------------------------- Настройка боковой панели (только для >1400px) ---------------------------*/
+
+@media  (min-device-width: 1400px) {
+	
+	.metro {
+		list-style: none;
+		padding: 0;
+		margin: 10px 0 0 10px;
+	}
+	.metro li {
+		line-height: 2em;
+	}
+	.metro ul {
+		margin: 20px 0 10px 15px;
+		padding: 0;
+		border: none;
+		list-style: none;
+	}
+	.metro ul:before, .metro ul:after {
+	 	content: "";
+		width: 5px;
+		height: 28px;
+	 	position: relative;
+		display: block;
+		left: -9px;
+	}
+	.metro ul:before {
+	 	transform: rotate(-45deg);
+	 	margin-top: -15px;
+	}
+	.metro ul:after {
+		transform: rotate(45deg);
+		bottom: -20px;
+	}
+	.metro ul li:first-child {
+		margin-top: -5px;
+		padding-top: 5px;
+	}
+	.metro ul li:last-child {
+		padding-bottom: 9px;
+		margin-bottom: -25px;
+	}
+	.metro a {
+		text-decoration: none;
+		display: block;
+		font-size: 1.1em;
+	}
+	.metro a:before {
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		left: -9px;
+		position: relative;
+		border-radius: 50%;
+		margin-right: .5em;
+	}
+	
+}
+
+/*--------------------------- Настройка боковой панели (только для <1400px) ---------------------------*/
+
+@media (max-device-width: 1400px) {
+	
+	.metro {
+		list-style: none;
+		padding: 0;
+		margin: 10px 0 0 10px;
+	}
+	.metro li {
+		line-height: 1.25em;
+	}
+	.metro ul {
+		margin: 5px 0 5px 5px;
+		padding: 0;
+		border: none;
+		list-style: none;
+	}
+	.metro a {
+		text-decoration: none;
+		display: block;
+		font-size: 1.1em;
+	}
+
+}

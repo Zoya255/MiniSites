@@ -1,0 +1,113 @@
+/*--------------------------- Файл стилей тёмной темы ---------------------------*/
+
+/*--------------------------- Настройка основных блоков ---------------------------*/
+
+body{
+	color: #ffffff;
+	background-color: #2e2e2e;
+}
+header{
+	background-color: #0e3b0e;
+}
+nav{
+	background-color: #0e3b0e;
+}
+
+/*--------------------------- Настройка текста ---------------------------*/
+
+p.info{
+	border-left: 5px solid #ffffff;
+	background-color: #222222;
+}
+p.extra{
+	border-left: 5px solid #5ad65a;
+	background-color: #004d00;
+}
+p.extra:first-line{
+	color: #5ad65a;
+}
+p.important{
+	border-left: 5px solid #ffec8b;
+	background-color: #666600;
+}
+p.important:first-line{
+	color: #ffec8b;
+}
+p.warn{
+	border-left: 5px solid red;
+	background-color: #ad1f4a;
+}
+p.warn:first-line{
+	color: #ff9999;
+}
+
+/*--------------------------- Настройка меню (только для >1140px) ---------------------------*/
+
+@media (min-device-width: 1140px) {
+	
+	ul.menu > li > a {
+	    background-color: #0e3b0e;
+	    color: #ffffff;
+	}
+	ul.menu > li > a:hover {
+	    background-color: #33cc33;
+	    color: black;
+	}
+	ul.submenu {
+		color: white;
+		background-color: white;
+	}
+	ul.submenu > li > a {
+		background-color: #33cc33;
+		color: black;
+	}
+	ul.menu_theme > li > button{
+		background-color: #0e3b0e;
+		color: #ffffff;
+	}
+	ul.menu_theme > li > button:hover{
+	    background-color: #33cc33;
+	    color: #000000;
+	}
+	
+}
+
+/*--------------------------- Настройка боковой панели (только для >1400px) ---------------------------*/
+
+@media (min-device-width: 1400px) {
+	
+	.metro {
+		border-left: 5px solid #ffffff;
+	}
+	.metro ul:before, .metro ul:after {
+		background: #ffffff;
+	}
+	.metro ul li {
+		border-left: 5px solid #ffffff;
+	}
+	.metro a {
+		color: #ffffff;
+	}
+	.metro a:before {
+		background: #ffffff;
+	}
+
+}
+
+/*--------------------------- Настройка меню (только для >1140px) ---------------------------*/
+
+@media (max-device-width: 1140px) {
+	
+	
+	
+}
+
+/*--------------------------- Настройка боковой панели (только для <1400px) ---------------------------*/
+
+@media (max-device-width: 1400px) {
+	
+	.metro a {
+		color: #ffffff;
+	}
+	
+}
