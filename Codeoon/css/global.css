@@ -1,0 +1,205 @@
+/*----------------------- Глобальные настройки -----------------------*/
+body{
+	margin: 0;
+}
+@font-face {
+	font-family: Montserrat Light;
+	src: url('Montserrat/Montserrat-Light.eot');
+	src: url('Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+	url('Montserrat/Montserrat-Light.woff') format('woff'),
+	url('Montserrat/Montserrat-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;	
+}
+a{ 
+    text-decoration: none;
+}
+h1, h2{
+	font-family: Montserrat Light;
+	color: black;
+	margin: 0;
+	font-size: 170%;
+}
+p{
+	font-family: Montserrat Light;
+	color: black;
+	padding: 5px;
+	padding-left: 11%;
+	padding-right: 11%;
+	text-align: justify;
+	margin: 0px;
+	font-size: 1.2em;
+}
+p > code{
+	font-size: 1.35em;
+}
+font{
+	color: yellow;
+}
+/*----------------------- Анимация -----------------------*/
+#animate_link_stark_work{
+
+}
+#animate_link_stark_work:hover{
+    color: #00ffff;
+    border-top-color: #00ffff;
+    border-right-color: #00ffff;
+    border-bottom-color: #00ffff;
+    border-left-color: #00ffff;
+    transition: color 0.5s,
+    			border-top-color 0.25s ease-out,
+                border-right-color 0.25s ease-out 0.25s,
+                border-bottom-color 0.25s ease-out 0.5s,
+                border-left-color 0.25s ease-out 0.75s;
+}
+/*----------------------- Глобальные настройки для блоков -----------------------*/
+.block{
+	position: relative;
+	left: 6%;
+	width: 88%;
+	min-height: 84%;
+}
+.joint_block{				  /*Перемычка (шов) между соседними блоками*/
+	position: relative;
+	left: 6%;
+	width: 88%;
+	height: 8%;
+	min-height: 8%;
+}
+/*----------------------- Задний фон (подложка) -----------------------*/
+#fon_block{
+	position: relative;
+	top: 0%;
+	width: 100%;
+	background: linear-gradient(to bottom right, #2e2d2d, #424242);
+	overflow-y: auto;
+}
+/*----------------------- HEADER -----------------------*/
+#header_block{
+	position: fixed;
+	top: 0%;
+	min-width: 100%;
+	max-width: 400%;
+	min-height: 8%;
+	max-height: 16%;
+	background: linear-gradient(to bottom right, #2e2d2d, #2e2d2d);
+	z-index: 5;
+	overflow-x: auto;
+}
+#fake_header_block{
+	position: relative;
+	top: 0%;	
+	width: 100%;
+	min-height: 8%;
+}
+.img_logo{
+	position: relative;
+	float: left;
+	padding-top: 0.4%; 
+	left: 6%;
+	padding-right: 10px;
+	width: 30px;
+}
+.txt_share > a{
+	position: relative;
+	color: white;
+	font-family: Montserrat Light;
+	font-size: 1.2em;
+	text-align: center;
+	letter-spacing: 2;
+}
+.txt_share > a:hover{
+	transition: color 0.5s;
+	color: #00ffff;
+}
+#codeoon{
+	position: relative;
+	left: 6%;
+	color: white;
+	font-family: Montserrat Light;
+	font-size: 1.4em;
+}
+/*----------------------- Колонки (используются в TOP CONTENT и ABOUT US) -----------------------*/
+
+/*----------------------- TOP CONTENT (верхний блок) -----------------------*/
+#top_content_main_block{
+	background-color: rgba(0, 0, 0, 0.25);
+}
+#link_start_work > button{
+	text-decoration:none;
+	text-align:center;
+	padding: 20px 100px;
+	border:solid 2px #ffffff;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius: 10px;
+	font: 3em Montserrat Light;
+	color:#ffffff;
+	background:#1f1f1f;
+    position: relative;
+    align-self: center;
+    margin-top: 70vh;
+}
+#img_coder{
+	position: absolute;
+	right: 6%;
+	top: 7.5%;
+	width: 50%;
+	box-shadow: 0 0 10px 2px #00ffff;
+}
+#img_slogan{
+	position: absolute;
+	padding-top: 15.0%;
+	width: 30%;
+}
+/*----------------------- ABOUT US (рассказ о нас, 2 блок) -----------------------*/
+#about_us_content_block{
+	background: white;
+}
+.head_about_us{
+	padding-top: 40px;
+	padding-bottom: 35px;
+	padding-left: 16%;
+}
+.img_tehnology{
+	width: 20%;
+}
+#left_block_about_us{
+	position: relative;
+	float:left; 
+	width: 50%;
+	bottom: 0;
+	margin-bottom: 2px;
+
+}
+#left_block_about_us > p{
+	padding-left: 20%;
+}
+#left_block_about_us > img{
+	padding-left: 25%;
+}
+#right_block_about_us{
+	position: relative;
+	float:right; 
+	width: 50%;
+	bottom: 0;
+	margin-bottom: 2px;
+}
+#right_block_about_us > img{
+	padding-left: 15%;
+}
+/*----------------------- FORM (встроенная Google форма, 3 блок) -----------------------*/
+#form_content_block{
+	background: rgba(128, 128, 128, 0.25);
+}
+/*----------------------- FOOTER -----------------------*/
+#footer_block{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	max-height: 100%;
+	background: linear-gradient(to bottom right, #2e2d2d, #292929);
+}
+#footer_block > p{
+	color: white;
+}
