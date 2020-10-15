@@ -1,0 +1,329 @@
+/*-------------------------------------------- главный файл стилей --------------------------------------------*/
+
+
+/*--------------------------------- глобально ---------------------------------*/
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*--------------------------------- основные блоки ---------------------------------*/
+
+
+/* структура страницы */
+
+.body{
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "header header"
+						 "aside main"
+						 "footer footer";
+	min-height: 100vh;
+}
+
+/* верхняя часть, заголовок */
+
+.header{
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	background: -webkit-linear-gradient(bottom, #cce6ff, #66b3ff);
+	background: -o-linear-gradient(bottom, #cce6ff, #66b3ff);
+	background: linear-gradient(to top, #cce6ff, #66b3ff);
+}
+.header__h2{
+	font-size: 1.7em;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+}
+.logo{
+	margin: 0px auto;
+}
+
+/* панель-меню слева */
+
+.aside{
+	grid-area: aside;
+	background-color: #cce6ff;
+}
+.aside__list{
+	margin-top: 50px;
+}
+.aside__list li{
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: Gill Sans, sans-serif;
+	list-style: none;
+	border-bottom: 1px solid #999999;
+	background-color: #99ccff;
+}
+.aside__list li:nth-child(1){
+	border-top: 1px solid #999999;
+}
+.aside__list li:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+	text-decoration: underline;
+}
+.aside__list li:active{
+	background-color: #66b3ff;
+}
+.aside__list li a{
+	display: block;
+	width: 100%;
+}
+.aside__list li a:active{
+	color: #dedede;
+}
+
+/* блок с контентом */
+
+.main{
+	grid-area: main;
+	background-color: #cce6ff;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.main__title{
+	font-size: 1.75em;
+}
+.main__subtitle{
+	font-size: 1.4em;
+}
+.main__title, .main__subtitle{
+	width: auto;
+	text-align: center;
+	font-family: Gill Sans, sans-serif;
+	padding-bottom: 5px;
+	padding-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid black;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.main__text{
+	font-family: Gill Sans, sans-serif;
+	font-size: 1.05em;
+	padding-left: 1em;
+}
+
+/* нижняя часть */
+
+.footer{
+	grid-area: footer;
+	background: -webkit-linear-gradient(top, #cce6ff, #66b3ff);
+	background: -o-linear-gradient(top, #cce6ff, #66b3ff);
+	background: linear-gradient(to bottom, #cce6ff, #66b3ff);
+}
+.footer__text{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Gill Sans, sans-serif;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.footer__news{
+	display: block;
+	float: right;
+	padding: 10px;
+	font-family: Gill Sans, sans-serif;
+	background-color: #66b3ff;
+}
+.footer__news:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	text-decoration: underline;
+	border-color: #66b3ff;
+}
+.footer__news:active{
+	background-color: #66b3ff;
+	border-color: #0080ff;
+	color: #efefef;
+}
+
+
+/*--------------------------------- таблица-меню ---------------------------------*/
+
+
+/* таблица с выбором на index.php */
+
+.table_menu td{
+	border-radius: 10px;
+	border-color: #3399FF;
+	border-width: 4px;
+	border-style: outset;
+	padding: 2px 0px;
+	text-align: center;
+}
+.table_menu td a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.table_menu td a img{
+	width: 25%;
+	height: 100%;
+}
+.table_menu td a p{
+	font-size: 22px;
+	font-family: Gill Sans, sans-serif;
+	color: black;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-weight: 400;
+}
+.table_menu td:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	text-decoration: underline;
+	border-color: #66b3ff;
+}
+.table_menu td:active{
+	background-color: #66b3ff;
+	border-color: #0080ff;
+}
+.table_menu td:active p{
+	color: #efefef;
+}
+
+
+/*-------------------------------------------- таблицы с данными --------------------------------------------*/
+
+
+/* основа таблицы для данных */
+
+.data_table{
+	border-collapse: collapse;
+	font-family: Gill Sans, sans-serif;
+	margin: 20px auto;
+}
+.data_table__center td{
+	text-align: center;
+}
+.data_table__normal{
+	font-size: 1.05em;
+}
+.data_table__mini{
+	font-size: 0.9em;
+}
+
+/* заголовок таблицы */
+
+.data_table thead{
+	background-color: #42aaff;
+	border-bottom: 1px solid #2b2b2b;
+}
+.data_table__normal thead th{
+	border-radius: 10em;
+	padding: 3px 12px;
+}
+.data_table__mini thead th{
+	padding: 2px 6px;
+	border: 1px solid #2b2b2b
+}
+
+/* строки таблицы */
+
+.data_table tbody{
+	background-color: #efefef
+}
+.data_table__normal tbody th, td{
+	padding: 3px 12px;
+}
+.data_table__mini tbody th, td{
+	padding: 2px 6px;
+	text-align: left;
+}
+.data_table tbody tr:nth-child(odd){
+	background-color: rgba(0, 0, 0, 0.125);
+}
+.data_table tbody tr:hover{
+	background-color: rgba(0, 200, 0, 0.15);
+}
+
+/* выделение строк таблицы */
+
+.color_green{
+	background-color: rgba(0, 255, 0, 0.125);
+}
+.color_red{
+	background-color: rgba(255, 0, 0, 0.125);
+}
+
+/* границы в таблице */
+
+.data_table__bordered tbody th, td{
+	border-bottom: 1px solid #b2b2b2;
+}
+#ajax_get_group tr:nth-child(5n) td{
+	border-bottom: 1px solid #2b2b2b;
+}
+
+
+/*-------------------------------------------- кнопки --------------------------------------------*/
+
+
+/* основа кнопок и обработка их состояний */
+
+.button{
+	font-size: 18px;
+	padding: 6px 12px;
+	background-color: #42aaff;
+	border: none;
+}
+.button:hover,
+.button:active,
+.button:focus{
+	outline: none;
+}
+.button:hover{
+	background-color: #75c1ff;
+}
+.button:active{
+	background-color: #0079db;
+	color: #efefef;
+}
+
+
+/*-------------------------------------------- выпадающие списки --------------------------------------------*/
+
+
+/* основа выпадающих списков */
+
+.select__wrapper{
+	font-family: Gill Sans, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+.select{
+	position: relative;
+	top: auto;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid;
+	width: 40%;
+	outline: none !important;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.select:hover,
+.select:active,
+.select:focus{
+	outline: none !important;
+}
