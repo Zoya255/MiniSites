@@ -50,7 +50,7 @@
 *Plans*
 
 - [ ] EasyPaint: final plan update
-- [ ] add old text site
+- [X] add old text site
 
 ## 12.10.2020
 
@@ -63,7 +63,6 @@
 
 *Plans*
 
-- [ ] add old text site
 - [ ] add old profnavigator site
 
 ## 13.10.2020
@@ -83,7 +82,24 @@
 *Sergo*
 
 - add legacy music site
+- update README.md
 
 *Plans*
 
 - [ ] rewrite music site
+
+## 15.10.2020
+
+*Sergo*
+
+- add legacy text template site
+- add legacy site with timetable of KIET
+- add example site for technology "drag and drop"
+- add codeoon
+- update README.md
+
+*Plans*
+
+- [ ] rewrite text template site
+- [ ] update of codeoon
+- [ ] add guide
