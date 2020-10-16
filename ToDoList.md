@@ -103,3 +103,16 @@
 - [ ] rewrite text template site
 - [ ] update of codeoon
 - [ ] add guide
+
+## 16.10.2020
+
+*Sergo*
+
+- TextTemplate: delete old ini files ( from Google Disk )
+- TimetableKIET: rename readme.txt -> README.md and rewrite
+- FontsLib: rename FontsLib.txt -> README.md and rewrite
+- update README.md
+
+*Plans*
+
+- [ ] FontsLib: add lisences for fonts
