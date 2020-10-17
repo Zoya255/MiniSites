@@ -115,4 +115,12 @@
 
 *Plans*
 
+- [X] FontsLib: add files of fonts
 - [ ] FontsLib: add lisences for fonts
+
+## 17.10.2020
+
+*Sergo*
+
+- FontsLib: add files of fonts
+- FontsLib: add fonts.css with links of fonts
