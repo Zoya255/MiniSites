@@ -1,0 +1,197 @@
+/* ------------------------------- fonts ------------------------------- */
+
+/* -------------------- a_LCDNova -------------------- */
+
+@font-face {
+    font-family: 'a_LCDNova';
+    src: local('a_LCDNova'), 
+    	 url('../fonts/a_LCDNova.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Arial -------------------- */
+
+@font-face {
+    font-family: 'Arial';
+    src: local('Arial'), 
+    	 url('../fonts/Arial.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Calibri -------------------- */
+
+@font-face {
+    font-family: 'Calibri';
+    src: local('Calibri'), 
+    	 url('../fonts/Calibri.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Capture it -------------------- */
+
+@font-face {
+    font-family: 'Capture it';
+    src: local('Capture it'), 
+    	 url('../fonts/Capture it.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Comfortaa -------------------- */
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: local('Comfortaa'), 
+    	 url('../fonts/Comfortaa.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Consolas -------------------- */
+
+@font-face {
+    font-family: 'Consolas';
+    src: local('Consolas'), 
+    	 url('../fonts/Consolas.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Lato -------------------- */
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), 
+    	 url('../fonts/Lato.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Lucida Console -------------------- */
+
+@font-face {
+    font-family: 'Lucida Console';
+    src: local('Lucida Console'), 
+    	 url('../fonts/Lucida Console.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Magnolia Script -------------------- */
+
+@font-face {
+    font-family: 'Magnolia Script';
+    src: local('Magnolia Script'), 
+    	 url('../fonts/Magnolia Script.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Minecraft Title Cyrillic -------------------- */
+
+@font-face {
+    font-family: 'Minecraft Title Cyrillic';
+    src: local('Minecraft Title Cyrillic'), 
+    	 url('../fonts/Minecraft Title Cyrillic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Minecraftia -------------------- */
+
+@font-face {
+    font-family: 'Minecraftia';
+    src: local('Minecraftia'), 
+    	 url('../fonts/Minecraftia.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Montserrat -------------------- */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), 
+    	 url('../fonts/Montserrat.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Nunito -------------------- */
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), 
+    	 local('Nunito Regular'),
+    	 local('Nunito-Regular'),  
+    	 url('../fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Open Sans -------------------- */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+    	 local('Open Sans Regular'),
+    	 local('OpenSans-Regular'),
+    	 url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Roboto -------------------- */
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+    	 local('Roboto Regular'),
+    	 local('Roboto-Regular'),
+    	 url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Segoe Script -------------------- */
+
+@font-face {
+    font-family: 'Segoe Script';
+    src: local('Segoe Script'), 
+    	 url('../fonts/Segoe Script.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Times New Roman -------------------- */
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman'), 
+    	 url('../fonts/Times New Roman.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- VAG World -------------------- */
+
+@font-face {
+    font-family: 'VAG World';
+    src: local('VAG World'), 
+    	 url('../fonts/VAG World.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* -------------------- Verdana -------------------- */
+
+@font-face {
+    font-family: 'Verdana';
+    src: local('Verdana'), 
+    	 url('../fonts/Verdana.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
