@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Индекс проекта MiniSites</title>
+		
+		<style>
+			.body{
+				margin: 0px;
+				padding: 0px;
+
+				display: grid;
+				grid-template-areas: 'header header header'
+									 'aside  main   none'
+									 'footer footer footer';
+				grid-template-columns: 1fr 4fr 1fr;
+				grid-template-rows: auto 1fr;
+
+				height: 100vh;
+
+				font-family: Arial;
+			}
+			
+			.header{
+				grid-area: header;
+
+				text-align: center;
+				position: sticky;
+				top: 0px;
+
+				background-color: #d2d2d2;
+				border-bottom: 1px solid #666666;
+			}
+			.header__logo{
+				margin: 0px;
+
+				text-decoration: none;
+				font-family: Consolas;
+				font-size: 1.7em;
+				font-style: italic;
+			}
+
+			.main{
+				grid-area: main;
+
+				border-left: 1px solid #666666;
+				border-right: 1px solid #666666;
+			}
+			.main__section{
+				margin: 10px 20px;
+
+				border: 1px solid #666666;
+				background-color: #c2c2c2;
+			}
+			.main__section:hover{
+				background-color: #a2a2a2;
+			}
+			.main__section a{
+				display: grid;
+
+				height: 100%;
+
+				color: #000000;
+			}
+			.main__section-title{
+				margin: 10px 50px;
+
+				font-style: normal;
+			}
+
+			.footer{
+				grid-area: footer;
+
+				text-align: center;
+
+				border-top: 1px solid #666666;
+				background-color: #d2d2d2;
+			}
+		</style>
+	</head>
+
+	<body class="body">
+		<header class="header">
+			<h1 class="header__logo">Минисайты в проекте</h1>
+		</header>
+
+		<main class="main">
+			<section class="main__section">
+				<a href="Codeoon/main.html">
+					<h2 class="main__section-title">Codeoon</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="DragAndDrop/index.html">
+					<h2 class="main__section-title">DragAndDrop</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="EasyDictionary/template/index.html">
+					<h2 class="main__section-title">EasyDictionary ( только шаблон )</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="EasyPaint/index.html">
+					<h2 class="main__section-title">EasyPaint</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="FontsLib/index.html">
+					<h2 class="main__section-title">FontsLib</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="Music/main.html">
+					<h2 class="main__section-title">Music</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="PROTON/index.html">
+					<h2 class="main__section-title">PROTON</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="SportChart/index.html">
+					<h2 class="main__section-title">SportChart</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="TemplateText/main.html">
+					<h2 class="main__section-title">TemplateText</h2>
+				</a>
+			</section>
+
+			<section class="main__section">
+				<a href="#">
+					<h2 class="main__section-title">TimetableKIET ( требуется серверная часть )</h2>
+				</a>
+			</section>
+		</main>
+
+		<footer class="footer">
+			Понятно. Прозрачно. Доступно.<br>
+			18.10.2020
+		</footer>
+	</body>
+</html>
