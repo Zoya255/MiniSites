@@ -131,7 +131,11 @@
 
 - Create SportChart
 - Add SportChart
+- Create project of EasyDictionary
+- Create disign of EasyDictionary
 
 *Plans*
 
-- Add EasyDictionary
+- [+] Create base of EasyDictionary
+- [ ] Create backend of EasyDictionary
+- [ ] Add data in DB of EasyDictionary
