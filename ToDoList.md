@@ -124,3 +124,14 @@
 
 - FontsLib: add files of fonts
 - FontsLib: add fonts.css with links of fonts
+
+## 18.10.2020
+
+*Sergo*
+
+- Create SportChart
+- Add SportChart
+
+*Plans*
+
+- Add EasyDictionary
