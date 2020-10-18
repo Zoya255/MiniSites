@@ -122,9 +122,22 @@
 .global__main{
 	grid-area: main;
 
+	padding-left: 15px;
+	padding-right: 15px;
+
 	border-left: 1px solid #8e8e65;
 	border-right: 1px solid #8e8e65;
 	background-color: #ffffbf;
+}
+
+/* -------------------- content -------------------- */
+
+.global__main-header{
+	text-align: center;
+	font-family: Consolas;
+	font-style: italic;
+
+	border-bottom: 1px dashed #8e8e65;
 }
 
 /* -------------------- footer -------------------- */
