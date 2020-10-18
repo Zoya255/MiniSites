@@ -1,0 +1,49 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+	
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'none1  main   none2';
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-rows: auto 1fr;
+
+	min-height: 100vh;
+	
+	background-color: #cccccc;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	text-align: center;
+	position: sticky;
+	top: 0px;
+
+	background: #bbbbbb;
+	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-logo{
+	margin: 0px;
+
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 1.7em;
+	font-style: italic;
+
+	color: #000000;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+
+	padding: 0px 15px;
+}
