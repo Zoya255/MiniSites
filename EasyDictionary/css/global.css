@@ -1,0 +1,139 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */ 
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'aside  main   none'
+						 'footer footer footer';
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto 1fr;
+
+	height: 100vh;
+
+	font-family: Arial;
+
+	background-color: #f9f9c5;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	text-align: center;
+	position: sticky;
+	top: 0px;
+
+	border-bottom: 1px solid #8e8e65;
+	background-color: #ffffa6;
+}
+.global__header-logo{
+	grid-area: logo;
+
+	margin: 0px;
+
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 1.7em;
+	font-style: italic;
+}
+
+/* -------------------- aside -------------------- */
+
+.global__aside{
+	grid-area: aside;
+
+	display: grid;
+	grid-template-areas: 'none1 nav none2';
+	grid-template-columns: 1fr auto 10px;
+	grid-template-rows: auto 1fr;
+}
+
+/* -------------------- nav -------------------- */
+
+.global__aside-nav{
+	grid-area: nav;
+
+	top: 44px;
+	position: sticky;
+
+	font-family: Arial;
+
+	border: 1px solid #8e8e65;
+	background: #ffffbf;
+}
+.global__aside-nav h3{
+	margin: 0px;
+	padding: 6px 20px;
+
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Consolas;
+	font-style: italic;
+
+	border-bottom: 1px dashed #8e8e65;
+	background: #ffffa6;
+}
+
+/* -------------------- nav-list -------------------- */
+
+.global__nav-list{
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	list-style: none;
+}
+.global__nav-list-item{
+	padding: 5px 50px 5px 30px;
+
+	border-bottom: 1px dashed #999999;
+}
+.global__nav-list-item:last-child{
+	border-bottom: 0px dashed #999999;
+}
+.global__nav-list-item a{
+	display: block;
+	width: 100%;
+
+	text-decoration: none;
+	color: #333333;
+}
+.global__nav-list-item a::before {
+	content: "» ";
+}
+.global__nav-list-item:hover{
+	background-color: #ffffa6;
+}
+.global__nav-list-item:hover a{
+	color: #000000;
+}
+.global__nav-list-item:hover a::before {
+	color: #000000;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+
+	border-left: 1px solid #8e8e65;
+	border-right: 1px solid #8e8e65;
+	background-color: #ffffbf;
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+	grid-area: footer;
+
+	text-align: center;
+
+	border-top: 1px solid #8e8e65;
+	background-color: #ffffa6;
+}
