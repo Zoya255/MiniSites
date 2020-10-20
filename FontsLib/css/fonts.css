@@ -5,7 +5,8 @@
 @font-face {
     font-family: 'a_LCDNova';
     src: local('a_LCDNova'), 
-    	 url('../fonts/a_LCDNova.ttf') format('truetype');
+    	 url('../fonts/a_LCDNova/a_LCDNova.ttf') format('truetype'),
+    	 url('../fonts/a_LCDNova/a_LCDNova.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -15,7 +16,7 @@
 @font-face {
     font-family: 'Arial';
     src: local('Arial'), 
-    	 url('../fonts/Arial.ttf') format('truetype');
+    	 url('../fonts/Arial/Arial.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -25,7 +26,7 @@
 @font-face {
     font-family: 'Calibri';
     src: local('Calibri'), 
-    	 url('../fonts/Calibri.ttf') format('truetype');
+    	 url('../fonts/Calibri/Calibri.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -35,7 +36,7 @@
 @font-face {
     font-family: 'Capture it';
     src: local('Capture it'), 
-    	 url('../fonts/Capture it.ttf') format('truetype');
+    	 url('../fonts/Capture it/Capture it.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -45,7 +46,7 @@
 @font-face {
     font-family: 'Comfortaa';
     src: local('Comfortaa'), 
-    	 url('../fonts/Comfortaa.ttf') format('truetype');
+    	 url('../fonts/Comfortaa/Comfortaa.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -55,7 +56,7 @@
 @font-face {
     font-family: 'Consolas';
     src: local('Consolas'), 
-    	 url('../fonts/Consolas.ttf') format('truetype');
+    	 url('../fonts/Consolas/Consolas.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -65,7 +66,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato'), 
-    	 url('../fonts/Lato.ttf') format('truetype');
+    	 url('../fonts/Lato/Lato.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -75,7 +76,7 @@
 @font-face {
     font-family: 'Lucida Console';
     src: local('Lucida Console'), 
-    	 url('../fonts/Lucida Console.ttf') format('truetype');
+    	 url('../fonts/Lucida Console/Lucida Console.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -85,7 +86,7 @@
 @font-face {
     font-family: 'Magnolia Script';
     src: local('Magnolia Script'), 
-    	 url('../fonts/Magnolia Script.ttf') format('truetype');
+    	 url('../fonts/Magnolia Script/magnolia-script.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -95,7 +96,7 @@
 @font-face {
     font-family: 'Minecraft Title Cyrillic';
     src: local('Minecraft Title Cyrillic'), 
-    	 url('../fonts/Minecraft Title Cyrillic.ttf') format('truetype');
+    	 url('../fonts/Minecraft Title Cyrillic/Minecraft Title Cyrillic.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -105,7 +106,7 @@
 @font-face {
     font-family: 'Minecraftia';
     src: local('Minecraftia'), 
-    	 url('../fonts/Minecraftia.ttf') format('truetype');
+    	 url('../fonts/Minecraftia/Minecraftia.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -115,7 +116,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat'), 
-    	 url('../fonts/Montserrat.ttf') format('truetype');
+    	 url('../fonts/Montserrat/Montserrat.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -127,7 +128,7 @@
     src: local('Nunito'), 
     	 local('Nunito Regular'),
     	 local('Nunito-Regular'),  
-    	 url('../fonts/Nunito-Regular.ttf') format('truetype');
+    	 url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -139,7 +140,7 @@
     src: local('Open Sans'),
     	 local('Open Sans Regular'),
     	 local('OpenSans-Regular'),
-    	 url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    	 url('../fonts/Open Sans/OpenSans-Regular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -151,7 +152,7 @@
     src: local('Roboto'),
     	 local('Roboto Regular'),
     	 local('Roboto-Regular'),
-    	 url('../fonts/Roboto-Regular.ttf') format('truetype');
+    	 url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -161,7 +162,7 @@
 @font-face {
     font-family: 'Segoe Script';
     src: local('Segoe Script'), 
-    	 url('../fonts/Segoe Script.ttf') format('truetype');
+    	 url('../fonts/Segoe Script/Segoe Script.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -171,7 +172,7 @@
 @font-face {
     font-family: 'Times New Roman';
     src: local('Times New Roman'), 
-    	 url('../fonts/Times New Roman.ttf') format('truetype');
+    	 url('../fonts/Times New Roman/Times New Roman.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -181,7 +182,7 @@
 @font-face {
     font-family: 'VAG World';
     src: local('VAG World'), 
-    	 url('../fonts/VAG World.ttf') format('truetype');
+    	 url('../fonts/VAG World/VAG World.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -191,7 +192,7 @@
 @font-face {
     font-family: 'Verdana';
     src: local('Verdana'), 
-    	 url('../fonts/Verdana.ttf') format('truetype');
+    	 url('../fonts/Verdana/Verdana.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }

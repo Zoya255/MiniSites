@@ -145,3 +145,4 @@
 *Sergo*
 
 - SportChart: add data
+- FontsLib: fix some bugs with urls of fonts
