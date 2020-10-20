@@ -75,7 +75,7 @@
 *Plans*
 
 - [ ] add external sites
-- [ ] final add mechanic of layers
+- [X] final add mechanic of layers
 
 ## 14.10.2020
 
@@ -136,7 +136,7 @@
 
 *Plans*
 
-- [+] Create base of EasyDictionary
+- [X] Create base of EasyDictionary
 - [ ] Create backend of EasyDictionary
 - [ ] Add data in DB of EasyDictionary
 
@@ -146,3 +146,9 @@
 
 - SportChart: add data
 - FontsLib: fix some bugs with urls of fonts
+- EasyPaint: add font "Comfortaa"
+- EasyPaint: make worked mechanic of layers
+
+*Plans*
+
+- [ ] EasyPaint: rename of layers
