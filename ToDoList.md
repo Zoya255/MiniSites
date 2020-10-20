@@ -139,3 +139,9 @@
 - [+] Create base of EasyDictionary
 - [ ] Create backend of EasyDictionary
 - [ ] Add data in DB of EasyDictionary
+
+## 20.10.2020
+
+*Sergo*
+
+- SportChart: add data
