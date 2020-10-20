@@ -364,7 +364,7 @@ function get_ls(key) {
 
 /* -------------------- add user color -------------------- */
 
-$("#script__button-add-color").click(function() { add_user_color() });
+$('#script__button-add-color').click(function() { add_user_color() });
 
 function add_user_color() {
 	let inner = `
@@ -379,4 +379,20 @@ function add_user_color() {
 	console.log('Add user color in library:')
 	console.log('  | Paint color: ' + data.color__pr);
 	console.log('')
+}
+
+/* -------------------- import -------------------- */
+
+$('#script__button-import').click(function() { import_data() })
+
+function import_data() {
+	set_ls('coordsLS', $('#script__data_import').val());
+}
+
+/* -------------------- export -------------------- */
+
+$('#script__button-export').click(function() { export_data() })
+
+function export_data() {
+	$('#script__data_export').text(get_ls('coordsLS'))
 }

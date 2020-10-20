@@ -1,0 +1,68 @@
+/* ------------------------------- modal windows ------------------------------- */
+
+/* -------------------- base -------------------- */
+
+.modal{
+	position: absolute;
+
+	z-index: 100;
+
+	width: 100vw;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-open{
+	display: block;
+}
+.modal-close{
+	display: none !important;
+}
+.modal__window{
+	display: block;
+	position: relative;
+
+	width: 50%;
+	margin: 10% auto;
+
+	border-radius: 20px;
+
+	background-color: #e2e2e2;
+	border: 1px solid #2c2c2c;
+}
+
+/* -------------------- header -------------------- */
+
+.modal__header{
+	padding: 10px 20px;
+
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: Comfortaa;
+
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+
+	background-color: #d2d2d2;
+	border-bottom: 1px solid #2c2c2c;
+}
+
+/* -------------------- content -------------------- */
+
+.modal__content{
+	padding: 10px 20px;
+}
+
+/* -------------------- buttons -------------------- */
+
+.modal__buttons{
+	padding: 0px 10px;
+
+	text-align: right;
+
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+	background-color: #d2d2d2;
+	border-top: 1px solid #2c2c2c;
+}

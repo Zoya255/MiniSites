@@ -57,7 +57,7 @@
 	height: calc(100% - 43px);
 }
 
-/* -------------------- scripts elements -------------------- */
+/* -------------------- scripts layers -------------------- */
 
 #script__canvas-paint-1{
 	z-index: 6;
@@ -77,8 +77,24 @@
 #script__canvas-background{
 	z-index: 1;
 }
+
+/* -------------------- scripts elements -------------------- */
+
 #f1_inp2{
 	width: 50px;
+}
+
+/* -------------------- scripts modals -------------------- */
+
+#script__modal-import textarea{
+	min-width: calc(100% - 6px);
+	width: calc(100% - 6px);
+	max-width: calc(100% - 6px);
+}
+
+#script__modal-export .modal__content{
+	height: 400px;
+	overflow-y: auto;
 }
 
 /* -------------------- aside -------------------- */
