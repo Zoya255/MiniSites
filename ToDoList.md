@@ -157,3 +157,13 @@
 *Plans*
 
 - [ ] EasyPaint: rename of layers
+
+## 21.10.2020
+
+*Sergo*
+
+- Create base of StylesLib
+
+*Plans*
+
+- [ ] Add libs in StylesLib
