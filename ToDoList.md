@@ -32,8 +32,8 @@
 *Plans*
 
 - [X] FontsLib: add new fonts
-- [ ] EasyPaint: export
-- [ ] EasyPaint: import
+- [X] EasyPaint: export
+- [X] EasyPaint: import
 - [X] EasyPaint: features for end-user
 - [X] add old music site
 
@@ -49,7 +49,7 @@
 
 *Plans*
 
-- [ ] EasyPaint: final plan update
+- [X] EasyPaint: final plan update
 - [X] add old text site
 
 ## 12.10.2020
@@ -148,6 +148,11 @@
 - FontsLib: fix some bugs with urls of fonts
 - EasyPaint: add font "Comfortaa"
 - EasyPaint: make worked mechanic of layers
+- EasyPaint: add import
+- EasyPaint: add export
+- EasyPaint: add lib of modal windows
+- EasyPaint: add user colors
+- EasyPaint: final functional update
 
 *Plans*
 
