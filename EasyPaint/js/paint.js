@@ -50,6 +50,8 @@ var ctx__pr    = document.getElementById(data.canvas__id_pr + data.layer__id).ge
 console.log('Initialization background:');
 
 for (var i = 1; i <= data.layers; i++) {
+	canvas__pr = document.getElementById(data.canvas__id_pr + i);
+
 	canvas__pr.width  = $('#' + data.canvas__id_pr + i).width();
 	canvas__pr.height = $('#' + data.canvas__id_pr + i).height();
 
@@ -125,6 +127,8 @@ function repeat() {
 
 	var coordsR = JSON.parse(localStorage.getItem('coordsLS'));
 
+	var tempLayerID = data.layer__id;
+
 	let timer = setInterval(function() {
 		if (!coordsR.length) {
 			clearInterval(timer);
@@ -134,6 +138,13 @@ function repeat() {
 
 		let crd = coordsR.shift();
 		let e = {clientX: crd['0'], clientY: crd['1'], layerID: crd['2'], colorDR: crd['3'], widthDR: crd['4']};
+
+
+		if ( tempLayerID !== e.layerID ) {
+			ctx__pr.beginPath();
+			ctx__pr     = document.getElementById(data.canvas__id_pr + e.layerID).getContext('2d');
+			tempLayerID = e.layerID;
+		}
 
 		ctx__pr.fillStyle = e.colorDR;
 		ctx__pr.strokeStyle = e.colorDR;
@@ -148,7 +159,7 @@ function repeat() {
 
 		ctx__pr.beginPath();
 		ctx__pr.moveTo(e.clientX, e.clientY);
-	}, 1);
+	}, 5);
 
 	console.log('Repaint of picture');
 	console.log('');
@@ -177,10 +188,21 @@ function aside_toggle() {
 $("#script__button-clear").click(function() { clear() });
 
 function clear() {
-	ctx__pr.clearRect(0, 0, canvas__pr.width, canvas__pr.height);
+	console.log('Clear all layers:');
+
+	for (var i = 1; i <= data.layers; i++) {
+		ctx__pr    = document.getElementById(data.canvas__id_pr + i).getContext('2d');
+
+		ctx__pr.clearRect(0, 0, canvas__pr.width, canvas__pr.height);
+
+		console.log('  | Clear layer ' + i)
+	}
+	
+	ctx__pr    = document.getElementById(data.canvas__id_pr + data.layer__id).getContext('2d');
+
 	coords = [];
 
-	console.log('Clear canvas');
+	console.log('  | Clear array of coords')
 	console.log('');
 }
 
@@ -200,7 +222,7 @@ function save_config() {
 
 	if ((width_pr_check !== null) && (width_pr_check !== undefined) && (width_pr_check !== "")){
 		set_ls('widthDRLS', width_pr_check);
-		data.width_pr = width_pr_check;
+		data.width__pr = width_pr_check;
 	}
 
 	if ((color_bg_check !== null) && (color_bg_check !== undefined) && (color_bg_check !== "")){
@@ -338,4 +360,23 @@ function get_ls(key) {
 	log_debug('Loading data from Local Storage:');
 	log_debug('  | key: ' + key);
 	log_debug('');
+}
+
+/* -------------------- add user color -------------------- */
+
+$("#script__button-add-color").click(function() { add_user_color() });
+
+function add_user_color() {
+	let inner = `
+		<div class="global__aside-colors-content-color"
+			 onclick="pallete_color('${data.color__pr}')"
+			 style="background-color: ${data.color__pr};">
+		</div>
+	`;
+
+	$(inner).appendTo('.global__aside-colors-content-user');
+
+	console.log('Add user color in library:')
+	console.log('  | Paint color: ' + data.color__pr);
+	console.log('')
 }

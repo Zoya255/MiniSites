@@ -1,0 +1,11 @@
+/* ------------------------------- fonts ------------------------------- */
+
+/* -------------------- Comfortaa -------------------- */
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: local('Comfortaa'), 
+    	 url('../fonts/Comfortaa/Comfortaa.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
