@@ -1,0 +1,162 @@
+/* ------------------------------- global-lib-text ------------------------------- */ 
+
+/* -------------------- text-highlight -------------------- */
+
+.alert{
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-primary{
+	color: #004085;
+	background-color: #cce5ff;
+	border-color: #b8daff;
+}
+.alert-primary hr{
+	border-top-color: #9fcdff;
+}
+
+.alert-secondary{
+	color: #383d41;
+	background-color: #e2e3e5;
+	border-color: #d6d8db;
+}
+.alert-secondary hr{
+	border-top-color: #c8cbcf;
+}
+
+.alert-success{
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+.alert-success hr{
+	border-top-color: #b1dfbb;
+}
+
+.alert-info{
+	color: #0c5460;
+	background-color: #d1ecf1;
+	border-color: #bee5eb;
+}
+.alert-info hr{
+	border-top-color: #abdde5;
+}
+
+.alert-warning{
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+.alert-warning hr{
+	border-top-color: #ffe8a1;
+}
+
+.alert-danger{
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+.alert-danger hr{
+	border-top-color: #f1b0b7;
+}
+
+.alert-light{
+	color: #818182;
+	background-color: #fefefe;
+	border-color: #fdfdfe;
+}
+.alert-light hr{
+	border-top-color: #ececf6;
+}
+
+.alert-dark{
+	color: #1b1e21;
+	background-color: #d6d8d9;
+	border-color: #c6c8ca;
+}
+.alert-dark hr{
+	border-top-color: #b9bbbe;
+}
+
+/* -------------------- text-weight -------------------- */
+
+
+.text-normal{
+	font-weight: 500;
+}
+.text-bold{
+	font-weight: 600;
+}
+.text-bolder{
+	font-weight: 700;
+}
+.text-boldest{
+	font-weight: 900;
+}
+
+/* -------------------- text-header -------------------- */
+
+.text-h1{
+	font-weight: bold;
+	font-size: 2em;
+}
+.text-h2{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.text-h3{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+.text-h4{
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+/*----------------------------- text-align -----------------------------*/
+
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.text-justify{
+	text-align: justify;
+}
+
+/*----------------------------- text-indent -----------------------------*/
+
+
+.text-indent{
+	text-indent: 2em;
+}
+.text-indent-none{
+	text-indent: 0;
+}
+
+/*----------------------------- text-list -----------------------------*/
+
+.list{
+	margin-left: 3em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-indent: 0px;
+	outline: none;
+}
+.list-num{
+	list-style-type: decimal;
+}
+.list-mark{
+	list-style-type: circle;
+}
+.list-none{
+	list-style: none;
+}

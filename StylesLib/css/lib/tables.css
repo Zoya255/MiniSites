@@ -1,0 +1,106 @@
+/* ------------------------------- global-lib-tables ------------------------------- */ 
+
+/* -------------------- table-base -------------------- */
+
+table.table{
+	border-collapse: collapse;
+	margin-bottom: 1rem;
+	color: #212529;
+	font-family: Roboto;
+	margin: 10px;
+}
+.table th,
+.table td{
+	padding: 0.75rem;
+}
+.table th{
+	font-size: .9rem;
+	font-weight: 600;
+	vertical-align: bottom;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.table td{
+	font-size: .9rem;
+	font-weight: 400;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);;
+}
+.table a{
+	margin: 0;
+	color: #212529
+}
+
+/* -------------------- table-size -------------------- */
+
+.table-mc{
+	max-width: 25%;
+}
+.table-mc th,
+.table-mc td{
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+
+.table-sm{
+	max-width: 50%;
+}
+.table-sm th,
+.table-sm td{
+	padding-top: .5rem;
+	padding-bottom: .5rem
+}
+
+.table-md{
+	max-width: 75%;
+}
+.table-md th,
+.table-md td{
+	font-size: 1rem;
+	padding-top: .75rem;
+	padding-bottom: .75rem
+}
+
+.table-lg{
+	max-width: 100%;
+}
+.table-lg th,
+.table-lg td{
+	font-size: 1.1rem;
+	padding-top: .9rem;
+	padding-bottom: .9rem
+}
+
+/* -------------------- table-addition -------------------- */
+
+.table-inline{
+	display: inline-table;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+ 	background-color: rgba(0, 0, 0, 0.125);
+}
+
+.table-hover tbody tr:hover{
+	color: #212529;
+	background-color: rgba(0, 0, 0, 0.25)!important;
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.table-bordered{
+	border: 1px solid #c5cbd1;
+}
+.table-bordered th,
+.table-bordered td{
+	border: 1px solid #c5cbd1;
+}
+.table-bordered thead th,
+.table-bordered thead td{
+	border-bottom-width: 2px;
+}
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody{
+	border: 0;
+}

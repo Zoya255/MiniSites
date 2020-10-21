@@ -1,0 +1,88 @@
+/* ------------------------------- lib of forms ------------------------------- */
+
+/* -------------------- modal form -------------------- */
+
+.forms__modal-form{
+	width: 40%;
+
+	margin: 0px auto;
+
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+
+	background-color: #e9ecbf;
+	border: 1px solid #2c2c2c;
+}
+
+/* -------------------- modal form header -------------------- */
+
+.forms__modal-form-header{
+	display: grid;
+
+	text-align: center;
+
+	border-top-right-radius: 2em;
+
+	background-color: #b8d68f;
+	border-bottom: 1px dashed #2d2d2d;
+}
+.forms__modal-form-header-title{
+	margin: 5px 20px;
+
+	font-size: 1.15em;
+}
+
+/* -------------------- modal form content -------------------- */
+
+.forms__modal-form-content{
+
+}
+.forms__modal-form-content-form{
+
+}
+
+/* -------------------- modal form buttons -------------------- */
+
+.forms__modal-form-buttons{
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border-bottom-left-radius: 2em;
+
+	text-align: right;
+
+	background-color: #b8d68f;
+	border-top: 1px dashed #2d2d2d;
+}
+
+/* -------------------- inputs -------------------- */
+
+.forms__input-text{
+	display: block;
+
+	width: 60%;
+
+	padding: 3px 6px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+	font-family: Arial;
+	font-size: 1em;
+
+	border: 1px solid #2c2c2c;
+}
+.forms__input-text:placeholder{
+	color: #929292;
+}
+.forms__input-text:focus{
+	outline: none;
+
+	border: 2px solid #388e3c;
+}
+
+/* -------------------- textarea -------------------- */
+

@@ -1,0 +1,291 @@
+/* ------------------------------- colors lib ------------------------------- */ 
+
+/* -------------------- main colors -------------------- */
+
+.color-primary{
+	background-color: #4285f4;
+}
+.color-primary-text{
+	color: #4285f4;
+}
+
+.color-primary-dark{
+	background-color: #0d47a1;
+}
+.color-primary-dark-text{
+	color: #0d47a1;
+}
+
+.color-default{
+	background-color: #2bbbad;
+}
+.color-default-text{
+	color: #2bbbad;
+}
+
+.color-default-dark{
+	background-color: #00695c;
+}
+.color-default-dark-text{
+	color: #00695c;
+}
+
+.color-secondary{
+	background-color: #aa66cc;
+}
+.color-secondary-text{
+	color: #aa66cc;
+}
+
+.color-secondary-dark{
+	background-color: #9933cc;
+}
+.color-secondary-dark-text{
+	color: #9933cc;
+}
+
+.color-info{
+	background-color: #33b5e5;
+}
+.color-info-text{
+	color: #33b5e5;
+}
+
+.color-info-dark{
+	background-color: #0099cc;
+}
+.color-info-dark{
+	color: #0099cc;
+}
+
+.color-success{
+	background-color: #00c851;
+}
+.color-success-text{
+	color: #00c851;
+}
+
+.color-success-dark{
+	background-color: #007e33;
+}
+.color-success-dark-text{
+	color: #007e33;
+}
+
+.color-warning{
+	background-color: #ffbb33;
+}
+.color-warning-text{
+	color: #ffbb33;
+}
+
+.color-warning-dark{
+	background-color: #ff8800;
+}
+.color-warning-dark-text{
+	color: #ff8800;
+}
+
+.color-danger{
+	background-color: #ff3547;
+}
+.color-danger-text{
+	color: #ff3547;
+}
+
+.color-danger-dark{
+	background-color: #cc0000;
+}
+.color-danger-dark-text{
+	color: #cc0000;
+}
+
+/* -------------------- monohrome colors -------------------- */
+
+.color-white{
+	background-color: #fff;
+}
+.color-white-text{
+	color: #fff;
+}
+
+.color-light-grey{
+	background-color: #e0e0e0;
+}
+.color-light-grey-text{
+	color: #e0e0e0;
+}
+
+.color-grey{
+	background-color: #9e9e9e;
+}
+.color-grey-text{
+	color: #9e9e9e;
+}
+
+.color-elegant{
+	background-color: #2e2e2e;
+}
+.color-elegant-text{
+	color: #2e2e2e;
+}
+
+.color-elegant-dark{
+	background-color: #212121;
+}
+.color-elegant-dark-text{
+	color: #212121;
+}
+
+.color-black{
+	background-color: #000;
+}
+.color-black-text{
+	color: #000;
+}
+
+/* -------------------- gradients colors -------------------- */
+
+.color-aqua-gradient{
+	background: linear-gradient(40deg, #2096ff, #05ffa3);
+}
+
+.color-purple-gradient{
+	background: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+
+.color-peach-gradient{
+	background: linear-gradient(40deg, #ffd86f, #fc6262);
+}
+
+.color-blue-gradient{
+	background: linear-gradient(40deg, #45cafc, #303f9f);
+}
+
+/* -------------------- additional colors -------------------- */
+
+.color-red{
+	background-color: #f44336;
+}
+.color-red-text{
+	color: #f44336;
+}
+
+.color-pink{
+	background-color: #e91e63;
+}
+.color-pink-text{
+	color: #e91e63;
+}
+
+.color-purple{
+	background-color: #9c27b0;
+}
+.color-purple-text{
+	color: #9c27b0;
+}
+
+.color-deep-purple{
+	background-color: #673ab7;
+}
+.color-deep-purple-text{
+	color: #673ab7;
+}
+
+.color-indigo{
+	background-color: #3f51b5;
+}
+.color-indigo-text{
+	color: #3f51b5;
+}
+
+.color-blue{
+	background-color: #2196f3;
+}
+.color-blue-text{
+	color: #2196f3;
+}
+
+.color-light-blue{
+	background-color: #03a9f4;
+}
+.color-light-blue-text{
+	color: #03a9f4;
+}
+
+.color-cyan{
+	background-color: #00bcd4;
+}
+.color-cyan-text{
+	color: #00bcd4;
+}
+
+.color-aqua{
+	background-color: #17eee3
+}
+.color-aqua-text{
+	color: #17eee3	
+}
+
+.color-teal{
+	background-color: #009688;
+}
+.color-teal-text{
+	color: #009688;
+}
+
+.color-green{
+	background-color: #4caf50;
+}
+.color-green-text{
+	color: #4caf50;
+}
+
+.color-light-green{
+	background-color: #8bc34a;
+}
+.color-light-green-text{
+	color: #8bc34a;
+}
+
+.color-lime{
+	background-color: #cddc39;
+}
+.color-lime-text{
+	color: #cddc39;
+}
+
+.color-yellow{
+	background-color: #ffeb3b;
+}
+.color-yellow-text{
+	color: #ffeb3b;
+}
+
+.color-amber{
+	background-color: #ffc107
+}
+.color-amber-text{
+	color: #ffc107
+}
+
+.color-orange{
+	background-color: #ff9800;
+}
+.color-orange-text{
+	color: #ff9800;
+}
+
+.color-deep-orange{
+	background-color: #ff5722;
+}
+.color-deep-orange-text{
+	color: #ff5722;
+}
+
+.color-brown{
+	background-color: #795548;
+}
+.color-brown-text{
+	color: #795548;
+}
