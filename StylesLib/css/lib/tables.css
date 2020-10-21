@@ -1,13 +1,16 @@
-/* ------------------------------- global-lib-tables ------------------------------- */ 
+/* ------------------------------- lib of tables ------------------------------- */ 
 
-/* -------------------- table-base -------------------- */
-
-table.table{
+/* -------------------- base of tables -------------------- */
+ 
+.table{
 	border-collapse: collapse;
 	margin-bottom: 1rem;
 	color: #212529;
 	font-family: Roboto;
 	margin: 10px;
+}
+.table thead{
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 .table th,
 .table td{
@@ -17,19 +20,20 @@ table.table{
 	font-size: .9rem;
 	font-weight: 600;
 	vertical-align: bottom;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	text-align: center;
 }
 .table td{
 	font-size: .9rem;
 	font-weight: 400;
-	border-top: 1px solid rgba(0, 0, 0, 0.3);;
+	text-align: left;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 .table a{
 	margin: 0;
 	color: #212529
 }
 
-/* -------------------- table-size -------------------- */
+/* -------------------- sizes of tables -------------------- */
 
 .table-mc{
 	max-width: 25%;
@@ -69,22 +73,28 @@ table.table{
 	padding-bottom: .9rem
 }
 
-/* -------------------- table-addition -------------------- */
+/* -------------------- additional -------------------- */
 
 .table-inline{
 	display: inline-table;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
 .table-striped tbody tr:nth-of-type(odd){
  	background-color: rgba(0, 0, 0, 0.125);
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
 .table-hover tbody tr:hover{
-	color: #212529;
-	background-color: rgba(0, 0, 0, 0.25)!important;
+	background-color: rgba(0, 0, 0, 0.2);
 	-webkit-transition: .5s;
 	transition: .5s
 }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
 
 .table-bordered{
 	border: 1px solid #c5cbd1;
@@ -98,9 +108,98 @@ table.table{
 	border-bottom-width: 2px;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
 .table-borderless th,
 .table-borderless td,
 .table-borderless thead th,
 .table-borderless tbody + tbody{
 	border: 0;
+}
+
+/* -------------------- colors -------------------- */
+
+.table-aqua{
+	background-color: rgba(23, 238, 227, 0.2);
+}
+.table-aqua thead{
+	background-color: rgba(23, 238, 227, 0.6);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.table-aqua td{
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.table-aqua.table-striped tbody tr:nth-of-type(odd){
+ 	background-color: rgba(23, 238, 227, 0.1);
+}
+
+.table-aqua.table-hover tbody tr:hover{
+	background-color: rgba(23, 238, 227, 0.35);
+}
+
+.table-aqua.table-bordered{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.table-aqua.table-bordered th,
+.table-aqua.table-bordered td{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.table-amber{
+	background-color: rgba(255, 193, 7, 0.2);
+}
+.table-amber thead{
+	background-color: rgba(255, 193, 7, 0.6);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.table-amber td{
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.table-amber.table-striped tbody tr:nth-of-type(odd){
+ 	background-color: rgba(255, 193, 7, 0.2);
+}
+
+.table-amber.table-hover tbody tr:hover{
+	background-color: rgba(255, 193, 7, 0.4);
+}
+
+.table-amber.table-bordered{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.table-amber.table-bordered th,
+.table-amber.table-bordered td{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.table-dark{
+	background-color: #2e2e2e;
+	color: #eeeeee;
+}
+.table-dark thead{
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.table-dark td{
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd){
+ 	background-color: #212121;
+}
+
+.table-dark.table-hover tbody tr:hover{
+	background-color: rgba(100, 100, 100, 0.4);
+}
+
+.table-dark.table-bordered{
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.table-dark.table-bordered th,
+.table-dark.table-bordered td{
+	border: 1px solid rgba(255, 255, 255, 0.3);
 }

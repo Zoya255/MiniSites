@@ -1,0 +1,100 @@
+/* ------------------------------- lib of borders ------------------------------- */ 
+
+/* -------------------- base of borders -------------------- */
+
+.border{
+	border-color: #000000;
+}
+
+/* -------------------- sizes of borders -------------------- */
+
+.border-1px{
+	border-width: 1px;
+}
+.border-2px{
+	border-width: 2px;
+}
+.border-3px{
+	border-width: 3px;
+}
+.border-4px{
+	border-width: 4px;
+}
+.border-5px{
+	border-width: 5px;
+}
+.border-6px{
+	border-width: 6px;
+}
+.border-7px{
+	border-width: 7px;
+}
+.border-8px{
+	border-width: 8px;
+}
+.border-9px{
+	border-width: 9px;
+}
+.border-10px{
+	border-width: 10px;
+}
+
+/* -------------------- types of borders -------------------- */
+
+.border-solid{
+	border-style: solid;
+}
+.border-dashed{
+	border-style: dashed;
+}
+.border-dotted{
+	border-style: dotted;
+}
+.border-double{
+	border-style: double;
+}
+
+/* -------------------- main colors of borders -------------------- */
+
+.border-primary{
+	border-color: #4285f4;
+}
+.border-primary-dark{
+	border-color: #0d47a1;
+}
+.border-default{
+	border-color: #2bbbad;
+}
+.border-default-dark{
+	border-color: #00695c;
+}
+.border-secondary{
+	border-color: #aa66cc;
+}
+.border-secondary-dark{
+	border-color: #9933cc;
+}
+.border-info{
+	border-color: #33b5e5;
+}
+.border-info-dark{
+	border-color: #0099cc;
+}
+.border-success{
+	border-color: #00c851;
+}
+.border-success-dark{
+	border-color: #007e33;
+}
+.border-warning{
+	border-color: #ffbb33;
+}
+.border-warning-dark{
+	border-color: #ff8800;
+}
+.border-danger{
+	border-color: #ff3547;
+}
+.border-danger-dark{
+	border-color: #cc0000;
+}

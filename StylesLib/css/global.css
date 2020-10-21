@@ -10,7 +10,7 @@
 	grid-template-areas: 'header header header'
 						 'none1  main   none2'
 						 'footer footer footer';
-	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-columns: 1fr 10fr 1fr;
 	grid-template-rows: auto 1fr auto;
 
 	min-height: 100vh;
@@ -53,6 +53,8 @@
 	margin: 20px 0px;
 	padding: 0px;
 
+	border-top-right-radius: 2em;
+
 	border: 1px solid #999999;
 }
 .global__section-header{
@@ -61,6 +63,8 @@
 	grid-template-areas: "title text";
 
 	font-family: Consolas;
+
+	border-top-right-radius: 2em;
 
 	background-color: #dddddd;
 	border-bottom: 1px solid #aaaaaa;
@@ -85,8 +89,8 @@
 	margin: 10px;
 	padding: 5px;
 
-	width: 200px;
-	height: 80px;
+	width: 100px;
+	height: 40px;
 
 	border: 1px solid #aaaaaa;
 }
@@ -100,8 +104,6 @@
 
 	font-size: 1.05em;
 	font-family: Arial;
-
-	background-color: #e2e2e2;
 }
 
 /* -------------------- footer -------------------- */
