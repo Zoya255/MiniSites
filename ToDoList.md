@@ -166,4 +166,27 @@
 
 *Plans*
 
-- [ ] Add libs in StylesLib
+- [X] StylesLib: add libs
+
+## 22.10.2020
+
+*Sergo*
+
+- StylesLib: create lib borders.css
+- StylesLib: add and update lib buttons.css
+- StylesLib: add and update lib colors.css
+- StylesLib: add lib forms.css
+- StylesLib: add lib modals.css
+- StylesLib: add and update lib tabels.css
+- StylesLib: add lib text.css
+- SportChart: add some data
+
+*Plans*
+
+- [ ] FontsLib: link all libs
+
+## 24.10.2020
+
+*Sergo*
+
+- SportChart: add some data
