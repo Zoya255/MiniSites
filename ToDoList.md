@@ -190,3 +190,13 @@
 *Sergo*
 
 - SportChart: add some data
+
+## 25.10.2020
+
+*Sergo*
+
+- SportChart: add some data
+- StylesLib: update css
+- StylesLib: update lib borders.css
+- StylesLib: fix of lib button.css
+- StylesLib: update lib text.css
