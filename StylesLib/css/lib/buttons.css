@@ -58,7 +58,7 @@
 
 .btn-primary{
 	color: #fff;
-	background-color: #4285f4
+	background-color: #4285f4 !important
 }
 .btn-primary:hover{
 	color: #fff;
@@ -99,7 +99,7 @@
 
 .btn-default{
 	color: #fff;
-	background-color: #2bbbad
+	background-color: #2bbbad !important
 }
 .btn-default:hover{
 	color: #fff;
@@ -140,7 +140,7 @@
 
 .btn-success{
 	color: #fff;
-	background-color: #00c851
+	background-color: #00c851 !important
 }
 .btn-success:hover{
 	color: #fff;
@@ -181,7 +181,7 @@
 
 .btn-info{
 	color: #fff;
-	background-color: #33b5e5
+	background-color: #33b5e5 !important
 }
 .btn-info:hover{
 	color: #fff;
@@ -222,7 +222,7 @@
 
 .btn-warning {
 	color: #fff;
-	background-color: #fb3
+	background-color: #fb3 !important
 }
 .btn-warning:hover {
 	color: #fff;
@@ -263,7 +263,7 @@
 
 .btn-danger{
 	color: #fff;
-	background-color: #ff3547
+	background-color: #ff3547 !important
 }
 .btn-danger:hover{
 	color: #fff;
@@ -349,7 +349,7 @@
 }
 .btn-grey:hover {
 	color: #fff;
-	background-color: #6e6e6e
+	background-color: #6e6e6e !important
 }
 .btn-grey:focus,
 .btn-grey.focus {
@@ -390,7 +390,7 @@
 }
 .btn-dark-grey:hover {
 	color: #fff;
-	background-color: #3b3b3b
+	background-color: #3b3b3b !important
 }
 .btn-dark-grey:focus,
 .btn-dark-grey.focus {
@@ -431,7 +431,7 @@
 }
 .btn-dark:hover {
 	color: #fff;
-	background-color: #2e2e2e
+	background-color: #2e2e2e !important
 }
 .btn-dark:focus,
 .btn-dark.focus {
@@ -472,7 +472,7 @@
 }
 .btn-black:hover {
 	color: #fff;
-	background-color: #0d0d0d
+	background-color: #0d0d0d !important
 }
 .btn-black:focus,
 .btn-black.focus {
@@ -513,7 +513,7 @@
 }
 .btn-red:hover {
 	color: #fff;
-	background-color: #d74444
+	background-color: #d74444 !important
 }
 .btn-red:focus,
 .btn-red.focus {
@@ -554,7 +554,7 @@
 }
 .btn-pink:hover {
 	color: #fff;
-	background-color: #ee578a
+	background-color: #ee578a !important
 }
 .btn-pink:focus,
 .btn-pink.focus {
@@ -595,7 +595,7 @@
 }
 .btn-purple:hover {
 	color: #fff;
-	background-color: #a028bf
+	background-color: #a028bf !important
 }
 .btn-purple:focus,
 .btn-purple.focus {
@@ -636,7 +636,7 @@
 }
 .btn-deep-purple:hover {
 	color: #fff;
-	background-color: #5b32bc
+	background-color: #5b32bc !important
 }
 .btn-deep-purple:focus,
 .btn-deep-purple.focus {
@@ -677,7 +677,7 @@
 }
 .btn-indigo:hover {
 	color: #fff;
-	background-color: #4d5ec1
+	background-color: #4d5ec1 !important
 }
 .btn-indigo:focus,
 .btn-indigo.focus {
@@ -718,7 +718,7 @@
 }
 .btn-blue:hover {
 	color: #fff;
-	background-color: #2083e4
+	background-color: #2083e4 !important
 }
 .btn-blue:focus,
 .btn-blue.focus {
@@ -759,7 +759,7 @@
 }
 .btn-light-blue:hover {
 	color: #fff;
-	background-color: #9cc1ff
+	background-color: #9cc1ff !important
 }
 .btn-light-blue:focus,
 .btn-light-blue.focus {
@@ -800,7 +800,7 @@
 }
 .btn-cyan:hover {
 	color: #fff;
-	background-color: #00d3ee
+	background-color: #00d3ee !important
 }
 .btn-cyan:focus,
 .btn-cyan.focus {
@@ -841,7 +841,7 @@
 }
 .btn-teal:hover {
 	color: #fff;
-	background-color: #009382
+	background-color: #009382 !important
 }
 .btn-teal:focus,
 .btn-teal.focus {
@@ -882,7 +882,7 @@
 }
 .btn-green:hover {
 	color: #fff;
-	background-color: #3fa044
+	background-color: #3fa044 !important
 }
 .btn-green:focus,
 .btn-green.focus {
@@ -923,7 +923,7 @@
 }
 .btn-light-green:hover {
 	color: #fff;
-	background-color: #97c95d
+	background-color: #97c95d !important
 }
 .btn-light-green:focus,
 .btn-light-green.focus {
@@ -964,7 +964,7 @@
 }
 .btn-lime:hover {
 	color: #fff;
-	background-color: #c3c930
+	background-color: #c3c930 !important
 }
 .btn-lime:focus,
 .btn-lime.focus {
@@ -1005,7 +1005,7 @@
 }
 .btn-yellow:hover {
 	color: #fff;
-	background-color: #fbc846
+	background-color: #fbc846 !important
 }
 .btn-yellow:focus,
 .btn-yellow.focus {
@@ -1046,7 +1046,7 @@
 }
 .btn-amber:hover {
 	color: #fff;
-	background-color: #ffaa1a
+	background-color: #ffaa1a !important
 }
 .btn-amber:focus,
 .btn-amber.focus {
@@ -1087,7 +1087,7 @@
 }
 .btn-orange:hover {
 	color: #fff;
-	background-color: #ff8910
+	background-color: #ff8910 !important
 }
 .btn-orange:focus,
 .btn-orange.focus {
@@ -1128,7 +1128,7 @@
 }
 .btn-deep-orange:hover {
 	color: #fff;
-	background-color: #ff835d
+	background-color: #ff835d !important
 }
 .btn-deep-orange:focus,
 .btn-deep-orange.focus {
@@ -1169,7 +1169,7 @@
 }
 .btn-brown:hover {
 	color: #fff;
-	background-color: #896052
+	background-color: #896052 !important
 }
 .btn-brown:focus,
 .btn-brown.focus {

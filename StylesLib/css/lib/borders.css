@@ -98,3 +98,81 @@
 .border-danger-dark{
 	border-color: #cc0000;
 }
+
+/* -------------------- monohrome colors of borders -------------------- */
+
+.border-white{
+	border-color: #fff;
+}
+.border-light-grey{
+	border-color: #e0e0e0;
+}
+.border-grey{
+	border-color: #9e9e9e;
+}
+.border-elegant{
+	border-color: #2e2e2e;
+}
+.border-elegant-dark{
+	border-color: #212121;
+}
+.border-black{
+	border-color: #000000;
+}
+
+/* -------------------- additional colors of borders -------------------- */
+
+.border-red{
+	border-color: #f44336;
+}
+.border-pink{
+	border-color: #e91e63;
+}
+.border-purple{
+	border-color: #9c27b0;
+}
+.border-deep-purple{
+	border-color: #673ab7;
+}
+.border-indigo{
+	border-color: #3f51b5;
+}
+.border-blue{
+	border-color: #2196f3;
+}
+.border-light-blue{
+	border-color: #03a9f4;
+}
+.border-cyan{
+	border-color: #00bcd4;
+}
+.border-aqua{
+	border-color: #17eee3
+}
+.border-teal{
+	border-color: #009688;
+}
+.border-green{
+	border-color: #4caf50;
+}
+.border-light-green{
+	border-color: #8bc34a;
+}
+.border-lime{
+	border-color: #cddc39;
+}
+.border-yellow{
+	border-color: #ffeb3b;
+}
+.border-amber{
+	border-color: #ffc107
+}
+.border-orange{
+	border-color: #ff9800;
+}
+.border-deep-orange{
+	border-color: #ff5722;
+}
+.border-brown{
+	border-color: #795548;
+}
