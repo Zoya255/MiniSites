@@ -1,0 +1,51 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+
+	display: grid;
+	grid-template-areas: 'header header header'
+						 'none1  main   none2'
+						 'footer footer footer';
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto 1fr auto;
+
+	height: 100vh;
+
+	font-family: Arial;
+
+	background-color: #4ceaf5;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+}
+.global__header-title{
+
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+}
+.global__main-section{
+	background-color: #228B22;
+}
+.global__main-section-title{
+
+}
+.global__main-section-content{
+
+}
+
+/* -------------------- footer -------------------- */
+
+.global__footer{
+	grid-area: footer;
+}
