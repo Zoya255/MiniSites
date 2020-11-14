@@ -213,3 +213,9 @@
 *Zoya*
 
 - AnimalBook: update base
+
+## 14.11.2020
+
+*Sergo*
+
+- FontsLib: add fonts
