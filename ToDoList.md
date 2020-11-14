@@ -200,3 +200,16 @@
 - StylesLib: update lib borders.css
 - StylesLib: fix of lib button.css
 - StylesLib: update lib text.css
+
+## 06.11.2020
+
+*Zoya*
+
+- joined project
+- create AnimalBook
+
+## 07.11.2020
+
+*Zoya*
+
+- AnimalBook: update base
