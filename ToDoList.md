@@ -219,3 +219,9 @@
 *Sergo*
 
 - FontsLib: add fonts
+
+## 26.11.2020
+
+*Sergo*
+
+- FontsLib: add fonts
