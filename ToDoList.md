@@ -11,6 +11,7 @@
 
 - add README
 
+
 ## 09.10.2020
 
 *Ploject*
@@ -20,6 +21,7 @@
 *Sergo*
 
 - add PROTON
+
 
 ## 10.10.2020
 
@@ -37,6 +39,7 @@
 - [X] EasyPaint: features for end-user
 - [X] add old music site
 
+
 ## 11.10.2020
 
 *Sergo*
@@ -52,6 +55,7 @@
 - [X] EasyPaint: final plan update
 - [X] add old text site
 
+
 ## 12.10.2020
 
 *Sergo*
@@ -65,6 +69,7 @@
 
 - [ ] add old profnavigator site
 
+
 ## 13.10.2020
 
 *Sergo*
@@ -77,6 +82,7 @@
 - [ ] add external sites
 - [X] final add mechanic of layers
 
+
 ## 14.10.2020
 
 *Sergo*
@@ -87,6 +93,7 @@
 *Plans*
 
 - [ ] rewrite music site
+
 
 ## 15.10.2020
 
@@ -104,6 +111,7 @@
 - [ ] update of codeoon
 - [ ] add guide
 
+
 ## 16.10.2020
 
 *Sergo*
@@ -118,12 +126,14 @@
 - [X] FontsLib: add files of fonts
 - [ ] FontsLib: add lisences for fonts
 
+
 ## 17.10.2020
 
 *Sergo*
 
 - FontsLib: add files of fonts
 - FontsLib: add fonts.css with links of fonts
+
 
 ## 18.10.2020
 
@@ -139,6 +149,7 @@
 - [X] Create base of EasyDictionary
 - [ ] Create backend of EasyDictionary
 - [ ] Add data in DB of EasyDictionary
+
 
 ## 20.10.2020
 
@@ -158,6 +169,7 @@
 
 - [ ] EasyPaint: rename of layers
 
+
 ## 21.10.2020
 
 *Sergo*
@@ -167,6 +179,7 @@
 *Plans*
 
 - [X] StylesLib: add libs
+
 
 ## 22.10.2020
 
@@ -185,11 +198,13 @@
 
 - [ ] FontsLib: link all libs
 
+
 ## 24.10.2020
 
 *Sergo*
 
 - SportChart: add some data
+
 
 ## 25.10.2020
 
@@ -201,6 +216,7 @@
 - StylesLib: fix of lib button.css
 - StylesLib: update lib text.css
 
+
 ## 06.11.2020
 
 *Zoya*
@@ -208,11 +224,13 @@
 - joined project
 - create AnimalBook
 
+
 ## 07.11.2020
 
 *Zoya*
 
 - AnimalBook: update base
+
 
 ## 14.11.2020
 
@@ -220,8 +238,16 @@
 
 - FontsLib: add fonts
 
+
 ## 26.11.2020
 
 *Sergo*
 
 - FontsLib: add fonts
+
+
+## 27.11.2020
+
+*Sergo*
+
+- create EasySpy
