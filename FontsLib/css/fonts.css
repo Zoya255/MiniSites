@@ -54,6 +54,18 @@
 	font-style: normal;
 }
 
+/* -------------------- Bahnschrift -------------------- */
+
+@font-face {
+	font-family: 'Bahnschrift';
+	src: local('Bahnschrift'),
+		 local('Bahnschrift Regular'),
+		 local('Bahnschrift-Regular'),
+		 url('../fonts/Bahnschrift/Bahnschrift.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* -------------------- Calibri -------------------- */
 
 @font-face {
