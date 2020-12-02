@@ -251,3 +251,18 @@
 *Sergo*
 
 - create EasySpy
+- FontsLib: add fonts
+
+
+## 29.11.2020
+
+*Sergo*
+
+- EasySpy: big update - to version 01
+
+
+## 02.12.2020
+
+*Sergo*
+
+- create FarmersMarket
