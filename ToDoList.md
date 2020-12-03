@@ -266,3 +266,10 @@
 *Sergo*
 
 - create FarmersMarket
+
+
+## 03.12.2020
+
+*Sergo*
+
+- EasySpy: big update - to version 02
