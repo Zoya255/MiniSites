@@ -273,3 +273,10 @@
 *Sergo*
 
 - EasySpy: big update - to version 02
+
+
+## 04.12.2020
+
+*Sergo*
+
+- EasySpy: big update - to version 03
