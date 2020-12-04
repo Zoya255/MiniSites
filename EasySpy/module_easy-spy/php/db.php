@@ -5,7 +5,7 @@
 	/* @var $CONF_PASS   */
 
 	require "external/rb.php";
-	require "../config/config.php";
+	require __DIR__."/../config/config.php";
 
 
 	$host = "mysql:host=${CONF_IP};dbname=${CONF_DB_LOG}";

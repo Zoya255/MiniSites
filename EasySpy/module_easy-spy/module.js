@@ -1,9 +1,9 @@
-// ------------------------------- //
-//  EASY SPY VERSION 02 - VENOMIA  //
-//                                 //
-//  Author: Cet500                 //
-//  Date:   03.12.2020             //
-// ------------------------------- //
+// -------------------------------- //
+//  EASY SPY VERSION 03 - VERGILIA  //
+//                                  //
+//  Author: Cet500                  //
+//  Date:   04.12.2020              //
+// -------------------------------- //
 
 window.onload = function() {
     include("module_easy-spy/js/external/jquery-3.5.1.min.js");

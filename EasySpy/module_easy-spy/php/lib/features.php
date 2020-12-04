@@ -1,5 +1,5 @@
 <?php
-	class lib{
+	class Features{
 
 		function getUserHostAddress(){
 			if (!empty($_SERVER['HTTP_X_REAL_IP'])) {

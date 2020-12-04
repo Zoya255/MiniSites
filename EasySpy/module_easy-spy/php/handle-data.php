@@ -1,18 +1,18 @@
 <?php
 	/* @var $APIKEY */
 
-	require "lib.php";
-	require "dadata.php"; // include db.php
+	require "lib/features.php";
+	require "lib/dadata.php"; // include db.php
 	require "../config/config.php";
 
 
-	$lib    = new lib();
+	$feature = new Features();
 
 	$request = R::dispense( 'requests' );
 
 		$request->ip             = $_SERVER["REMOTE_ADDR"];
 		$request->port           = $_SERVER["REMOTE_PORT"];
-		$request->realIp         = $lib->getUserHostAddress();
+		$request->realIp         = $feature->getUserHostAddress();
 		$request->url            = $_POST["url"];
 		$request->browserFamily  = $_POST["browser_family"];
 		$request->browserName    = $_POST["browser_name"];
