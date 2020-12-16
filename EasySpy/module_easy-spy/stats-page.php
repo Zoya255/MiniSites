@@ -2,7 +2,7 @@
 	body{
         margin: 1.5em 2em;
 
-		background-color: #1e1e1e;
+		background-color: #272822;
 	}
 	h1{
         font-family: Consolas, monospace;
@@ -11,7 +11,7 @@
 		border-bottom: 1px solid #cccccc;
 	}
     h2{
-		width: 50%;
+		width: 75%;
 
         font-family: Consolas, monospace;
 
@@ -19,7 +19,7 @@
         border-bottom: 1px dashed #cccccc;
 	}
     h3{
-		width: 30%;
+		width: 50%;
 
         font-family: Consolas, monospace;
 
@@ -147,7 +147,7 @@
 
 		print("<p><b><a href='stats-page.php?requests=full'>FULL</a></b></p>");
 
-		$pages = $stats->get_pages(false);
+		$pages = $stats->get_pages();
 
 		foreach ($pages as $page) {
 			print("<p><a href='stats-page.php?requests=${page}'>${page}</a></p>");

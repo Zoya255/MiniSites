@@ -1,8 +1,8 @@
 // -------------------------------- //
-//  EASY SPY VERSION 03 - VERGILIA  //
+//  EASY SPY VERSION 04 - AQUA      //
 //                                  //
 //  Author: Cet500                  //
-//  Date:   04.12.2020              //
+//  Date:   16.12.2020              //
 // -------------------------------- //
 
 window.onload = function() {

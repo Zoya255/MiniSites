@@ -31,9 +31,17 @@
 
 			$array = json_decode( $json, true );
 
-			$geo_ip = R::dispense( 'ips' );
+			if ( $array["location"] == null ) {
+				if ($is_city_return) {
+					return null;
+				}
 
-				$geo_ip->ip               = $_SERVER["REMOTE_ADDR"];
+				return false;
+			}
+			else {
+				$geo_ip = R::dispense( 'ips' );
+
+				$geo_ip->ip               = $ip;
 
 				$geo_ip->postal_code      = $array["location"]["data"]["postal_code"];
 				$geo_ip->country          = $array["location"]["data"]["country"];
@@ -46,13 +54,15 @@
 				$geo_ip->geo_lat          = $array["location"]["data"]["geo_lat"];
 				$geo_ip->geo_lon          = $array["location"]["data"]["geo_lon"];
 
-			R::store( $geo_ip );
+				R::store( $geo_ip );
+			}
 
 			if ($is_city_return) {
 				return $array["location"]["data"]["city"];
 			}
 
 			return true;
+
 		}
 
 	}
