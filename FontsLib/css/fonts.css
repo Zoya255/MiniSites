@@ -1226,6 +1226,15 @@
 	font-style: normal;
 }
 
+/* -------------------- Rozovii Chulok -------------------- */
+
+@font-face {
+	font-family: 'Rozovii Chulok';
+	src: local('Rozovii Chulok'), 
+		 url('../fonts/Rozovii Chulok/Rozovii Chulok.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
 
 /* -------------------- Segoe Script -------------------- */
 
