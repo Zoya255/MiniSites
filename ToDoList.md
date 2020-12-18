@@ -287,3 +287,10 @@
 *Sergo*
 
 - EasySpy: small update - to version 04
+
+
+## 18.12.2020
+
+*Sergo*
+
+- FontsLib: add new font - Rozovii Chulok
