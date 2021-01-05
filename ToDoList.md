@@ -294,3 +294,11 @@
 *Sergo*
 
 - FontsLib: add new font - Rozovii Chulok
+
+
+## 05.01.2021
+
+*Sergo*
+
+- add Chocolate - site based on random disign
+- Chocolate: add base adaptive
