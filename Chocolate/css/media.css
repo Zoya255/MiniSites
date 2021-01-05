@@ -1,0 +1,42 @@
+/* ------------------------------- media ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+@media screen and (min-width: 1600px) {
+
+	.global__body{
+		width: 50%;
+	}
+
+}
+@media screen and (min-width: 1350px) and (max-width: 1600px) {
+
+	.global__body{
+		width: 60%;
+	}
+
+}
+@media screen and (min-width: 1150px) and (max-width: 1350px) {
+
+	.global__body{
+		width: 70%;
+	}
+
+}
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+
+	.global__body{
+		width: 80%;
+	}
+
+}
+@media screen and (max-width: 1000px) {
+
+	.global__body{
+		width: 100%;
+	}
+	.global__aside{
+		display: none;
+	}
+
+}

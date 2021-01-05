@@ -1,0 +1,121 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	display: grid;
+	grid-template-areas: "aside main";
+
+	margin: 0 auto;
+	width: 50%;
+
+	background-image: url(../img/fon.jpg);
+}
+
+/* -------------------- aside -------------------- */
+
+.global__aside{
+	position: sticky;
+	padding-top: 47px;
+
+	height: 25vh;
+
+	font-family: Arial, sans-serif;
+
+	background-color: rgba(234, 231, 226, 1);
+}
+.global__aside-header{
+	text-align: center;
+
+	border-bottom: 1px solid #666666;
+}
+.global__aside-list{
+	padding: 0;
+
+	list-style: none;
+}
+.global__aside-list-item{
+	margin: 4px;
+
+	font-size: 1em;
+
+	border-radius: 10px;
+
+	border: 1px solid #999999;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.global__aside-list-item:hover{
+	background-color: rgba(255, 255, 255, 1);
+}
+.global__aside-list-item:hover a{
+	text-decoration: underline;
+}
+.global__aside-list-item-link{
+	display: block;
+
+	padding: 4px 10px;
+
+	text-decoration: none;
+
+	color: #000000;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	padding: 0 40px;
+
+	font-family: Calibri, serif;
+
+	background-color: rgba(234, 231, 226, 1);
+}
+
+.global__main-header{
+	font-family: Arial, sans-serif;
+
+	border-bottom: 1px solid #666666;
+}
+.global__main-subheader{
+	font-family: Arial, sans-serif;
+}
+
+.global__main-text{
+	font-size: 1.05em;
+}
+.global__main-notice{
+	padding: 5px;
+	padding-left: 15px;
+
+	border-left: 5px solid burlywood;
+	background-color: rgba(222, 184, 135, 0.4);
+}
+.global__main-list{
+	font-size: 1.05em;
+}
+.global__main-list-item{
+	margin: 16px 0;
+}
+
+.global__main-image{
+	display: block;
+
+	margin: 10px auto;
+
+	width: 100%;
+
+	border: 1px solid #666666;
+}
+
+.global__main-table{
+	border-collapse: collapse;
+}
+.global__main-table th{
+	font-size: 1.05em;
+
+	border: 1px solid #999999;
+}
+.global__main-table td{
+	padding: 5px;
+
+	border: 1px solid #999999;
+}
