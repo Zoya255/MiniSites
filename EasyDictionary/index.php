@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<title>Простой переводчик</title>
 
-		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="css/global.css">
 	</head>
 
 	<body class="global__body">
 		<header class="global__header">
 			<h1 class="global__header-logo">
-				<a href="index.html">Простой переводчик</a>
+				<a href="index.php">Простой переводчик</a>
 			</h1>
 		</header>
 
@@ -20,15 +20,11 @@
 
 				<ul class="global__nav-list">
 					<li class="global__nav-list-item">
-						<a href="translate.html">переводчик</a>
+						<a href="ru-en-dist.php">рус-англ словарь</a>
 					</li>
 
 					<li class="global__nav-list-item">
-						<a href="ru-en-dist.html">рус-англ словарь</a>
-					</li>
-
-					<li class="global__nav-list-item">
-						<a href="en-ru-dist.html">англ-рус словарь</a>
+						<a href="en-ru-dist.php">англ-рус словарь</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,21 +3,21 @@
 /* -------------------- body -------------------- */ 
 
 .global__body{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 
 	display: grid;
 	grid-template-areas: 'header header header'
 						 'aside  main   none'
 						 'footer footer footer';
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
 	grid-template-rows: auto 1fr;
 
 	height: 100vh;
 
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 
-	background-color: #f9f9c5;
+	background-color: #fafad2;
 }
 
 /* -------------------- header -------------------- */
@@ -25,22 +25,26 @@
 .global__header{
 	grid-area: header;
 
-	text-align: center;
 	position: sticky;
-	top: 0px;
+	top: 0;
 
-	border-bottom: 1px solid #8e8e65;
+	text-align: center;
+
+	border-bottom: 1px solid #a6a681;
 	background-color: #ffffa6;
 }
 .global__header-logo{
 	grid-area: logo;
 
-	margin: 0px;
+	margin: 3px 0;
 
-	text-decoration: none;
-	font-family: Consolas;
+	font-family: Comfortaa, cursive;
 	font-size: 1.7em;
-	font-style: italic;
+}
+.global__header-logo a{
+	text-decoration: none;
+
+	color: #000000;
 }
 
 /* -------------------- aside -------------------- */
@@ -59,33 +63,32 @@
 .global__aside-nav{
 	grid-area: nav;
 
-	top: 44px;
+	top: 50px;
 	position: sticky;
 
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 
-	border: 1px solid #8e8e65;
-	background: #ffffbf;
+	border: 1px solid #a6a681;
+	background: #fafad2;
 }
 .global__aside-nav h3{
-	margin: 0px;
+	margin: 0;
 	padding: 6px 20px;
 
 	text-align: center;
 	font-size: 1.3em;
-	font-family: Consolas;
-	font-style: italic;
+	font-family: Comfortaa, cursive;
 
-	border-bottom: 1px dashed #8e8e65;
+	border-bottom: 1px dashed #a6a681;
 	background: #ffffa6;
 }
 
 /* -------------------- nav-list -------------------- */
 
 .global__nav-list{
-	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 
 	list-style: none;
 }
@@ -95,7 +98,7 @@
 	border-bottom: 1px dashed #999999;
 }
 .global__nav-list-item:last-child{
-	border-bottom: 0px dashed #999999;
+	border-bottom: 0 dashed #999999;
 }
 .global__nav-list-item a{
 	display: block;
@@ -122,22 +125,38 @@
 .global__main{
 	grid-area: main;
 
-	padding-left: 15px;
-	padding-right: 15px;
-
-	border-left: 1px solid #8e8e65;
-	border-right: 1px solid #8e8e65;
-	background-color: #ffffbf;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 /* -------------------- content -------------------- */
 
 .global__main-header{
-	text-align: center;
-	font-family: Consolas;
-	font-style: italic;
+	padding-bottom: 3px;
 
-	border-bottom: 1px dashed #8e8e65;
+	text-align: center;
+	font-family: Comfortaa, cursive;
+
+	border-bottom: 1px dashed #a6a681;
+}
+.global__main-table{
+	border-collapse: collapse;
+}
+.global__main-table th{
+	padding: 5px;
+
+	border: 1px solid #a6a681;
+}
+.global__main-table td{
+	padding: 3px 5px;
+
+	border: 1px solid #a6a681;
+}
+.global__main-table tr:hover{
+	background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.global__main-table tr:nth-child(2n){
+	background-color: rgba(0, 0, 0, 0.075);
 }
 
 /* -------------------- footer -------------------- */
@@ -147,6 +166,6 @@
 
 	text-align: center;
 
-	border-top: 1px solid #8e8e65;
+	border-top: 1px solid #a6a681;
 	background-color: #ffffa6;
 }
