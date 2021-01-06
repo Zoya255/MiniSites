@@ -309,3 +309,7 @@
 *Sergo*
 
 - EasySpy: cosmetic update - to version 05
+- EasyDictionary: full update
+- EasyDictionary: work code
+- EasyDictionary: add data
+- EasyDictionary: create DB
