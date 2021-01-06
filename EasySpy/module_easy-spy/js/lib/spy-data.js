@@ -1,10 +1,10 @@
 class SpyData extends Spy{
 
     data (arr_bool = true) {
-        let user = detect.parse(navigator.userAgent)
-        const screenWidth = window.screen.width
+        let user           = detect.parse(navigator.userAgent)
+        const screenWidth  = window.screen.width
         const screenHeight = window.screen.height
-        const screenDepth = window.screen.pixelDepth
+        const screenDepth  = window.screen.pixelDepth
 
         if (arr_bool) {
             let array = [
@@ -68,6 +68,7 @@ class SpyData extends Spy{
         const screenDepth  = window.screen.pixelDepth
         const is_log       = this.bool_log
         let url            = window.location.href
+        let th             = this;
 
         $.ajax({
             method   : "POST",
@@ -92,15 +93,18 @@ class SpyData extends Spy{
             success  : function (data, textStatus) {
                 if (is_log) {
                     console.log(textStatus)
+                    th.print(textStatus, "success");
                 }
             },
             error    : function (jqXHR, textStatus) {
                 if (is_log) {
                     console.error(textStatus)
+                    th.print(textStatus, "error");
                 }
             },
         });
     }
+
 
     dump_log() {
         let data = this.data(true)
@@ -109,6 +113,7 @@ class SpyData extends Spy{
             this.log(data[i]);
         }
     }
+
 
     dump_print () {
         let data = this.data(true)

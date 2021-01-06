@@ -1,0 +1,127 @@
+/* ------------------------------- dark ------------------------------- */
+
+/* -------------------- global -------------------- */
+
+body{
+    margin: 1.5em 2em;
+
+	font-family: Consolas, monospace;
+
+	color: #cccccc;
+	background-color: #272822;
+}
+
+/* -------------------- titles -------------------- */
+
+h1, h2, h3, h4, h5, h6{
+	padding: 5px 0;
+
+	font-family: Comfortaa, cursive;
+}
+h1{
+	border-bottom: 1px solid #cccccc;
+}
+h2{
+	width: 75%;
+
+    border-bottom: 1px dashed #cccccc;
+}
+h3{
+	width: 50%;
+
+    border-bottom: 1px dashed #cccccc;
+}
+
+/* -------------------- text -------------------- */
+
+b{
+	font-size: 1.2em;
+}
+a{
+	text-decoration: none;
+
+	color: #84c3be;
+}
+
+/* -------------------- tables -------------------- */
+
+table{
+	border-collapse: collapse;
+}
+td{
+	padding: 2px 8px;
+
+    font-family: Consolas, monospace;
+	white-space: nowrap;
+
+	color: #cccccc;
+}
+
+/* -------------------- highlight -------------------- */
+
+.debug{
+	color: #aaaaaa;
+}
+.info{
+	color: #cccccc;
+}
+.success{
+	color: #329932;
+}
+.warn{
+	color: #c98236;
+}
+.error{
+	color: #c93836;
+}
+
+/* -------------------- highlight -------------------- */
+
+.btn{
+	display: inline-block;
+
+	padding: 10px 20px;
+
+	font-size: 1.1em;
+
+	border-radius: 50px;
+
+	color: #000000;
+	background-color: #84c3be;
+}
+.btn:hover{
+	background-color: #a7d4d0;
+}
+.btn:active{
+	background-color: #62b3ac;
+}
+
+/* -------------------- horizontal line -------------------- */
+
+hr{
+	margin-left: 0;
+	border: 1px solid #666666;
+}
+.hr-sm{
+	width: 25%;
+}
+.hr-md{
+	width: 50%;
+}
+.hr-bg{
+	width: 75%;
+}
+.hr-lg{
+	width: 100%;
+}
+
+/* -------------------- special -------------------- */
+
+.dot{
+	position: absolute;
+
+	width: 3px;
+	height: 3px;
+
+	background-color: rgba(255, 255, 255, 0.3);
+}

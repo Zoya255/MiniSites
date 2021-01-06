@@ -31,6 +31,9 @@ class Spy {
 			else if ( level === "info" ){
 				$("body").append(`<p class='info'>${date} | ${message}</p>`);
 			}
+			else if ( level === "success" ){
+				$("body").append(`<p class='success'>${date} | ${message}</p>`);
+			}
 			else if ( level === "warn" ){
 				$("body").append(`<p class='warn'>${date} | ${message}</p>`);
 			}

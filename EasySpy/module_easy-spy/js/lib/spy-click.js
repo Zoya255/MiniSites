@@ -8,6 +8,7 @@ class SpyClick extends Spy{
         });
     }
 
+
     add_click(x, y) {
         let coords = x + " " + y;
 
@@ -17,9 +18,11 @@ class SpyClick extends Spy{
         this.ajax(x, y);
     }
 
+
     ajax(x, y) {
         const is_log = this.bool_log
-        let url = window.location.href
+        let url      = window.location.href
+        let th       = this;
 
         $.ajax({
             method   : "POST",
@@ -32,11 +35,13 @@ class SpyClick extends Spy{
             success  : function (data, textStatus) {
                 if (is_log) {
                     console.log(textStatus)
+                    th.print(textStatus, "success");
                 }
             },
             error    : function (jqXHR, textStatus) {
                 if (is_log) {
                     console.error(textStatus)
+                    th.print(textStatus, "error");
                 }
             },
         });

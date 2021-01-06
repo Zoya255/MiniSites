@@ -1,60 +1,4 @@
-<style>
-	body{
-        margin: 1.5em 2em;
-
-		background-color: #272822;
-	}
-	h1{
-        font-family: Consolas, monospace;
-
-        color: #cccccc;
-		border-bottom: 1px solid #cccccc;
-	}
-    h2{
-		width: 75%;
-
-        font-family: Consolas, monospace;
-
-        color: #cccccc;
-        border-bottom: 1px dashed #cccccc;
-	}
-    h3{
-		width: 50%;
-
-        font-family: Consolas, monospace;
-
-        color: #cccccc;
-    	border-bottom: 1px dashed #cccccc;
-	}
-	p{
-		font-family: Consolas, monospace;
-
-		color: #cccccc;
-	}
-	b{
-		font-size: 1.2em;
-	}
-	a{
-		color: #cccccc;
-		text-decoration: none;
-	}
-	td{
-		padding: 2px 8px;
-
-        font-family: Consolas, monospace;
-		white-space: nowrap;
-
-		color: #cccccc;
-	}
-	div{
-		position: absolute;
-
-		width: 3px;
-		height: 3px;
-
-		background-color: rgba(255, 255, 255, 0.3);
-	}
-</style>
+<link rel="stylesheet" href="css/dark.css">
 
 <?php
 	require "php/lib/stats.php";
@@ -68,14 +12,14 @@
 			$clicks = $stats->get_clicks_all();
 
 			foreach ($clicks as $click) {
-				print("<div style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
+				print("<div class='dot' style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
 			}
 		}
 		else{
 			$clicks = $stats->get_clicks($_GET['clickMap']);
 
 			foreach ($clicks as $click) {
-				print("<div style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
+				print("<div class='dot' style='top: ${click["click_y"]}; left: ${click["click_x"]}'></div>");
 			}
 		}
 
@@ -89,11 +33,15 @@
 
 			print("<h3>Windows</h3>");
 
-			echo $stats->get_requests_all("Win32", "full", true);
+			echo $stats->get_requests_all("Windows", "full", true);
 
 			print("<h3>Linux</h3>");
 
 			echo $stats->get_requests_all("Linux x86_64", "full", true);
+
+			print("<h3>Mac OS</h3>");
+
+			echo $stats->get_requests_all("Mac OS", "full", true);
 
 
 			print("<h2>Mobile</h2>");
@@ -134,7 +82,9 @@
 
 		print("<h1>ClickMaps</h1>");
 
-		print("<p><b><a href='stats-page.php?clickMap=full'>FULL</a></b></p>");
+		print("<p><a class='btn' href='stats-page.php?clickMap=full'>Full data</a></p>");
+
+		print("<hr class='hr-md'>");
 
 		$pages = $stats->get_pages(true);
 
@@ -145,7 +95,9 @@
 
 		print("<h1>RequestTables</h1>");
 
-		print("<p><b><a href='stats-page.php?requests=full'>FULL</a></b></p>");
+		print("<p><a class='btn' href='stats-page.php?requests=full'>Full data</a></p>");
+
+		print("<hr class='hr-md'>");
 
 		$pages = $stats->get_pages();
 

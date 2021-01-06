@@ -27,6 +27,12 @@
 				if ($os_platform == "Android") {
 					$data = R::getAll("SELECT COUNT(`requests`.`ip`) num, `requests`.`ip`, `url`, `browser_name`, `os_name`, `screen_width`, `screen_height`, `city_type_full`, `city` FROM `requests`, `ips` WHERE `os_name` LIKE 'Android%' AND `requests`.`ip` = `ips`.`ip` GROUP BY `ip`, `browser_name` ORDER BY `num` DESC;" );
 				}
+				elseif ($os_platform == "Mac OS") {
+					$data = R::getAll("SELECT COUNT(`requests`.`ip`) num, `requests`.`ip`, `url`, `browser_name`, `os_name`, `screen_width`, `screen_height`, `city_type_full`, `city` FROM `requests`, `ips` WHERE `os_name` LIKE 'Mac OS%' AND `requests`.`ip` = `ips`.`ip` GROUP BY `ip`, `browser_name` ORDER BY `num` DESC;" );
+				}
+				elseif ($os_platform == "Windows") {
+					$data = R::getAll("SELECT COUNT(`requests`.`ip`) num, `requests`.`ip`, `url`, `browser_name`, `os_name`, `screen_width`, `screen_height`, `city_type_full`, `city` FROM `requests`, `ips` WHERE `os_name` LIKE 'Windows%' AND `requests`.`ip` = `ips`.`ip` GROUP BY `ip`, `browser_name` ORDER BY `num` DESC;" );
+				}
 				else{
 					$data = R::getAll("SELECT COUNT(`requests`.`ip`) num, `requests`.`ip`, `url`, `browser_name`, `os_name`, `screen_width`, `screen_height`, `city_type_full`, `city` FROM `requests`, `ips` WHERE `os_platform` = ? AND `requests`.`ip` = `ips`.`ip` GROUP BY `ip`, `browser_name` ORDER BY `num` DESC;", [ $os_platform ] );
 				}
