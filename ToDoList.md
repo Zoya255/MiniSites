@@ -302,3 +302,10 @@
 
 - add Chocolate - site based on random disign
 - Chocolate: add base adaptive
+
+
+## 06.01.2021
+
+*Sergo*
+
+- EasySpy: cosmetic update - to version 05
