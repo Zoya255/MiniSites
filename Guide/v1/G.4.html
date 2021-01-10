@@ -1,0 +1,325 @@
+<!docktype HTML>
+
+<html>
+
+	<head>
+		<title>
+		Учебник по HTML5
+		</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<link rel="stylesheet" type="text/css" href="G.global.css">
+		<script type="text/javascript" src="G.4.test.js"></script>
+	</head>
+	
+	<body>
+		<center>
+		<table border=1>
+			<tr class="top-menu">
+				<td width="1920px" colspan="3">
+				
+					<p class="button_HTML5"  style="text-align:center;"><a href="G.1.html" target="_blank" 
+					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000; 
+					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">HTML5</a></p>
+					
+					<p class="button_CSS3"  style="text-align:center;"><a href="GS.1.html" target="_blank" 
+					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000; 
+					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">CSS3</a></p>
+					
+					<center>
+						<p><h1>Учебник по HTML5</h1></p>
+						<p><h2>Основные теги</h2></p>
+						<p>Special for Sych</p></td>
+					</center>
+			</tr>
+			<tr>
+				<td width="20%" height="400px" class="menu" rowspan="3">Навигация по сайту:
+					<ul>
+						<li><p><a href="G.1.html">Главная страница</a></p>
+						<li><p><a href="G.2.html">Введение</a></p>
+						<li><p><a href="G.3.html">Основные теги</a></p>
+						<li><p><a href="G.4.html">Форматирование текста</a></p>
+						<li><p><a href="G.5.html">Выравнивание</a></p>
+						<li><p><a href="G.6.html">Картинки</a></p>
+						<li><p><a href="G.7.html">Аудио</a></p>
+						<li><p><a href="G.8.html">Видео</a></p>
+						<li><p><a href="G.9.html">Таблицы</a></p>
+						<li><p><a href="G.10.html">Табличная вёрстка</a></p>
+						<li><p><a href="G.11.html">Прочие ништяки</a></p>
+					</ul>
+				</td>
+				<td width="80%" colspan="2" >
+					<p>Текст - это основа основ. Поэтому стоит начать с него. Думаю, все работали в MS Word (или в чём-то похожем) и хорошо знакомы с таким понятиям, как форматирование текста.
+					Разберёмся, как провернуть такое в HTML. Левая колонка таблицы содержит то, как это выглядит в виде кода, а правая - то, как это отображается в браузере.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%">
+					<ul>
+						<li>&lt;p&gt;Абцаз&lt;/p&gt;
+						<li>&lt;strong&gt;Жирный шрифт&lt;/strong&gt;
+						<li>&lt;em&gt;Курсив&lt;/em&gt;
+						<li>&lt;strike&gt;Зачёркнутый&lt;/strike&gt;
+						<li>&lt;u&gt;Подчёркнутый&lt;/u&gt;
+						<li>&lt;big&gt;Большой шрифт&lt;/big&gt;
+						<li>&lt;small&gt;Маленький шрифт&lt;/small&gt;
+						<li>&lt;code&gt;Код&lt;/code&gt;
+						<li>&lt;sup&gt;Верхний индекс&lt;/sup&gt;
+						<li>&lt;sub&gt;Нижний индекс&lt;/sub&gt;
+						<li>&lt;tt&gt;Моноширинный шрифт&lt;/tt&gt;
+					</ul>
+				</td>
+				<td width="40%">
+					<ul>
+						<li><p>Абцаз</p>
+						<li><strong>Жирный шрифт</strong>
+						<li><em>Курсив</em>
+						<li><strike>Зачёркнутый</strike>
+						<li><u>Подчёркнутый</u>
+						<li><big>Большой шрифт</big>
+						<li><small>Маленький шрифт</small>
+						<li><code>Код</code>
+						<li><sup>Верхний индекс</sup>
+						<li><sub>Нижний индекс</sub>
+						<li><tt>Моноширинный шрифт</tt>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="80%" colspan="2">
+					<p>Довольно много тегов, не так-ли? А ведь вариантов их использования становиться куда больше, если учесть возможность их вложения друг в друга.
+					Но это лишь форматирование собственно текста. Отдельно стоит рассмотреть заголовки. "Из коробки" они бывают шести уровней, от первого (самого большого), до шестого (самого маленького).
+					Хотя с помощью CSS и управления размером текста, этих заголовков может быть сколько угодно. А как это сделать мы рассмотрим потом.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="menu" rowspan="6">
+				</td>
+				<td width="40%">
+					<ul>
+						<li>&lt;h1&gt;Заголовок первого уровня&lt;/h1&gt;
+						<li>&lt;h2&gt;Заголовок второго уровня&lt;/h2&gt;
+						<li>&lt;h3&gt;Заголовок третьего уровня&lt;/h3&gt;
+						<li>&lt;h4&gt;Заголовок четвёртого уровня&lt;/h4&gt;
+						<li>&lt;h5&gt;Заголовок пятого уровня&lt;/h5&gt;
+						<li>&lt;h6&gt;Заголовок шестого уровня&lt;/h6&gt;
+					</ul>
+				</td>
+				<td width="40%">
+					<ul>
+						<li><h1>Заголовок первого уровня</h1>
+						<li><h2>Заголовок второго уровня</h2>
+						<li><h3>Заголовок третьего уровня</h3>
+						<li><h4>Заголовок четвёртого уровня</h4>
+						<li><h5>Заголовок пятого уровня</h5>
+						<li><h6>Заголовок шестого уровня</h6>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="80%" colspan="2">
+					<p>Но и это ещё не всё. Почему? Потому что мы ещё не рассмотрели выравнивание. 
+					Каждый, кто работал в MS Word или в чём-то похожем, знает, что выравнивание бывает 4 видов и вызывается через панель инструментов. 
+					А как провернуть подобное в HTML? С помощью тегов? Нет, на этот случай существуют специальные атрибуты. <br>
+					<strong>Атрибуты</strong> - это некоторые параметры для тегов, которые встраиваются в них и влияют на итоговое отображение элемнтов. 
+					Они бывают общие (для всех или почти всех тегов) и специальные (только для тегов). Атрибуты выравнивания относятся к общим 
+					и могут влиять на большинство элемнтов (текст, картинки, видео и прочее, это мы расмотрим позже). Итак, перейдём к делу: </p>
+				</td>
+			<tr>
+				<td width="40%">
+					<ul>
+						<li>left
+						<ul>
+							<li><p>&lt;p align="left"&gt;Пример текста&lt;/p&gt;</p>
+						</ul>
+						<li>center
+						<ul>
+							<li><p>&lt;p align="center"&gt;Пример текста&lt;/p&gt;</p>
+						</ul>
+						<li>right
+						<ul>
+							<li><p>&lt;p align="right"&gt;Пример текста&lt;/p&gt;</p>
+						</ul>
+						<li>justify
+						<ul>
+							<li><p>&lt;p align="justify"&gt;Пример текста&lt;/p&gt;</p>
+						</ul>
+					</ul>
+				</td>
+				<td width="40%">
+					<ul>
+						<li>по левому краю
+						<ul>
+							<li><p align="left">Пример текста</p>
+						</ul>
+						<li>по центру
+						<ul>
+							<li><p align="center">Пример текста</p>
+						</ul>
+						<li>по правому краю
+						<ul>
+							<li><p align="right">Пример текста</p>
+						</ul>
+						<li>по ширине
+						<ul>
+							<li><p align="justify">Пример текста</p>
+						</ul>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="80%" colspan="2">
+					<p>Как можно заметить, использовать атрибуты не сложнее, чем теги, ибо все они строятся по единому принципу:</p>
+					<p>&lt;тег атрибут1="значение атрибута1" атрибут2="значение атрибута2 ... атрибутN="значение атрибутаN"&gt;контент&lt;/тег&gt;</p>
+					<p>Теперь разберёмся, как использовать данные теги в общем. Например, расмотрим следующий код:</p>
+					<p>
+						<hr>
+							<code>
+								<pre>
+					&lt;html&gt;						
+						&lt;head&gt;					
+							&lt;title&gt;				
+							Форматирование текста		
+							&lt;/title&gt;				
+						&lt;/head&gt;					
+						&lt;body&gt;					
+							&lt;h1 align="center"&gt;Пример форматирования текста&lt;/h1&gt;
+							&lt;h2&gt;Что такое HTML?&lt;/h2&gt;
+							&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt; — стандартизированный язык разметки документов во Всемирной паутине.&lt;/p&gt;
+							&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt; - это не язык программирования, я язык гипертекстовой разметки.&lt;/p&gt;
+							&lt;p&gt;Код HTML5 состоит из &lt;strong&gt;&lt;em&gt;тегов&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+						&lt;/body&gt;
+					&lt;/html&gt;</pre>
+							</code>
+						<hr>
+					</p>
+					<p>Здесь мы просто распологаем нужные теги между &lt;body&gt; и &lt;/body&gt;, 
+					а в между этими тегами пишем текст, над которым нужно совершить то или иное действие.
+					В целом, ничего сложного, главное не запутаться в тегах и соблюдать порядок вложенности.</p>
+					<p>В браузере он отобразиться вот так:</p>
+					<p>
+						<hr>
+							<h1 align="center">Пример форматирования текста</h1>
+							<h2>Что такое HTML?</h2>
+							<p><strong>HTML</strong> — стандартизированный язык разметки документов во Всемирной паутине.</p>
+							<p><strong>HTML</strong> - это не язык программирования, я язык гипертекстовой разметки.</p>
+							<p>Код HTML5 состоит из <strong><em>тегов</em></strong>.</p>
+						<hr>
+					</p>
+					<p>Для лучшего понимания приведём ещё один пример. На этот раз приведём простую задачку из математики.</p>
+					<p>
+						<hr>
+							<code>
+								<pre>
+					&lt;html&gt;						
+						&lt;head&gt;					
+							&lt;title&gt;				
+							Решение 		
+							&lt;/title&gt;				
+						&lt;/head&gt;					
+						&lt;body&gt;					
+							&lt;h2 align="center"&gt;Задача&lt;/h2&gt;
+							&lt;h3&gt;Решить квадратное уравнение:&lt;/h3&gt;
+							&lt;p&gt;x&lt;sup&gt;2&lt;/sup&gt;+3x-4=0&lt;/p&gt;
+							&lt;h3&gt;Решение:&lt;/h3&gt;
+							&lt;h4&gt;1)Запишем уравнение:&lt;/h4&gt;
+							&lt;p&gt;x&lt;sup&gt;2&lt;/sup&gt;+3x-4&lt;/p&gt;
+							&lt;h4&gt;2)Найдём дискриминант:&lt;/h4&gt;
+							&lt;p&gt;D=3&lt;sup&gt;2&lt;/sup&gt;-4*1*(-4)&lt;/p&gt;
+							&lt;p&gt;D=9+16&lt;/p&gt;
+							&lt;p&gt;D=25&lt;/p&gt;
+							&lt;h4&gt;3)Найдём корни уравнения:&lt;/h4&gt;
+							&lt;p&gt;x&lt;sub&gt;1&lt;/sub&gt;=-3+√25/2*1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;1&lt;/sub&gt;=-3+5/2*1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;1&lt;/sub&gt;=2/2&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;1&lt;/sub&gt;=1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt;=-3-√25/2*1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt;=-3-5/2*1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt;=-8/2&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt;=-4&lt;/p&gt;
+							&lt;h3&gt;Ответ:&lt;/h3&gt;
+							&lt;p&gt;x&lt;sub&gt;1&lt;/sub&gt;=1&lt;/p&gt;
+							&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt;=-4&lt;/p&gt;
+						&lt;/body&gt;
+					&lt;/html&gt;</pre>
+							</code>
+						<hr>
+					</p>
+					<p>В браузере это отобразиться вот так:</p>
+						<hr>
+							<h2 align="center">Задача</h2>
+							<h3>Решить квадратное уравнение:</h3>
+							<p>x<sup>2</sup>+3x-4=0</p>
+							<h3>Решение:</h3>
+							<h4>1)Запишем уравнение:</h4>
+							<p>x<sup>2</sup>+3x-4=0</p>
+							<h4>2)Найдём дискриминант:</h4>
+							<p>D=3<sup>2</sup>-4*1*(-4)</p>
+							<p>D=9+16</p>
+							<p>D=25</p>
+							<h4>3)Найдём корни уравнения:</h4>
+							<p>x<sub>1</sub>=-3+√25/2*1</p>
+							<p>x<sub>1</sub>=-3+5/2*1</p>
+							<p>x<sub>1</sub>=2/2</p>
+							<p>x<sub>1</sub>=1</p>
+							<p>x<sub>1</sub>=-3-√25/2*1</p>
+							<p>x<sub>1</sub>=-3-5/2*1</p>
+							<p>x<sub>1</sub>=-8/2</p>
+							<p>x<sub>1</sub>=-4</p>
+							<h3>Ответ:</h3>
+							<p>x<sub>1</sub>=1</p>
+							<p>x<sub>1</sub>=-4</p>
+						<hr>
+					<p>Как можно заметить, в данном примере мы активно используем теги &lt;p&gt;, &lt;sub&gt; и &lt;sub&gt;. 
+					Первым мы создаём строки текста, а вторым и третиьм - подстрочные и надстрочные знаки соответственно. 
+					Пока что мы не будем рассматривать изменения цвета, типа или размера шрифта, это мы рассмотим позже.
+					А пока что рекомендуем попрактиковаться и создать Web-страницу со следующим текстом:</p>
+						<hr>
+					<h1 align="center">Три калача и одна баранка.</h1>
+					<h2>Русская сказка</h2>
+					<p>Одному мужику <big><strong>очень</strong></big> <em>хотелось есть</em>.</p>
+					<p>Он купил <u>один</u> калач и съел - ему всё ещё <em>хотелось есть</em>.</p>
+					<p>Он купил <u>второй</u> калач и съел - ему всё ещё <em>хотелось есть</em>.</p>
+					<p>Он купил <u>третий</u> калач и съел - ему всё ещё <em>хотелось есть</em>.</p>
+					<p>Потом он купил баранок и, когда сьел одну, <em>стал сыт</em>. Тогда мужик ударил себя по голове и сказал:</p>
+					<p><strong>-Экой я дурак!</strong> Что ж я напрасно сьел столько калачей. Мне надо было сначала сьесть <u>одну</u> баранку.</p>
+						<hr>
+					<p>А после выполнения задания, рекомендуем пройти тест и затем перейти к следующей теме.</p>
+			</tr>
+			<tr>
+				<td width="80%" colspan="2" class="menu">
+					<center>			
+						<p style="font-size: 25px;font-weight: bold;padding-top: 2px;" id="time">Затрачено времени: 0 сек</p>
+						<p style="font-size: 25px;font-weight: bold;padding-top: 2px;" id="result"></p>
+						<p style="font-size: 25px;font-weight: bold;padding-top: 2px;" id="question"></p>
+						<button onclick="check(1)" class="oganesyan" id="option1"></button>
+						<button onclick="check(2)" class="oganesyan" id="option2"></button>
+						<button onclick="check(3)" class="oganesyan" id="option3"></button>
+						<button onclick="check(4)" class="oganesyan" id="option4"></button>
+					</center><br><br><br>
+					<center>
+						<button id="start" class="button-next" onclick="check(0)">Пройти тест по теме</button>
+						<script type="text/javascript"> var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='oganesyan' href='" + curent_url + "'>Начать сначала</a>"); </script>
+					</center><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td width="80%" colspan="2">
+					<hr>
+						<p class="button-next"><a href="G.5.html" target="_self">Следующая часть</a></p>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td class="down-menu" width="100%" colspan="3">
+					<center>
+						<p>Корляков С. ИС-21</p>
+						<p>2018</p>
+					</center>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+	
+</html>
