@@ -320,3 +320,5 @@
 *Sergo*
 
 - add old project - Guide V1 ( legacy code from 2th course )
+- Guide: rename V1 -> V1-legacy
+- Guide: full refactoring V1
