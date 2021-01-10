@@ -313,3 +313,10 @@
 - EasyDictionary: work code
 - EasyDictionary: add data
 - EasyDictionary: create DB
+
+
+## 11.01.2020
+
+*Sergo*
+
+- add old project - Guide V1 ( legacy code from 2th course )
