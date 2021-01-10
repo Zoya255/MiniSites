@@ -1,0 +1,156 @@
+/*=====================*/
+/*    Общий CSS файл   */
+/*  Корляков С. ИС-21  */
+/*      2018-2019      */
+/*=====================*/
+
+/*Начало блока настройки внешнего вида*/
+body{
+	font-family:verdana;
+	margin: 0px;
+}
+
+.div_topmenu{
+	background-color:#E8AA5F;
+}
+
+.div_content_1{
+	background-color:FFE7D7;
+}
+
+.div_down{
+	background-color:#E8AA5F;
+}
+/*Конец блока настройки внешнего вида*/
+
+/*Начало блока координат дивов*/
+.div_topmenu_1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 165px;
+}
+
+.div_topmenu_2{
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+}
+
+.div_content_1{
+	position: absolute;
+	top: 210px;
+	left: 0px;
+	width: 100%;
+}
+
+.div_down{
+	position: absolute;
+	left: 0px;
+	bottom : 0px;
+	width: 100%;
+	height: 160px;
+}
+/*Конец блока координат дивов*/
+
+/*Начало блока кнопок*/
+.button_HTML5{
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	left: 20%;
+	text-align:center;
+}
+
+.button_CSS3{
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20%;
+	text-align:center;
+}
+
+.href_HTML5{
+	font-size:25px;
+	text-decoration: none;
+	padding:15px 25px;
+	color:#000000; 
+	background-color:#FFC75B;
+	border-radius:22px;
+	border: 5px solid #bd8d35;
+}
+
+.href_CSS3{
+	font-size:25px;
+	text-decoration: none;
+	padding:15px 25px;
+	color:#000000; 
+	background-color:#FFC75B;
+	border-radius:22px;
+	border: 5px solid #bd8d35;
+}
+
+.href_next{
+	text-align:center;
+	font-size:20px;
+	padding:15px 25px;
+	color:#000000;
+	border-radius: 25px; 
+	border: 5px solid #bd8d35;
+	background-color:#FFC75B;
+}
+/*Конец блока кнопок*/
+
+/*Начало блока меню*/
+ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+  background-color: #FFC75B;
+}
+
+.topmenu{
+	background-color:#FFC75B;
+}
+
+.topmenu > li {
+	display: inline-block;
+	margin-right: 70px;
+	position: relative;
+}
+  
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.div_topmenu_2{
+	background-color:#FFC75B;
+}
+
+.div_topmenu_2 .submenu {
+  display: none;
+}
+
+.div_topmenu_2 ul li:hover .submenu {
+  display: block;
+}
+/*Конец блока меню*/

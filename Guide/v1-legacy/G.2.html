@@ -1,0 +1,123 @@
+<!docktype HTML>
+
+<html>
+
+	<head>
+		<title>
+		Учебник по HTML5
+		</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<link rel="stylesheet" type="text/css" href="G.global.css">
+	</head>
+	
+	<body>
+		<center>
+		<table border="1">
+			<tr class="top-menu">
+				<td width="1920px" colspan="2">
+				
+					<p class="button_HTML5"  style="text-align:center;"><a href="G.1.html" target="_blank" 
+					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000; 
+					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">HTML5</a></p>
+					
+					<p class="button_CSS3"  style="text-align:center;"><a href="GS.1.html" target="_blank" 
+					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000; 
+					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">CSS3</a></p>
+					
+					<center>
+						<p><h1>Учебник по HTML5</h1></p>
+						<p><h2>Введение</h2></p>
+						<p>Special for Sych</p></td>
+					</center>
+			</tr>
+			<tr>
+				<td width="20%"  height="400px" class="menu">Навигация по сайту:
+					<ul>
+						<li><p><a href="G.1.html">Главная страница</a></p>
+						<li><p><a href="G.2.html">Введение</a></p>
+						<li><p><a href="G.3.html">Основные теги</a></p>
+						<li><p><a href="G.4.html">Форматирование текста</a></p>
+						<li><p><a href="G.5.html">Выравнивание</a></p>
+						<li><p><a href="G.6.html">Картинки</a></p>
+						<li><p><a href="G.7.html">Аудио</a></p>
+						<li><p><a href="G.8.html">Видео</a></p>
+						<li><p><a href="G.9.html">Таблицы</a></p>
+						<li><p><a href="G.10.html">Табличная вёрстка</a></p>
+						<li><p><a href="G.11.html">Прочие ништяки</a></p>
+					</ul>
+				</td>
+				<td width="80%" rowspan="2">
+					<p><strong>HTML</strong> (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный
+					язык разметки документов во Всемирной паутине.Большинство веб-страниц содержат описание разметки на языке HTML. 
+					Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на 
+					экране монитора компьютера или мобильного устройства. </p>
+					<p>Если упростить, то мы указываем браузеру, как он должен распологать элементы на экране. Эти указания мы просто пишем
+					в специальном документе с расширением .html, а браузер, "читая" эту инструкцию, понимает, чего мы от него хотим. Поэтому 
+					работать можно даже в самом обычном блокноте. Однако рекомендуются специально предназначеные для этого программы - Notepad++ 
+					(универсальный редактор кода) или Sublime Text 3.</p>
+					<p>Также существуют различные конструкторы и системы управления сайтами, но мы не будем их тут рассматривать.</p>
+					<p>Также, сразу нужно уяснить несколько вещей:
+						<ul>
+							<li>Прежде всего - HTML5 - это не язык программирования, я язык гипертекстовой разметки.
+							<li>Код HTML5 состоит из тегов. Тег - это основная структурная единица веб-страницы, написанная на языке HTML.
+							<li>Теги бывают открывающие, закрывающие, а также могут иметь атрибуты (т.е. дополнительные параметры). Для некоторых тегов закрывающие теги необязательны.
+								<ul>
+									<li>Открывающие: <code>&lt;тег&gt;</code>
+									<li>Закрывающие: <code>&lt;/тег&gt;</code>
+									<li>Атрибуты: <code>&lt;тег атрибут="параметры атрибута"&gt;</code>
+								</ul>
+							<li>Теги строятся по принципу <strong>вложенности</strong>.<br>
+							Например:<br>
+								<ul>
+									<li><code>&lt;em&gt;&lt;strong&gt;&lt;strike&gt;Жирный зачёркнутый курсив&lt;/strike&gt;&lt;/strong&gt;&lt;/em&gt;</code> - <strong style="color:green">верно</strong>
+									<li>будет: <em><strong><strike>Жирный зачёркнутый курсив</strike></strong></em>
+									<li><code>&lt;em&gt;&lt;strong&gt;&lt;strike&gt;Жирный зачёркнутый курсив&lt;/em&gt;&lt;/strong&gt;&lt;/strike&gt;</code> - <strong style="color:red">неверно</strong>
+									<li>будет: Жирный зачёркнутый курсив.
+								</ul>
+							<li>Также, при написании кода рекомендуются соблюдать отступы (с ними код выглядит куда аккуратнее и лучше читается).<br>
+							Например (данный код мы разберём потом, сейчас главное понять принцип, в будущем это сильно поможет):<br>
+						</ul>
+					</p>
+					<p>
+						<code>
+							<pre>
+					&lt;html&gt;
+						&lt;head&gt;
+							&lt;title&gt;
+							Название вкладки
+							&lt;/title&gt;
+						&lt;/head&gt;
+						&lt;body&gt;
+							&lt;p&gt;
+								&lt;center&gt;
+									&lt;audio src="ZEDION - Radiance.mp3" controls="controls"&gt;
+								&lt;center&gt;
+							&lt;/p&gt;
+						&lt;/body&gt;
+					&lt;/html&gt;
+</pre>
+						</code>
+					</p>
+					<hr>
+						<p class="button-next"><a href="G.3.html" target="_self">Следующая часть</a></p>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="menu">
+				</td>
+			</tr>
+			<tr>
+				<td class="down-menu" width="100%" colspan="2">
+					<center>
+						<p>Корляков С. ИС-21</p>
+						<p>2018</p>
+					</center>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+	
+</html>
