@@ -1,249 +1,215 @@
-<!docktype HTML>
-
-<html>
-
+<!doctype HTML>
+<html lang="ru">
 	<head>
 		<title>
-		Учебник по HTML5
+			Учебник по HTML5
 		</title>
 		<meta charset="utf-8">
 		<meta name="robots" content="index, follow">
-		<link rel="stylesheet" type="text/css" href="G.global.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script src="js/result-fix.js"></script>
 	</head>
 
-	<body>
-		<center>
-		<table border="1">
-			<tr class="top-menu">
-				<td width="1920px" colspan="3">
+	<body class="global__body">
+		<header class="global__header">
+			<h1 class="global__header-title">Учебник по HTML5</h1>
+		</header>
 
-					<p class="button_HTML5"  style="text-align:center;"><a href="G.1.html" target="_blank"
-					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000;
-					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">HTML5</a></p>
+		<nav class="global__nav">
+			<h3 class="global__nav-title">
+				Навигация по сайту:
+			</h3>
 
-					<p class="button_CSS3"  style="text-align:center;"><a href="GS.1.html" target="_blank"
-					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000;
-					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">CSS3</a></p>
+			<ul class="global__nav-list">
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.1.html">Главная страница</a>
+				</li>
 
-					<center>
-						<p><h1>Учебник по HTML5</h1></p>
-						<p><h2>Таблицы</h2></p>
-						<p>Special for Sych</p></td>
-					</center>
-			</tr>
-			<tr>
-				<td width="20%" height="400px"  class="menu" rowspan="3">Навигация по сайту:
-					<ul>
-						<li><p><a href="G.1.html">Главная страница</a></p>
-						<li><p><a href="G.2.html">Введение</a></p>
-						<li><p><a href="G.3.html">Основные теги</a></p>
-						<li><p><a href="G.4.html">Форматирование текста</a></p>
-						<li><p><a href="G.5.html">Выравнивание</a></p>
-						<li><p><a href="G.6.html">Картинки</a></p>
-						<li><p><a href="G.7.html">Аудио</a></p>
-						<li><p><a href="G.8.html">Видео</a></p>
-						<li><p><a href="G.9.html">Таблицы</a></p>
-						<li><p><a href="G.10.html">Табличная вёрстка</a></p>
-						<li><p><a href="G.11.html">Прочие ништяки</a></p>
-					</ul>
-				</td>
-				<td width="80%" colspan="2">
-					<p>Ну вот речь и дошла до того, что лежит в основе данного сайта - таблиц. Их видели все.
-					И как известно, они состоят из строк и столбцов, а на их пересечении образуются ячейчки.
-					Таблицы могут быть любого размера, от миниатюрных, до огромных.</p>
-					<p>Для создания любых таблиц, нам потребуются три тега и пять атрибутов:</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<ul>
-						<li>&lt;table&gt;...&lt;/table&gt;
-						<li>&lt;tr&gt;...&lt;/tr&gt;
-						<li>&lt;td&gt;...&lt;/td&gt;
-						<hr>
-						<li>width="количество пикселей(px) или %"
-						<li>height="количество пикселей(px) или %"
-						<li>rowspan="количество строк"
-						<li>colspan="количество столбцов"
-						<li>border="количество пикселей(px)"
-					</ul>
-				</td>
-				<td width="40%">
-					<ul>
-						<li>Основа таблицы, в данные теги помещаются все остальные теги таблицы.
-						<li>Теги стороки, в них вкладываются теги столбцов.
-						<li>Теги столбца.
-						<hr>
-						<li>Максимальная ширина строки(столбца)
-						<li>Максимальная высота строки(столбца)
-						<li>Растягивание строки(столбца) по высоте
-						<li>Растягивание строки(столбца) по ширине
-						<li>Толщина рамки таблиц
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td width="80%" colspan="2">
-					<p>Теперь можно попробовать создать таблицу. Кстати, они могут включать в себя любые другие элементы, например, текст, картинки, аудио и видео. Например:</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="20%" class="menu" rowspan="12">
-				</td>
-				<td width="80%" colspan="2">
-					<code>
-						<pre>
-&lt;table&gt
-	&lt;tr&gt;
-		&lt;td&gt;
-			&lt;center&gt;
-				&lt;img src="G.img6.1.jpg" width="600px" height="338px" title="тян"&gt;
-			&lt;/center&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;center&gt;
-				&lt;img src="G.img9.1.jpg" width="600px" height="338px" title="тян"&gt;
-			&lt;/center&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;
-			&lt;center&gt;
-				&lt;audio src="ZEDION - Radiance.mp3" controls="controls"&gt;
-			&lt;/center&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;center&gt;
-				&lt;video src="G.vid3.1.mkv" width="600px" height="338px" controls="controls" title="ARP"&gt;
-			&lt;/center&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt
-</pre>
-					</code>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<center>
-						<img src="G.img6.1.jpg" width="600px" height="338px" title="тян">
-					</center>
-				</td>
-				<td>
-					<center>
-						<img src="G.img9.1.jpg" width="600px" height="338px" title="тян">
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<center>
-						<audio src="ZEDION - Radiance.mp3" controls="controls">
-					</center>
-				</td>
-				<td>
-					<center>
-						<video src="G.vid3.1.mkv" width="600px" height="338px" controls="controls" title="ARP">
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<p>Как видно из данного примера, внутрь таблицы можно вставить практически всё, кроме другой таблицы. Текст, картинки, аудио, видео и прочее.</p>
-					<p>Внурти таблицы также можно пользоваться выравниванием, а сама таблица может быть самых разных размеров. Например:</p>
-				</td>
-			</tr>
-				<td width="80%" colspan="2">
-					<code>
-						<pre>
-&lt;table&gt
-	&lt;tr&gt;
-		&lt;td&gt;
-			&lt;p align="right"&gt;Выравнивание текста по правому краю.&lt;/p&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
-			&lt;img src="G.img9.1.jpg" width="600px" height="338px" title="тян"&gt;
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td colspan="2"&gt;
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.2.html">Введение</a>
+				</li>
 
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td rowspan="2"&gt;
-			&lt;center&gt;
-				&lt;img src="G.img9.2.jpg" width="338px" height="600px" title="тян"&gt;
-			&lt;/center&gt;
-		&lt;/td&gt;
-		&lt;td&gt;
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.3.html">Основные теги</a>
+				</li>
 
-		&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td&gt;
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.4.html">Форматирование текста</a>
+				</li>
 
-		&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt
-</pre>
-					</code>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<p align="right">Выравнивание текста по правому краю.</p>
-				</td>
-				<td width="40%">
-					<img src="G.img9.1.jpg" width="600px" height="338px" title="тян">
-				</td>
-			</tr>
-			<tr>
-				<td width="80%" colspan="2">
-					<p>Тут ячейчка растянута на два столбца. Это делается с помощью параметра colspan="количество столбцов".</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%" rowspan="2">
-					<center>
-						<img src="G.img9.2.jpg" width="338px" height="600px" title="тян">
-					</center>
-					<p>Тут столбец растянут на две ячейчки. Это делается с помощью параметра rowspan="количество строк".</p>
-				</td>
-				<td width="40%">
-					<p>Мне лень, поэтому тут будет простой текст. Вообще, как известно, в таблицу можно запихнуть что угодно.
-					Кстати, тут видно, что размеры ячеек таблиц могут подгоняться к размеру элемента, который в ней находиться. </p>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<center>
-						<p>Delta Heavy - White Flag</p>
-						<p><audio src="Delta Heavy - White Flag.mp3" controls="controls"></p>
-						<p>Nightcore - Fireflies</p>
-						<p><audio src="Nightcore - Fireflies.mp3" controls="controls"></p>
-						<p>OCTiV - Nothing To Hide</p>
-						<p><audio src="OCTiV - Nothing To Hide.mp3" controls="controls"></p>
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td width="80%" colspan="2">
-					<hr>
-						<p class="button-next"><a href="G.10.html" target="_self">Следующая часть</a></p>
-					<hr>
-				</td>
-			</tr>
-			<tr>
-				<td class="down-menu" colspan="3">
-					<center>
-						<p>Корляков С. ИС-21</p>
-						<p>2018</p>
-					</center>
-				</td>
-			</tr>
-		</table>
-		</center>
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.5.html">Выравнивание</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.6.html">Картинки</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.7.html">Аудио</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.8.html">Видео</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.9.html">Таблицы</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.10.html">Табличная вёрстка</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.11.html">Прочие ништяки</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="global__main">
+			<h2 class="global__main-title">
+				Таблицы
+			</h2>
+
+			<p class="global__main-text">
+				Ну вот речь и дошла до того, что лежит в основе данного сайта - таблиц. Их видели все. И как
+				известно, они состоят из строк и столбцов, а на их пересечении образуются ячейчки. Таблицы могут
+				быть любого размера, от миниатюрных, до огромных.
+			</p>
+
+			<p class="global__main-text">
+				Для создания любых таблиц, нам потребуются три тега и пять атрибутов:
+			</p>
+
+			<table class="global__main-table">
+				<thead>
+					<tr>
+						<th>тег</th>
+						<th>описание</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td><code class="global__main-code">&lt;table&gt;...&lt;/table&gt;</code></td>
+						<td>Основа таблицы, в данные теги помещаются все остальные теги таблицы.</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">&lt;tr&gt;...&lt;/tr&gt;</code></td>
+						<td>Теги стороки, в них вкладываются теги столбцов.</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">&lt;td&gt;...&lt;/td&gt;</code></td>
+						<td>Теги столбца.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="global__main-table">
+				<thead>
+					<tr>
+						<th>атрибут</th>
+						<th>описание</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td><code class="global__main-code">width="количество пикселей(px) или %"</code></td>
+						<td>Максимальная ширина строки(столбца)</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">height="количество пикселей(px) или %"</code></td>
+						<td>Максимальная высота строки(столбца)</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">rowspan="количество строк"</code></td>
+						<td>Растягивание строки(столбца) по высоте</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">colspan="количество столбцов"</code></td>
+						<td>Растягивание строки(столбца) по ширине</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">border="количество пикселей(px)"</code></td>
+						<td>Толщина рамки таблиц</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="global__main-text">
+				Теперь можно попробовать создать таблицу. Кстати, они могут включать в себя любые другие элементы,
+				например, текст, картинки, аудио и видео. Например:
+			</p>
+
+			<code class="global__main-code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Таблицы&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;table&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;img src="../img/img-6-1.jpg" height="300px" title="сакура"&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;img src="../img/img-9-1.jpg" height="300px" title="море"&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;audio src="../audio/ZEDION - Radiance.mp3" controls="controls"&gt;&lt;/audio&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;video src="../video/video-8-1.mkv" heigth="270px" controls="controls" title="ARP"&gt;&lt;/video&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+			</code>
+
+			<div class="global__main-result"
+				 id="script-result-header-9-1">
+				<iframe class="global__main-result-frame"
+						src="examples/page-9-1.html"
+						id="script-result-9-1"
+						onload="resultFix('9-1')">
+				</iframe>
+			</div>
+
+			<p class="global__main-text">
+				Как видно из данного примера, внутрь таблицы можно вставить практически всё, кроме другой таблицы.
+				Текст, картинки, аудио, видео и прочее.
+			</p>
+
+			<p class="global__main-text">
+				Внурти таблицы также можно пользоваться выравниванием, а сама таблица может быть самых разных
+				размеров.
+			</p>
+
+			<a class="global__main-button-next" href="G.10.html">&gt;&gt; Следующая часть &gt;&gt;</a>
+		</main>
+
+		<footer class="global__footer">
+			<p>Special for Sych</p>
+
+			<p>Корляков С. ИС-21</p>
+
+			<p>2018</p>
+		</footer>
 	</body>
-
 </html>

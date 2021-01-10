@@ -1,110 +1,148 @@
-<!docktype HTML>
-
-<html>
-
+<!doctype HTML>
+<html lang="ru">
 	<head>
 		<title>
-		Учебник по HTML5
+			Учебник по HTML5
 		</title>
 		<meta charset="utf-8">
 		<meta name="robots" content="index, follow">
-		<link rel="stylesheet" type="text/css" href="G.global.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script src="js/result-fix.js"></script>
 	</head>
 
-	<body>
-		<center>
-		<table border="1">
-			<tr class="top-menu">
-				<td width="1920px" colspan="3">
+	<body class="global__body">
+		<header class="global__header">
+			<h1 class="global__header-title">Учебник по HTML5</h1>
+		</header>
 
-					<p class="button_HTML5"  style="text-align:center;"><a href="G.1.html" target="_blank"
-					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000;
-					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">HTML5</a></p>
+		<nav class="global__nav">
+			<h3 class="global__nav-title">
+				Навигация по сайту:
+			</h3>
 
-					<p class="button_CSS3"  style="text-align:center;"><a href="GS.1.html" target="_blank"
-					style="font-size:30px;  text-decoration: none; padding:25px 65px; color:#000000;
-					background-color:#ffb833; border-radius:22px; border: 5px solid #bd8d35;">CSS3</a></p>
+			<ul class="global__nav-list">
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.1.html">Главная страница</a>
+				</li>
 
-					<center>
-						<p><h1>Учебник по HTML5</h1></p>
-						<p><h2>Видео</h2></p>
-						<p>Special for Sych</p></td>
-					</center>
-			</tr>
-			<tr>
-				<td width="20%"  height="400px" class="menu" rowspan="4">Навигация по сайту:
-					<ul>
-						<li><p><a href="G.1.html">Главная страница</a></p>
-						<li><p><a href="G.2.html">Введение</a></p>
-						<li><p><a href="G.3.html">Основные теги</a></p>
-						<li><p><a href="G.4.html">Форматирование текста</a></p>
-						<li><p><a href="G.5.html">Выравнивание</a></p>
-						<li><p><a href="G.6.html">Картинки</a></p>
-						<li><p><a href="G.7.html">Аудио</a></p>
-						<li><p><a href="G.8.html">Видео</a></p>
-						<li><p><a href="G.9.html">Таблицы</a></p>
-						<li><p><a href="G.10.html">Табличная вёрстка</a></p>
-						<li><p><a href="G.11.html">Прочие ништяки</a></p>
-					</ul>
-				</td>
-				<td width="80%" colspan="2">
-					<p>Ну вот мы и добрались до видео. Для создания своего мини-ютуба, вам потрубуются тег &lt;video&gt; и атрибуты картинок. Да, они также относятся и к видео. Так же нужен атрибут от аудио.</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					<ul>
-						<li>src="путь"
-						<li>width="количество пикселей или %"
-						<li>height="количество пикселей или %"
-						<li>title="текст"
-					</ul>
-				</td>
-				<td width="40%">
-					<ul>
-						<li>Указание расположения картинки
-						<li>Указание ширины в пикселях(px) или %
-						<li>Указание высоты в пикселях(px) или %
-						<li>Указание всплывающей подсказки (при наведении мышью)
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td width="80%" colspan="2">
-					<p>Ну и разумеется пример:</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="40%">
-					&lt;center&gt;<br>
-						&lt;video src="G.vid3.1.mkv" width="360px" height="200px" controls="controls" title="ARP"&gt;<br>
-					&lt;/center&gt;
-				</td>
-				<td width="40%">
-					<center>
-						<video src="G.vid3.1.mkv" width="360px" height="200px" controls="controls" title="ARP">
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td width="20%" class="menu">
-				</td>
-				<td width="80%" colspan="9">
-					<hr>
-						<p class="button-next"><a href="G.9.html" target="_self">Следующая часть</a></p>
-					<hr>
-				</td>
-			</tr>
-			<tr>
-				<td class="down-menu" width="100%" colspan="3">
-					<center>
-						<p>Корляков С. ИС-21</p>
-						<p>2018</p>
-					</center>
-				</td>
-			</tr>
-		</table>
-		</center>
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.2.html">Введение</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.3.html">Основные теги</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.4.html">Форматирование текста</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.5.html">Выравнивание</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.6.html">Картинки</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.7.html">Аудио</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.8.html">Видео</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.9.html">Таблицы</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.10.html">Табличная вёрстка</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="G.11.html">Прочие ништяки</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="global__main">
+			<h2 class="global__main-title">
+				Видео
+			</h2>
+
+			<p class="global__main-text">
+				Ну вот мы и добрались до видео. Для создания своего мини-ютуба, вам потрубуются тег &lt;video&gt; и его
+				атрибуты.
+			</p>
+
+			<table class="global__main-table">
+				<thead>
+					<tr>
+						<th>атрибут</th>
+						<th>описание</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td><code class="global__main-code">src="путь"</code></td>
+						<td>Указание расположения видеофайла</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">width="количество пикселей или %"</code></td>
+						<td>Указание ширины в пикселях(px) или %</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">height="количество пикселей или %"</code></td>
+						<td>Указание высоты в пикселях(px) или %</td>
+					</tr>
+
+					<tr>
+						<td><code class="global__main-code">alt="текст"</code></td>
+						<td>Альтернативный текст</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="global__main-text">Ну и разумеется пример:</p>
+
+			<code class="global__main-code-block">
+&lt;!doctype HTML&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;
+            Видео
+        &lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;video src="video/video-8-1.mkv" height="400px" controls="controls"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+			</code>
+
+			<div class="global__main-result"
+				 id="script-result-header-8-1">
+				<iframe class="global__main-result-frame"
+						src="examples/page-8-1.html"
+						id="script-result-8-1"
+						onload="resultFix('8-1')">
+				</iframe>
+			</div>
+
+			<a class="global__main-button-next" href="G.9.html">&gt;&gt; Следующая часть &gt;&gt;</a>
+		</main>
+
+		<footer class="global__footer">
+			<p>Special for Sych</p>
+
+			<p>Корляков С. ИС-21</p>
+
+			<p>2018</p>
+		</footer>
 	</body>
-
 </html>
