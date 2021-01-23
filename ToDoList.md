@@ -109,7 +109,7 @@
 
 - [ ] rewrite text template site
 - [ ] update of codeoon
-- [ ] add guide
+- [X] add guide
 
 
 ## 16.10.2020
@@ -147,8 +147,8 @@
 *Plans*
 
 - [X] Create base of EasyDictionary
-- [ ] Create backend of EasyDictionary
-- [ ] Add data in DB of EasyDictionary
+- [X] Create backend of EasyDictionary
+- [X] Add data in DB of EasyDictionary
 
 
 ## 20.10.2020
@@ -322,3 +322,10 @@
 - add old project - Guide V1 ( legacy code from 2th course )
 - Guide: rename V1 -> V1-legacy
 - Guide: full refactoring V1
+
+
+## 23.01.2021
+
+*Sergo*
+
+- EasySpy: fix update - to version 06
