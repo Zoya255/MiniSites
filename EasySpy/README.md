@@ -1,4 +1,4 @@
-# Module EasySpy Version 05 - Lacia
+# Module EasySpy Version 06 - Simka
 
 
 ## Описание:
@@ -38,10 +38,12 @@
 - [X] данные из DaData
 - [X] отображение города
 - [X] проверка автомоной работы
+- [X] исправлены баги группировки
 
 
 ## Версии:
 
+- 06 - SIMKA
 - 05 - LACIA
 - 04 - AQUA
 - 03 - VERGILIA

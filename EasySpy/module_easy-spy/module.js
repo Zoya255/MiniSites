@@ -1,5 +1,5 @@
 // -------------------------------- //
-//  EASY SPY VERSION 05 - LACIA     //
+//  EASY SPY VERSION 06 - SIMKA     //
 //                                  //
 //  Author: Cet500                  //
 //  Date:   16.12.2020              //

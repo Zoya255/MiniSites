@@ -1,10 +1,14 @@
-<link rel="stylesheet" href="css/dark.css">
+<link rel="stylesheet" href="css/min/dark.min.css">
 
 <?php
 	require "php/lib/stats.php";
 
 
 	$stats = new Stats();
+
+	# ========================== Time Charts ==========================
+
+	# ========================== Click Maps ==========================
 
 	if ( !empty($_GET['clickMap']) ) {
 
@@ -24,61 +28,58 @@
 		}
 
 	}
+
+    # ========================== Requests ==========================
+
 	else if ( !empty($_GET['requests']) ) {
 
 		print("<h1>${_GET['requests']}</h1>");
 
+		$sys_names_desk = [ "Windows", "Linux", "Ubuntu", "Mac OS" ];
+		$sys_names_mob  = [ "Android", "iOS" ];
+
 		if ( $_GET['requests'] == "full" ) {
 			print("<h2>Desktop</h2>");
 
-			print("<h3>Windows</h3>");
-
-			echo $stats->get_requests_all("Windows", "full", true);
-
-			print("<h3>Linux</h3>");
-
-			echo $stats->get_requests_all("Linux x86_64", "full", true);
-
-			print("<h3>Mac OS</h3>");
-
-			echo $stats->get_requests_all("Mac OS", "full", true);
-
+			foreach ($sys_names_desk as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all($sys_name."%", "full", true));
+			}
 
 			print("<h2>Mobile</h2>");
 
-			print("<h3>Android</h3>");
-
-			echo $stats->get_requests_all("Android", "full", true);
-
-			print("<h3>iOS</h3>");
-
-			echo $stats->get_requests_all("iPhone", "full", true);
+            foreach ($sys_names_mob as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all($sys_name."%", "full", true));
+            }
 		}
 		else{
-			print("<h2>Desktop</h2>");
+            print("<h2>Desktop</h2>");
 
-			print("<h3>Windows</h3>");
+            foreach ($sys_names_desk as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all($sys_name."%", $_GET['requests'], true));
+            }
 
-			echo $stats->get_requests_all("Win32", $_GET['requests'], true);
+            print("<h2>Mobile</h2>");
 
-			print("<h3>Linux</h3>");
-
-			echo $stats->get_requests_all("Linux x86_64", $_GET['requests'], true);
-
-
-			print("<h2>Mobile</h2>");
-
-			print("<h3>Android</h3>");
-
-			echo $stats->get_requests_all("Android", $_GET['requests'], true);
-
-			print("<h3>iOS</h3>");
-
-			echo $stats->get_requests_all("iPhone", $_GET['requests'], true);
+            foreach ($sys_names_mob as $sys_name) {
+                print("<h3>$sys_name</h3>");
+                print($stats->get_requests_all($sys_name."%", $_GET['requests'], true));
+            }
 		}
 
 	}
+
+    # ========================== Choice ==========================
+
 	else{
+
+        print("<h1>TimeCharts</h1>");
+
+        print("<p><a class='btn' href='stats-page.php?timeCharts=full'>Full data</a></p>");
+
+
 
 		print("<h1>ClickMaps</h1>");
 
@@ -106,4 +107,3 @@
 		}
 
 	}
-

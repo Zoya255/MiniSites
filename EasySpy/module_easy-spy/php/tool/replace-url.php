@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../css/dark.css">
+<link rel="stylesheet" href="../../css/min/dark.min.css">
 
 <h1>Replace urls...</h1>
 
