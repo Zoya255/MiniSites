@@ -1,0 +1,40 @@
+/* ------------------------------- dark ------------------------------- */
+
+/* -------------------- global -------------------- */
+
+body{
+	font-family: Roboto, Arial, sans-serif;
+
+	color: #cccccc;
+	background-color: #272822;
+}
+
+/* -------------------- titles -------------------- */
+
+
+/* -------------------- form -------------------- */
+
+form {
+	padding: 10px 30px;
+}
+input {
+	display: block;
+}
+input[type=text],
+input[type=number] {
+	padding: 5px;
+	margin: 5px 0;
+
+	font-size: 1em;
+
+	color: #cccccc;
+	background-color: #272822;
+	border: 1px solid #666666;
+	outline: none;
+}
+input[type=text]:focus{
+	border: 1px solid #ffFFFF;
+}
+input[type=submit] {
+	margin: 15px 0;
+}
