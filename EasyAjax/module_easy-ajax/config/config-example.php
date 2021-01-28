@@ -1,9 +1,9 @@
 <?php
 	$CONF_FIELDS = [
-		["name"], ["lastname"], ["email"], ["age"]
+		[ "id", "name", "lastname", "email", "age" ],
+		[ "id", "nickname", "game", "description"  ]
 	];
-	$CONF_IP     = "localhost";
-	$CONF_PORT   = "3306";
-	$CONF_DB_LOG = "database";
-	$CONF_USER   = "root";
-	$CONF_PASS   = "root";
+	$CONF_NAMES = [
+		[ "0", "имя", "фамилия", "эл. почта", "возраст" ],
+		[ "1", "ник", "игра", "описание"                ]
+	];

@@ -2,11 +2,14 @@
 //  EASY AJAX VERSION 01 - ELIZA     //
 //                                   //
 //  Author: Cet500                   //
-//  Date:   27.01.2020               //
+//  Date:   28.01.2020               //
 // --------------------------------- //
 
 window.onload = function() {
+	console.log("Start EasyAjax [ver 01]...");
+
 	include("module_easy-ajax/js/external/jquery-3.5.1.min.js");
+	include("module_easy-ajax/js/lib/lib.js");
 	include("module_easy-ajax/js/ajax.js");
 }
 

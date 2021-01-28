@@ -1,4 +1,10 @@
 <?php
 	require "../config/config.php";
 
-	print_r($_POST);
+	/** @var $CONF_FIELDS */
+
+	$id = $_POST["id"];
+
+	foreach ($CONF_FIELDS[$id] as $field) {
+		print($field.": ".$_POST[$field]."<br>");
+	}

@@ -10,7 +10,13 @@
 	</head>
 
 	<body>
-		<form id="form">
+		<h1>Test page</h1>
+
+		<h2>Forms</h2>
+
+		<form class="form">
+			<input type="hidden" name="id" value="0">
+			
 			<label>
 				name
 				<input type="text" name="name" placeholder="name">
@@ -33,5 +39,30 @@
 
 			<input type="submit">
 		</form>
+
+		<form class="form">
+			<input type="hidden" name="id" value="1">
+
+			<label>
+				nickname
+				<input type="text" name="nickname" placeholder="name">
+			</label>
+
+			<label>
+				game
+				<input type="text" name="game" placeholder="lastname">
+			</label>
+
+			<label>
+				description
+				<textarea name="description" rows="4" cols="22" placeholder="description"></textarea>
+			</label>
+
+			<input type="submit">
+		</form>
+
+		<h2>Logs</h2>
+
+
 	</body>
 </html>
