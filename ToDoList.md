@@ -329,3 +329,17 @@
 *Sergo*
 
 - EasySpy: fix update - to version 06
+
+
+## 27.01.2021
+
+*Sergo*
+
+- create EasyAjax
+
+
+## 28.01.2021
+
+*Sergo*
+
+- EasyAjax: create version 01
