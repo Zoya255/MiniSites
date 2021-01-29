@@ -1,20 +1,35 @@
 # DB
 
 
+## === Federal block ========================
+
+**projects**
+
+Таблица с проектами, известными системе.
+
+| name     | a | ky | type         |
+|:---------|:-:|:--:|:-------------|
+| id       | A | PK | increment    |
+| uuid     | A |    | uuid         |
+| project  | A |    | varchar(100) |
+| datetime | A |    | datestamp    |
+
+
 ## === Logs block ========================
 
 **clicks**
 
 Таблица с собираемыми системой кликами.
 
-| name     | a | ky | type         |
-|:---------|:-:|:--:|:-------------|
-| id       | A | PK | increment    |
-| ip       | A |    | varchar(15)  |
-| url      | A |    | varchar(100) |
-| click_x  | A |    | int          |
-| click_y  | A |    | int          |
-| datetime | A |    | datestamp    |
+| name       | a | ky | type         |
+|:-----------|:-:|:--:|:-------------|
+| id         | A | PK | increment    |
+| id_project | A | FK | int          |
+| ip         | A |    | varchar(15)  |
+| url        | A |    | varchar(100) |
+| click_x    | A |    | int          |
+| click_y    | A |    | int          |
+| datetime   | A |    | datestamp    |
 
 **requests**
 
@@ -23,6 +38,7 @@
 | name                | a | ky | type         |
 |:--------------------|:-:|:--:|:-------------|
 | id                  | A | PK | increment    |
+| id_project          | A |    | int          |
 | ip                  | A |    | varchar(15)  |
 | port                | A |    | int          |
 | real_ip             | A |    | varchar(15)  |
@@ -50,6 +66,7 @@
 | name             | a | ky | type          |
 |:-----------------|:-:|:--:|:--------------|
 | id               | A | PK | increment     |
+| id_project       | A | FK | int           |
 | ip               | A |    | varchar(15)   |
 | postal_code      | A |    | int           |
 | country          | A |    | varchar(50)   |

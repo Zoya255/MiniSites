@@ -6,6 +6,8 @@
 // -------------------------------- //
 
 window.onload = function() {
+    console.log("Start EasySpy [ver 06]...")
+
     include("module_easy-spy/js/external/jquery-3.5.1.min.js");
     include("module_easy-spy/js/external/detect.min.js");
     include("module_easy-spy/js/lib/spy.js");

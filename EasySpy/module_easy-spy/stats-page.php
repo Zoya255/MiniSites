@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/min/dark.min.css">
 
 <?php
+	/* @var $CONF_PROJECT */
+
 	require "php/lib/stats.php";
 
 
@@ -74,14 +76,16 @@
     # ========================== Choice ==========================
 
 	else{
+		print("<h1>Project ${CONF_PROJECT}</h1>");
 
-        print("<h1>TimeCharts</h1>");
+
+        print("<h2>TimeCharts</h2>");
 
         print("<p><a class='btn' href='stats-page.php?timeCharts=full'>Full data</a></p>");
 
 
 
-		print("<h1>ClickMaps</h1>");
+		print("<h2>ClickMaps</h2>");
 
 		print("<p><a class='btn' href='stats-page.php?clickMap=full'>Full data</a></p>");
 
@@ -94,7 +98,7 @@
 		}
 
 
-		print("<h1>RequestTables</h1>");
+		print("<h2>RequestTables</h2>");
 
 		print("<p><a class='btn' href='stats-page.php?requests=full'>Full data</a></p>");
 

@@ -41,9 +41,6 @@ class Spy {
 				$("body").append(`<p class='error'>${date} | ${message}</p>`);
 			}
 		}
-		else{
-			console.error("боба")
-		}
 	}
 
 
