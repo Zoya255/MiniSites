@@ -343,3 +343,11 @@
 *Sergo*
 
 - EasyAjax: create version 01
+
+
+## 02.02.2021
+
+*Sergo*
+
+- EasySpy: project update - to version 07
+- EasyAjax: mini update
