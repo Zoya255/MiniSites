@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../css/form.css">
 
 <?php
-	require "../config/config.php";
+	require "../../config.php";
 
 	/** @var $CONF_FIELDS */
 	/** @var $CONF_NAMES  */

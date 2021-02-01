@@ -1,5 +1,5 @@
 <?php
-	require "../config/config.php";
+	require "../../config.php";
 
 	/** @var $CONF_FIELDS */
 
