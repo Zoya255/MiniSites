@@ -1,9 +1,10 @@
 <?php
-	/* @var $APIKEY */
+	/* @var $APIKEY          */
+	/* @var $CONF_PROJECT_ID */
 
 	require "lib/features.php";
 	require "lib/dadata.php"; // include db.php
-	require "../config/config.php";
+	require "../../config.php";
 
 
 	$feature = new Features();
@@ -11,6 +12,7 @@
 	$request = R::dispense( 'requests' );
 
 		$request->ip             = $_SERVER["REMOTE_ADDR"];
+		$request->id_project     = $CONF_PROJECT_ID;
 		$request->port           = $_SERVER["REMOTE_PORT"];
 		$request->realIp         = $feature->getUserHostAddress();
 		$request->url            = $_POST["url"];

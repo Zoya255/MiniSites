@@ -1,7 +1,8 @@
 <?php
 	# Federal System
-	$CONF_UUID    = "00000000-0000-0000-0000-000000000000";
-	$CONF_PROJECT = "Coolest_project_name";
+	$CONF_UUID       = "00000000-0000-0000-0000-000000000000";
+	$CONF_PROJECT    = "Coolest_project_name";
+	$CONF_PROJECT_ID = 1;
 
 	# Config DB
 	$CONF_IP     = "localhost";

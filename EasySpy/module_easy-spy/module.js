@@ -1,12 +1,12 @@
 // -------------------------------- //
-//  EASY SPY VERSION 06 - SIMKA     //
+//  EASY SPY VERSION 07 - NASTYA    //
 //                                  //
 //  Author: Cet500                  //
-//  Date:   16.12.2020              //
+//  Date:   02.02.2021              //
 // -------------------------------- //
 
 window.onload = function() {
-    console.log("Start EasySpy [ver 06]...")
+    console.log("Start EasySpy [ver 07]...")
 
     include("module_easy-spy/js/external/jquery-3.5.1.min.js");
     include("module_easy-spy/js/external/detect.min.js");
