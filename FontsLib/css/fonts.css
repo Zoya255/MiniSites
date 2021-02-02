@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: '28 Days Later';
-	src: local('28 Days Later'), 
+	src: local('28 Days Later'),
 		 url('../fonts/28 Days Later/28 Days Later.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: 'a_LCDNova';
-	src: local('a_LCDNova'), 
+	src: local('a_LCDNova'),
 		 url('../fonts/a_LCDNova/a_LCDNova.ttf') format('truetype'),
 		 url('../fonts/a_LCDNova/a_LCDNova.woff') format('woff');
 	font-weight: 500;
@@ -38,7 +38,7 @@
 
 @font-face {
 	font-family: 'Arial';
-	src: local('Arial'), 
+	src: local('Arial'),
 		 url('../fonts/Arial/Arial.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -48,7 +48,7 @@
 
 @font-face {
 	font-family: 'BadaBoom BB';
-	src: local('BadaBoom BB'), 
+	src: local('BadaBoom BB'),
 		 url('../fonts/badaboom/BadaBoom BB.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -70,7 +70,7 @@
 
 @font-face {
 	font-family: 'Calibri';
-	src: local('Calibri'), 
+	src: local('Calibri'),
 		 url('../fonts/Calibri/Calibri.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -126,7 +126,7 @@
 
 @font-face {
 	font-family: 'Capture it';
-	src: local('Capture it'), 
+	src: local('Capture it'),
 		 url('../fonts/Capture it/Capture it.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -172,7 +172,7 @@
 
 @font-face {
 	font-family: 'Consolas';
-	src: local('Consolas'), 
+	src: local('Consolas'),
 		 url('../fonts/Consolas/Consolas.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -377,7 +377,7 @@
 
 @font-face {
 	font-family: 'Lato';
-	src: local('Lato'), 
+	src: local('Lato'),
 		 url('../fonts/Lato/Lato.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -387,7 +387,7 @@
 
 @font-face {
 	font-family: 'Lucida Console';
-	src: local('Lucida Console'), 
+	src: local('Lucida Console'),
 		 url('../fonts/Lucida Console/Lucida Console.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -397,7 +397,7 @@
 
 @font-face {
 	font-family: 'Magnolia Script';
-	src: local('Magnolia Script'), 
+	src: local('Magnolia Script'),
 		 url('../fonts/Magnolia Script/magnolia-script.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -407,7 +407,7 @@
 
 @font-face {
 	font-family: 'Minecraft Title Cyrillic';
-	src: local('Minecraft Title Cyrillic'), 
+	src: local('Minecraft Title Cyrillic'),
 		 url('../fonts/Minecraft Title Cyrillic/Minecraft Title Cyrillic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -417,7 +417,7 @@
 
 @font-face {
 	font-family: 'Minecraftia';
-	src: local('Minecraftia'), 
+	src: local('Minecraftia'),
 		 url('../fonts/Minecraftia/Minecraftia.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -1071,9 +1071,9 @@
 
 @font-face {
 	font-family: 'Nunito';
-	src: local('Nunito'), 
+	src: local('Nunito'),
 		 local('Nunito Regular'),
-		 local('Nunito-Regular'),  
+		 local('Nunito-Regular'),
 		 url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -1230,7 +1230,7 @@
 
 @font-face {
 	font-family: 'Rozovii Chulok';
-	src: local('Rozovii Chulok'), 
+	src: local('Rozovii Chulok'),
 		 url('../fonts/Rozovii Chulok/Rozovii Chulok.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -1240,17 +1240,28 @@
 
 @font-face {
 	font-family: 'Segoe Script';
-	src: local('Segoe Script'), 
+	src: local('Segoe Script'),
 		 url('../fonts/Segoe Script/Segoe Script.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
 
+/* -------------------- Tahoma -------------------- */
+
+@font-face {
+	font-family: 'Tahoma';
+	src: local('Tahoma'),
+		 url('../fonts/Tahoma/Tahoma.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
 /* -------------------- Times New Roman -------------------- */
 
 @font-face {
 	font-family: 'Times New Roman';
-	src: local('Times New Roman'), 
+	src: local('Times New Roman'),
 		 url('../fonts/Times New Roman/Times New Roman.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -1260,7 +1271,7 @@
 
 @font-face {
 	font-family: 'VAG World';
-	src: local('VAG World'), 
+	src: local('VAG World'),
 		 url('../fonts/VAG World/VAG World.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -1270,7 +1281,7 @@
 
 @font-face {
 	font-family: 'Verdana';
-	src: local('Verdana'), 
+	src: local('Verdana'),
 		 url('../fonts/Verdana/Verdana.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;

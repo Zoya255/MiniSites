@@ -351,3 +351,4 @@
 
 - EasySpy: project update - to version 07
 - EasyAjax: mini update
+- FontsLib: add new font - Tahoma
