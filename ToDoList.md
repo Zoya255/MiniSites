@@ -352,3 +352,10 @@
 - EasySpy: project update - to version 07
 - EasyAjax: mini update
 - FontsLib: add new font - Tahoma
+
+
+## 03.02.2021
+
+*Sergo*
+
+- EasyAjax: add templates for emails
