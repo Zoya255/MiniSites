@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/form.css">
+<link rel="stylesheet" href="../css/src/form.css">
 
 <?php
 	require "../../config.php";

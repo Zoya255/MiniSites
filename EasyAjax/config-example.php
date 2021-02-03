@@ -1,4 +1,5 @@
 <?php
+	# Forms settings
 	$CONF_FIELDS = [
 		[ "id", "name", "lastname", "email", "age" ],
 		[ "id", "nickname", "game", "description"  ]
@@ -7,3 +8,4 @@
 		[ "0", "имя", "фамилия", "эл. почта", "возраст" ],
 		[ "1", "ник", "игра", "описание"                ]
 	];
+
