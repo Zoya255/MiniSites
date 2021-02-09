@@ -5,7 +5,7 @@
 .global__body{
 	margin: 0px;
 	padding: 0px;
-	
+
 	display: grid;
 	grid-template-areas: 'header header header'
 						 'none1  main   none2'
@@ -14,7 +14,7 @@
 	grid-template-rows: auto 1fr auto;
 
 	min-height: 100vh;
-	
+
 	background-color: #cccccc;
 }
 
@@ -63,16 +63,21 @@
 .global__main h2{
 	font-family: Consolas;
 	font-style: italic;
+	font-size: 1.75em;
 	text-indent: 2em;
+
+	padding-top: 10px;
 
 	border-bottom: 1px dashed #2d2d2d;
 }
 .global__main p{
 	padding: 10px;
 
-	font-size: 1em;
+	font-size: 1.2em;
 	white-space: pre-wrap;
 
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	border: 1px solid #2d2d2d;
 	background-color: #ffffff;
 }

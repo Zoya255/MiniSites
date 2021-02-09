@@ -17,11 +17,11 @@
 	src: local('a_LCDNova'),
 		 url('../fonts/a_LCDNova/a_LCDNova.ttf') format('truetype'),
 		 url('../fonts/a_LCDNova/a_LCDNova.woff') format('woff');
-	font-weight: 500;
+	font-weight: normal;
 	font-style: normal;
 }
 
-/* -------------------- Arial -------------------- */
+/* -------------------- airstrike -------------------- */
 
 @font-face {
 	font-family: 'airstrike';
@@ -29,10 +29,20 @@
 		 local('airstrike Regular'),
 		 local('airstrike-regular'),
 		 url('../fonts/airstrike/airstrike.ttf') format('truetype');
-	font-weight: 500;
+	font-weight: normal;
 	font-style: normal;
 }
 
+/* -------------------- Android Insomnia -------------------- */
+
+@font-face {
+	font-family: 'Android Insomnia';
+	src: local('Android Insomnia'),
+		 local('Android Insomnia Regular'),
+		 url('../fonts/Android Insomnia/AndroidInsomniaRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* -------------------- Arial -------------------- */
 
@@ -40,7 +50,73 @@
 	font-family: 'Arial';
 	src: local('Arial'),
 		 url('../fonts/Arial/Arial.ttf') format('truetype');
-	font-weight: 500;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------------- Arizone Unicase -------------------- */
+
+@font-face {
+	font-family: 'Arizone Unicase';
+	src: local('Arizone Unicase'),
+		 local('Arizone Unicase Regular'),
+		 url('../fonts/Arizone Unicase/ArizoneUnicaseRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------------- Aromia Script -------------------- */
+
+@font-face {
+	font-family: 'Aromia Script';
+	src: local('Aromia Script Thin'),
+		 url('../fonts/Aromia Script/AromiaScriptThin.otf') format('embedded-opentype');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aromia Script';
+	src: local('Aromia Script'),
+		 local('Aromia Script Regular'),
+		 url('../fonts/Aromia Script/AromiaScriptMedium.otf') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aromia Script';
+	src: local('Aromia Script Bold'),
+		 url('../fonts/Aromia Script/AromiaScriptBold.otf') format('embedded-opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Aromia Script';
+	src: local('Aromia Script Black'),
+		 url('../fonts/Aromia Script/AromiaScriptBlack.otf') format('embedded-opentype');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+/* -------------------- Astro Space -------------------- */
+
+@font-face {
+	font-family: 'Astro Space';
+	src: local('Astro Space'),
+		 local('Astro Space Regular'),
+		 url('../fonts/Astro Space/AstroSpace.ttf') format('truetype'),
+		 url('../fonts/Astro Space/AstroSpace.otf') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------------- Azonix -------------------- */
+
+@font-face {
+	font-family: 'Azonix';
+	src: local('Azonix'),
+		 local('Azonix Regular'),
+		 url('../fonts/Azonix/Azonix.otf') format('embedded-opentype');
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -62,6 +138,18 @@
 		 local('Bahnschrift Regular'),
 		 local('Bahnschrift-Regular'),
 		 url('../fonts/Bahnschrift/Bahnschrift.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* -------------------- Beon -------------------- */
+
+@font-face {
+	font-family: 'Beon';
+	src: local('Beon'),
+		 local('Beon Regular'),
+		 url('../fonts/Beon/BeonMedium.ttf') format('truetype'),
+		 url('../fonts/Beon/BeonMedium.otf') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1067,6 +1155,17 @@
 	font-style: normal;
 }
 
+/* -------------------- Nero -------------------- */
+
+@font-face {
+	font-family: 'Nero';
+	src: local('Nero'),
+		 local('Nero Regular'),
+		 url('../fonts/Nero/Nero.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* -------------------- Nunito -------------------- */
 
 @font-face {
@@ -1226,6 +1325,17 @@
 	font-style: normal;
 }
 
+/* -------------------- Rogueland Slab -------------------- */
+
+@font-face {
+	font-family: 'Rogueland Slab';
+	src: local('Rogueland Slab'),
+		 local('Rogueland Slab Bold'),
+		 url('../fonts/Rogueland Slab/RoguelandSlabBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 /* -------------------- Rozovii Chulok -------------------- */
 
 @font-face {
@@ -1243,6 +1353,17 @@
 	src: local('Segoe Script'),
 		 url('../fonts/Segoe Script/Segoe Script.ttf') format('truetype');
 	font-weight: 500;
+	font-style: normal;
+}
+
+/* -------------------- Showtime -------------------- */
+
+@font-face {
+	font-family: 'Showtime';
+	src: local('Showtime'),
+		 local('Showtime Regular'),
+		 url('../fonts/Showtime/Showtime.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 
