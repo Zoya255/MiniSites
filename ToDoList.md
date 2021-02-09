@@ -359,3 +359,19 @@
 *Sergo*
 
 - EasyAjax: add templates for emails
+
+
+## 09.02.2021
+
+*Sergo*
+
+- FontsLib: add new font - Android Insomnia
+- FontsLib: add new font - Arizone Unicase
+- FontsLib: add new font - Aromia Script
+- FontsLib: add new font - Astro Space
+- FontsLib: add new font - Azonix
+- FontsLib: add new font - Beon
+- FontsLib: add new font - Nero
+- FontsLib: add new font - Rogueland Slab
+- FontsLib: add new font - Showtime
+- FontsLib: update template
