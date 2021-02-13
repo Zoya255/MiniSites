@@ -10,18 +10,18 @@ function printer (message, level = "info", multiline = false) {
 	}
 
 	if ( level === "debug" ){
-		$("body").append(`<p class='debug'>${date}${delimiter}${message}</p>`);
+		$("body").append("<p class='debug'><b>" + date + "</b>" + delimiter + message + "</p>");
 	}
 	else if ( level === "info" ){
-		$("body").append(`<p class='info'>${date}${delimiter}${message}</p>`);
+		$("body").append("<p class='info'><b>" + date + "</b>" + delimiter + message + "</p>");
 	}
 	else if ( level === "success" ){
-		$("body").append(`<p class='success'>${date}${delimiter}${message}</p>`);
+		$("body").append("<p class='success'><b>" + date + "</b>" + delimiter + message + "</p>");
 	}
 	else if ( level === "warn" ){
-		$("body").append(`<p class='warn'>${date}${delimiter}${message}</p>`);
+		$("body").append("<p class='warn'><b>" + date + "</b>" + delimiter + message + "</p>");
 	}
 	else if ( level === "error" ){
-		$("body").append(`<p class='error'>${date}${delimiter}${message}</p>`);
+		$("body").append("<p class='error'><b>" + date + "</b>" + delimiter + message + "</p>");
 	}
 }

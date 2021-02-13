@@ -32,18 +32,21 @@ h3{
 
 /* -------------------- form -------------------- */
 
-form {
+form{
 	padding: 5px 20px;
 	display: inline-block;
 	font-family: Roboto, Arial, sans-serif;
 }
 textarea,
-input {
+input{
 	display: block;
 }
 textarea,
 input[type=text],
-input[type=number] {
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=tel] {
 	padding: 5px;
 	margin: 5px 0;
 
@@ -57,7 +60,10 @@ input[type=number] {
 }
 textarea:focus,
 input[type=text]:focus,
-input[type=number]:focus {
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=tel]:focus {
 	border: 1px solid #ffFFFF;
 }
 input[type=submit] {

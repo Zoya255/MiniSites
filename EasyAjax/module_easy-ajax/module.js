@@ -9,8 +9,8 @@ window.onload = function() {
 	console.log("Start EasyAjax [ver 01]...");
 
 	include("module_easy-ajax/js/external/jquery-3.5.1.min.js");
-	include("module_easy-ajax/js/lib/lib.js");
-	include("module_easy-ajax/js/ajax.js");
+	include("module_easy-ajax/js/min/lib.min.js");
+	include("module_easy-ajax/js/min/ajax.min.js");
 }
 
 function include(url) {

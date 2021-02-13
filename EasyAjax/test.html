@@ -14,51 +14,77 @@
 
 		<h2>Forms</h2>
 
-		<form class="form">
-			<input type="hidden" name="id" value="0">
-			
-			<label>
-				name
-				<input type="text" name="name" placeholder="name">
+		<form class='form'>
+			<input type='hidden' class='id-field' name='id' value='0'>
+
+			<label class='label'>
+				имя
+				<input type='text' name='name' class='text-field' maxlength=60 required placeholder='имя'>
 			</label>
 
-			<label>
-				lastname
-				<input type="text" name="lastname" placeholder="lastname">
+			<label class='label'>
+				фамилия
+				<input type='text' name='lastname' class='text-field' maxlength=60 required placeholder='фамилия'>
 			</label>
 
-			<label>
-				email
-				<input type="text" name="email" placeholder="email">
+			<label class='label'>
+				эл. почта
+				<input type='email' name='email' class='email-field' maxlength=100 required placeholder='эл. почта'>
 			</label>
 
-			<label>
-				age
-				<input type="number" name="age" placeholder="age">
+			<label class='label'>
+				возраст
+				<input type='number' name='age' class='number-field' min=0 max=100 required placeholder='возраст'>
 			</label>
 
-			<input type="submit">
+			<input type='submit'>
 		</form>
 
-		<form class="form">
-			<input type="hidden" name="id" value="1">
+		<form class='form'>
+			<input type='hidden' class='id-field' name='id' value='1'>
 
-			<label>
-				nickname
-				<input type="text" name="nickname" placeholder="name">
+			<label class='label'>
+				ник
+				<input type='text' name='nickname' class='text-field' maxlength=60 required placeholder='ник'>
 			</label>
 
-			<label>
-				game
-				<input type="text" name="game" placeholder="lastname">
+			<label class='label'>
+				игра
+				<input type='text' name='game' class='text-field' maxlength=100 required placeholder='игра'>
 			</label>
 
-			<label>
-				description
-				<textarea name="description" rows="4" cols="22" placeholder="description"></textarea>
+			<label class='label'>
+				описание
+				<input type='text' name='description' class='text-field' maxlength=200 placeholder='описание'>
 			</label>
 
-			<input type="submit">
+			<label class='label'>
+				ссылка
+				<input type='url' name='game_link' class='url-field' maxlength=40 required placeholder='ссылка'>
+			</label>
+
+			<input type='submit'>
+		</form>
+
+		<form class='form'>
+			<input type='hidden' class='id-field' name='id' value='2'>
+
+			<label class='label'>
+				имя
+				<input type='text' name='name' class='text-field' maxlength=80 required placeholder='имя'>
+			</label>
+
+			<label class='label'>
+				телефон
+				<input type='tel' name='phone' class='phone-field ' required placeholder='телефон'>
+			</label>
+
+			<label class='label'>
+				сообщение
+				<textarea name='message' class='textarea-field' rows=4 cols=23 required>сообщение</textarea>
+			</label>
+
+			<input type='submit'>
 		</form>
 
 		<h2>Logs</h2>

@@ -1,21 +1,7 @@
 <?php
-	require "../../config.php";
-
-	/** @var $CONF_NAMES  */
-	/** @var $CONF_EMAILS */
-
-	$id = $_POST["id"];
-
-	foreach ($CONF_NAMES[$id] as $field) {
-		if ( $field == "id" ) {
-			print( "============= ID ${id} =============<br>" );
-		}
-		else {
-			print($field.": ".$_POST[$field]."<br>");
-		}
-	}
-
-	print( "================================<br>" );
+	$CONF_EMAILS  = [
+		"codeoon@mail.ru"
+	];
 
 
 	$headers = <<<HEADERS
@@ -30,7 +16,8 @@
 
 	$variables['title']       = "Codeoon Automatic Email";
 	$variables['preheader']   = "Штатное техническое сообщение | ";
-	$variables['message']     = "Новый заказ однако прибыл наверное";
+	$variables['message']     = "Если это сообщение дошло до вас в целости и сохранности, значит админ молодец и" .
+								"справился с возложенной на него задачей. Не забудьте похвалить его за такие старания.";
 	$variables['footer_from'] = "Sincerely from Develop";
 	$variables['footer_by']   = "Created by Codeoon";
 
@@ -43,5 +30,7 @@
 
 
 	foreach ($CONF_EMAILS as $email) {
+
 		echo mail( $email, "Pixel Info | Тестовое", $template, $headers );
+
 	}
