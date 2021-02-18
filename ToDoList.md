@@ -375,3 +375,10 @@
 - FontsLib: add new font - Rogueland Slab
 - FontsLib: add new font - Showtime
 - FontsLib: update template
+
+
+## 18.02.2021
+
+*Sergo*
+
+- EasyAjax: LARGE update - to version 02
