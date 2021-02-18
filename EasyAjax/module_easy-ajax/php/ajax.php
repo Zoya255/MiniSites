@@ -1,47 +1,47 @@
 <?php
+	/** @var $CONF_PROJECT      */
+	/** @var $CONF_NAMES        */
+	/** @var $CONF_PLACEHOLDERS */
+	/** @var $CONF_EMAIL_FROM   */
+	/** @var $CONF_EMAILS       */
+
 	require "../../config.php";
+	require "lib/data.php";
+	require "lib/mail.php";
+	require "db.php";
 
-	/** @var $CONF_NAMES  */
-	/** @var $CONF_EMAILS */
+	print( list_data( $_POST, $CONF_NAMES, $CONF_PLACEHOLDERS ) );
 
-	$id = $_POST["id"];
+	$id = $_POST['id'];
 
-	foreach ($CONF_NAMES[$id] as $field) {
-		if ( $field == "id" ) {
-			print( "============= ID ${id} =============<br>" );
-		}
-		else {
-			print($field.": ".$_POST[$field]."<br>");
-		}
+	$row = R::dispense( mb_strtolower( $CONF_PROJECT ."id". $id ) );
+
+	for ( $i = 1; $i < count( $CONF_NAMES[$id] ); $i++ ) {
+		$row[ $CONF_NAMES[$id][$i] ] = $_POST[ $CONF_NAMES[$id][$i] ];
 	}
 
-	print( "================================<br>" );
+	$row_id = R::store($row);
 
 
-	$headers = <<<HEADERS
-	MIME-Version: 1.0
-	Content-type: text/html; charset=utf-8
-	From: Pixel <info@pixel27.ru>
-	X-Mailer: PHP/7.4.14
-	HEADERS;
+	$vars = [];
 
-
-	$variables = [];
-
-	$variables['title']       = "Codeoon Automatic Email";
-	$variables['preheader']   = "Штатное техническое сообщение | ";
-	$variables['message']     = "Новый заказ однако прибыл наверное";
-	$variables['footer_from'] = "Sincerely from Develop";
-	$variables['footer_by']   = "Created by Codeoon";
-
-
-	$template = file_get_contents("template.html");
-
-	foreach($variables as $key => $value) {
-		$template = str_replace('{{ '.$key.' }}', $value, $template);
-	}
-
+	$vars['title']     = "Info | Уведомление";
+	$vars['preheader'] = "Уведомление о новом сообщении | ";
+	$vars['message']   = [
+		[ 't', 'Здравствуйте!' ],
+		[ 't', 'На сайте example.com вам поступо новое обращение' ],
+		[ 't', 'Подробная информация:' ],
+		[ 't', list_data( $_POST, $CONF_NAMES, $CONF_PLACEHOLDERS ) ],
+		[ 'b', 'Посмотреть на сайте', 'https://example.com/EasyAjax/module_easy-ajax/php/info.php?id='.
+									   $row_id.'&table='.mb_strtolower( $CONF_PROJECT ."id". $id ) ],
+		[ 't', 'Это автоматическое сообщение, на не нужно отвечать' ],
+		[ 't', 'Удачи!' ]
+	];
+	$vars['footer']    = [
+		[ 't', 'Sincerely from Develop' ],
+		[ 't', 'Created by Codeoon' ]
+	];
 
 	foreach ($CONF_EMAILS as $email) {
-		echo mail( $email, "Pixel Info | Тестовое", $template, $headers );
+		email_send( $CONF_EMAIL_FROM, $email, $vars );
 	}

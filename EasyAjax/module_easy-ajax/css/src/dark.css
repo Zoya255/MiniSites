@@ -96,3 +96,20 @@ p{
 .error{
 	color: #c93836;
 }
+
+/* -------------------- tables -------------------- */
+
+table{
+	margin: auto;
+
+	font-family: Roboto, monospace;
+	font-size: 18px;
+
+	border-collapse: collapse;
+}
+table th,
+table td{
+	padding: 5px 10px;
+
+	border: 1px solid #666666;
+}

@@ -1,10 +1,14 @@
 <?php
-	# Federal System
+	# Appearance settings
+	$CONF_LOOK_DARK = True;
+
+	# Federal system
 	$CONF_UUID       = "00000000-0000-0000-0000-000000000000";
 	$CONF_PROJECT    = "Coolest_project_name";
 	$CONF_PROJECT_ID = 1;
 
 	# Config emails
+	$CONF_EMAIL_FROM = "Admin <admin@example.ru>";
 	$CONF_EMAILS  = [
 		"mail@example.com",
 	];
