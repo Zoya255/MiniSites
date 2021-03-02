@@ -1,0 +1,80 @@
+<?php
+	require "../config.php"
+?>
+
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>FullControl Template</title>
+
+		<link rel="stylesheet" href="css/src/global.css">
+		<link rel="stylesheet" href="css/src/dark.css">
+	</head>
+
+	<body class="global__body">
+		<header class="global__header">
+			<span class="global__header-logo">FullControl</span>
+		</header>
+
+		<nav class="global__nav">
+			<ul class="global__nav-list">
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="">TimeCharts</a>
+				</li>
+
+				<li class="global__nav-list-item active">
+					<a class="global__nav-list-item-link" href="">ClickMaps</a>
+				</li>
+
+				<li class="global__nav-list-item">
+					<a class="global__nav-list-item-link" href="">RequestTables</a>
+				</li>
+			</ul>
+		</nav>
+
+		<aside class="global__aside">
+			<ul class="global__aside-list">
+				<li class="global__aside-list-item">
+					<a class="global__aside-list-item-link" href="">Information</a>
+				</li>
+
+				<li class="global__aside-list-item active">
+					<a class="global__aside-list-item-link" href="">EasyAjax</a>
+				</li>
+
+				<li class="global__aside-list-item">
+					<a  class="global__aside-list-item-link" href="">EasySpy</a>
+				</li>
+
+				<li class="global__aside-list-item">
+					<a  class="global__aside-list-item-link" href="">Settings</a>
+				</li>
+			</ul>
+		</aside>
+
+		<main class="global__main">
+			<h1>ClickMaps</h1>
+
+			<p><a class='btn' href='stats-page.php?clickMap=Full'>Full data</a></p>
+			<hr class='hr-md'>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=31eki8b242a7kj0bic7elger4s'>http://localhost:63342/cdn_Pixel/index.html?_ijt=31eki8b242a7kj0bic7elger4s</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=31eki8b242a7kj0bic7elger4s#form'>http://localhost:63342/cdn_Pixel/index.html?_ijt=31eki8b242a7kj0bic7elger4s#form</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=71hdhpuqfggrd0dhpfcqi46a68'>http://localhost:63342/cdn_Pixel/index.html?_ijt=71hdhpuqfggrd0dhpfcqi46a68</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=c3r97m4ejiouujtkbgf4tisae1#'>http://localhost:63342/cdn_Pixel/index.html?_ijt=c3r97m4ejiouujtkbgf4tisae1#</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=c3r97m4ejiouujtkbgf4tisae1#form'>http://localhost:63342/cdn_Pixel/index.html?_ijt=c3r97m4ejiouujtkbgf4tisae1#form</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=g1j2phvqqhbom128abbduh4ruf'>http://localhost:63342/cdn_Pixel/index.html?_ijt=g1j2phvqqhbom128abbduh4ruf</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#about'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#about</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#advantages'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#advantages</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#form'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#form</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#main'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#main</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#works'>http://localhost:63342/cdn_Pixel/index.html?_ijt=pni9mtvarqe6vkfh1kuuvevdeg#works</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=rpnp2uvki5l17dosoal3pk6f2n'>http://localhost:63342/cdn_Pixel/index.html?_ijt=rpnp2uvki5l17dosoal3pk6f2n</a></p>
+			<p><a href='stats-page.php?clickMap=http://localhost:63342/cdn_Pixel/index.html?_ijt=rpnp2uvki5l17dosoal3pk6f2n#advantages'>http://localhost:63342/cdn_Pixel/index.html?_ijt=rpnp2uvki5l17dosoal3pk6f2n#advantages</a></p>
+		</main>
+	</body>
+</html>

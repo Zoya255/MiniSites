@@ -1,0 +1,147 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+    display: grid;
+
+    grid-template-areas: "header nav"
+                         "aside  main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows:    auto 1fr;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+    border-right: solid 1px #686963;
+    border-bottom: solid 1px #686963;
+
+    padding: 10px 20px;
+
+    background-color: #686963;
+}
+.global__header-logo{
+    font-family: Comfortaa, cursive;
+    font-size: 1.5em;
+}
+
+/* -------------------- nav -------------------- */
+
+.global__nav{
+    border-bottom: solid 1px #999999;
+
+    background-color: #686963;
+}
+.global__nav-list{
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+.global__nav-list-item{
+    height: auto;
+
+    margin-right: 5px;
+
+    font-size: 1.2em;
+
+    background-color: #333333;
+    border: solid 1px #999999;
+}
+.global__nav-list-item.active{
+    background-color: #2d6f7f;
+}
+.global__nav-list-item:hover{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.global__nav-list-item-link{
+    display: block;
+
+    padding: 7px 10px;
+
+    height: 100%;
+
+    text-decoration: none;
+
+    color: #cccccc;
+}
+
+/* -------------------- aside -------------------- */
+
+.global__aside{
+    border-right: solid 1px #999999;
+
+    background-color: #686963;
+}
+.global__aside-list{
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+.global__aside-list-item{
+    margin: 0 5px 5px;
+
+    font-size: 1.2em;
+    text-align: center;
+
+    background-color: #333333;
+    border: solid 1px #999999;
+}
+.global__aside-list-item.active{
+    background-color: #2d6f7f;
+}
+.global__aside-list-item:hover{
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+.global__aside-list-item-link{
+    display: block;
+
+    height: 100%;
+
+    padding: 10px;
+
+    text-decoration: none;
+
+    color: #cccccc;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+    padding: 0 20px;
+}
+
+p{
+    font-family: Consolas, monospace;
+    line-height: 24px;
+}
+a {
+    text-decoration: none;
+    color: #84c3be;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 5px 0;
+
+    font-family: Comfortaa, cursive;
+}
+h1{
+    border-bottom: 1px solid #cccccc;
+    font-size: 1.4em;
+}

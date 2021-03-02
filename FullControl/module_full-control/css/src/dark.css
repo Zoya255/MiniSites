@@ -1,0 +1,26 @@
+/* ------------------------------- dark ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+    color: #cccccc;
+    background-color: #272822;
+}
+
+/* -------------------- highlight -------------------- */
+
+.debug{
+    color: #aaaaaa;
+}
+.info{
+    color: #cccccc;
+}
+.success{
+    color: #329932;
+}
+.warn{
+    color: #c98236;
+}
+.error{
+    color: #c93836;
+}
