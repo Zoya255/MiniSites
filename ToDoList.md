@@ -382,3 +382,10 @@
 *Sergo*
 
 - EasyAjax: LARGE update - to version 02
+
+
+## 02.03.2021
+
+*Sergo*
+
+- create new module - FullControl
